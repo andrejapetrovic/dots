@@ -1,0 +1,697 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/ap/
+	..
+1582118996
+'a
+	/home/ap/Documents/baze
+	01_BP_Osnovni pojmovi.pdf
+1582215180
+'b
+	/home/ap/bin/
+	..
+1582118996
+'h
+	/home/ap/
+	..
+1582215311
+'j
+	/home/ap
+	Pictures
+1582547485
+'n
+	/home/ap/Documents/beleske
+	angular.txt
+1582215210
+
+# Bookmarks:
+
+# TUI:
+ar
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/ap/.local/share
+	vifm
+7
+d/home/ap/.local
+	share
+1
+d/home/ap
+	pCloudDrive
+20
+d/home/ap/pCloudDrive
+	..
+0
+d/home/ap
+	Programs
+18
+d/home/ap/Programs
+	deezer
+1
+d/home/ap/Programs/deezer
+	.git
+1
+d/home/ap/Programs/deezer/.git
+	branches
+1
+d/home/ap/Programs/deezer
+	src
+3
+d/home/ap/Programs/deezer/src
+	chrome_200_percent.pak
+11
+d/home/ap/Programs/deezer
+	src
+3
+d/home/ap/Programs/deezer/src
+	deezer
+13
+d/home/ap/Programs/deezer
+	src
+3
+d/home/ap/Programs
+	st
+6
+d/home/ap
+	Programs
+11
+d/home
+	ap
+1
+d/home/ap
+	Pictures
+8
+d/home/ap/Pictures
+	edited.jpg
+2
+d/home/ap
+	Documents
+6
+d/home/ap/Documents
+	beleske
+2
+d/home/ap/Documents/beleske
+	node.txt
+11
+d/home/ap/Documents
+	dots.7z
+4
+d/home/ap
+	Documents
+6
+d/home/ap/Documents
+	baze
+1
+d/home/ap/Documents/baze
+	links
+15
+d/home/ap/Documents
+	beleske
+2
+d/home/ap/Documents/beleske
+	pacman.txt
+12
+d/home/ap/Documents
+	beleske
+2
+d/home/ap
+	.nv
+4
+d/home
+	ap
+1
+d/home/ap
+	.pki
+4
+d/home/ap/.pki
+	nssdb
+1
+d/home/ap
+	backup
+17
+d/home/ap/backup
+	fontconfig
+8
+d/home/ap/backup/fontconfig
+	fonts.conf
+1
+d/home/ap/backup
+	fonts
+9
+d/home/ap/backup/fonts
+	Fura Code Regular Nerd Font Complete.otf
+2
+d/home/ap/backup
+	fonts
+9
+d/home/ap/backup/fonts
+	Inconsolata Bold Nerd Font Complete Mono.otf
+3
+d/home/ap/backup
+	fonts
+9
+d/home/ap
+	backup
+17
+d/home/ap/backup
+	.vscode-oss
+1
+d/home/ap/backup/.vscode-oss
+	..
+0
+d/home/ap/backup
+	st
+14
+d/home/ap/backup/st
+	.git
+1
+d/home/ap/backup/st/.git
+	HEAD
+7
+d/home/ap/backup/st
+	st-scrollback-20190331-21367a0.diff
+15
+d/home/ap/backup
+	st
+14
+d/home/ap/backup/st
+	.git
+1
+d/home/ap/backup/st/.git
+	info
+3
+d/home/ap/backup/st/.git/info
+	exclude
+1
+d/home/ap/backup/st/.git
+	hooks
+2
+d/home/ap/backup/st/.git/hooks
+	..
+0
+d/home/ap/backup/st/.git
+	objects
+5
+d/home/ap/backup/st
+	.git
+1
+d/home/ap/backup
+	picom
+12
+d/home/ap
+	backup
+17
+d/home
+	ap
+1
+d/home/ap
+	pCloudDrive
+19
+d/home/ap/pCloudDrive
+	Documents
+1
+d/home/ap/pCloudDrive/Documents
+	baze
+1
+d/home/ap/pCloudDrive
+	Documents
+1
+d/home/ap/pCloudDrive/Documents
+	baze
+1
+d/home/ap/pCloudDrive
+	vifm
+2
+d/home/ap/pCloudDrive/vifm
+	..
+0
+d/home/ap/pCloudDrive
+	backup
+2
+d/home/ap/pCloudDrive/backup
+	vundle
+6
+d/home/ap/pCloudDrive/backup/vundle
+	src
+2
+d/home/ap/pCloudDrive/backup
+	fontconfig
+4
+d/home/ap/pCloudDrive/backup/fontconfig
+	fonts.conf
+1
+d/home/ap/pCloudDrive/backup
+	fontconfig
+4
+d/home/ap/pCloudDrive
+	backup
+2
+d/home/ap/pCloudDrive/backup
+	vundle
+6
+d/home/ap/pCloudDrive/backup/vundle
+	src
+2
+d/home/ap/pCloudDrive/backup
+	vundle
+6
+d/home/ap/pCloudDrive
+	backup
+2
+d/home/ap
+	backup
+17
+d/home/ap/backup
+	picom
+12
+d/home/ap
+	pCloudDrive
+19
+d/home/ap/pCloudDrive
+	vifm
+3
+d/home/ap
+	pCloudDrive
+18
+d/home/ap/pCloudDrive
+	backup.zip
+8
+d/home/ap
+	pCloudDrive
+18
+d/home
+	ap
+1
+d/
+	etc
+3
+d/etc
+	pacman.d
+32
+d/etc/pacman.d
+	hooks
+2
+d/etc/pacman.d/hooks
+	dash-sh.hook
+1
+d/etc/pacman.d
+	hooks
+2
+d/etc
+	udev
+32
+d/
+	usr
+17
+d/usr
+	include
+2
+d/
+	etc
+3
+d/etc
+	pam.d
+12
+d/etc/pam.d
+	chage
+1
+d/etc
+	pacman.d
+11
+d/etc/pacman.d
+	mirrorlist
+3
+d/etc
+	zsh
+4
+d/
+	etc
+3
+d/etc
+	pacman.conf
+12
+d
+
+# Right window history (oldest to newest):
+D/home/ap
+	Pictures
+4
+D/home
+	ap
+1
+D/
+	home
+4
+D/home
+	ap
+1
+D/home/ap
+	primer
+7
+D/home/ap/primer
+	..
+0
+D/home/ap
+	Downloads
+3
+D/home/ap/Downloads
+	baze1.zip
+1
+D/home/ap
+	Documents
+2
+D/home/ap/Documents
+	beleske
+2
+D/home/ap
+	Documents
+2
+D/home/ap/Documents
+	src.zip
+6
+D/home/ap
+	pCloudDrive
+7
+D/home/ap/pCloudDrive
+	..
+0
+D/home/ap
+	.local
+5
+D/home/ap/.local
+	share
+1
+D/home/ap/.local/share
+	fonts
+4
+D/home/ap/.local/share/fonts
+	Noto Sans Display Light Nerd Font Complete.ttf
+5
+D/home/ap/.local/share
+	applications
+1
+D/home/ap/.local
+	share
+1
+D/home/ap
+	.config
+3
+D/home/ap/.config
+	Code - OSS
+1
+D/home/ap
+	.local
+5
+D/home/ap/.local
+	share
+1
+D/home/ap/.local/share
+	fonts
+4
+D/home/ap/.local
+	share
+1
+D/home/ap
+	Documents
+15
+D/home/ap/Documents
+	beleske
+2
+D/home/ap
+	Pictures
+17
+D/home/ap/Pictures
+	Screenshots
+1
+D/home/ap
+	Programs
+18
+D/home/ap/Programs
+	vifm_devicons
+9
+D/home/ap/Programs/vifm_devicons
+	..
+0
+D/home/ap/Programs
+	vundle
+10
+D/home/ap/Programs/vundle
+	pkg
+2
+D/home/ap/Programs
+	optimus-manager
+3
+D/home/ap
+	Desktop
+14
+D/home/ap/Desktop
+	..
+0
+D/home/ap
+	Projects
+19
+D/home/ap/Projects
+	angular-ngrx
+1
+D/home/ap/Projects/angular-ngrx
+	..
+0
+D/home/ap/Projects
+	angular-ngrx
+1
+D/home/ap
+	pCloudDrive
+22
+D/home/ap/pCloudDrive
+	..
+0
+D/home/ap
+	.config
+3
+D/home/ap/.config
+	gtk-3.0
+12
+D/home/ap/.config/gtk-3.0
+	..
+0
+D/home/ap/.config
+	polybar
+17
+D/home/ap
+	.config
+3
+D/home
+	ap
+1
+D/
+	home
+4
+D/home
+	ap
+1
+D/home/ap
+	Documents
+15
+D/home/ap/Documents
+	baze
+1
+D/home/ap/Documents/baze
+	..
+0
+D/home/ap/Documents
+	dots
+3
+D/home/ap/Documents/dots
+	..
+0
+D/home/ap/Documents
+	dots
+3
+D/home/ap
+	fonts.txt
+37
+D/home
+	ap
+1
+D/
+	lib
+5
+D/lib
+	..
+0
+D/
+	home
+4
+D/home
+	ap
+1
+D/home/ap
+	.vscode-oss
+10
+D/home/ap/.vscode-oss
+	extensions
+1
+D/home/ap
+	.vscode-oss
+10
+D/home/ap/.vscode-oss
+	extensions
+1
+D/home/ap/.vscode-oss/extensions
+	ginfuru.ginfuru-better-solarized-dark-theme-0.9.3
+2
+D/home/ap/.vscode-oss
+	extensions
+1
+D/home/ap
+	.config
+3
+D/home/ap/.config
+	Code - OSS
+1
+D/home/ap/.config/Code - OSS
+	CachedData
+3
+D/home/ap/.config/Code - OSS/CachedData
+	..
+0
+D/home/ap/.config/Code - OSS
+	Cache
+2
+D/home/ap/.config/Code - OSS/Cache
+	..
+0
+D/home/ap/.config/Code - OSS
+	blob_storage
+8
+D/home/ap/.config/Code - OSS/blob_storage
+	48cd5ad4-845f-44ce-8210-b65dee5a0901
+1
+D/home/ap/.config/Code - OSS/blob_storage/48cd5ad4-845f-44ce-8210-b65dee5a0901
+	..
+0
+D/home/ap/.config/Code - OSS/blob_storage
+	48cd5ad4-845f-44ce-8210-b65dee5a0901
+1
+D/home/ap/.config/Code - OSS
+	GPUCache
+6
+D/home/ap/.config/Code - OSS/GPUCache
+	data_1
+2
+D/home/ap/.config/Code - OSS
+	CachedData
+3
+D/home/ap/.config/Code - OSS/CachedData
+	..
+0
+D/home/ap/.config/Code - OSS
+	CachedData
+3
+D/home/ap/.config
+	Dharkael
+2
+D/home/ap/.config/Dharkael
+	flameshot.ini
+1
+D/home/ap/.config
+	polybar
+17
+D/home/ap
+	Documents
+15
+D/home
+	ap
+1
+D/
+	home
+4
+D/home
+	ap
+1
+D/home/ap
+	pCloudDrive
+22
+D/home/ap/pCloudDrive
+	dash-sh.hook
+9
+D/home/ap
+	pCloudDrive
+22
+D/home/ap/pCloudDrive
+	backup.zip
+8
+D/home/ap
+	backup
+20
+D/home/ap/backup
+	dmenu-scripts
+8
+D/home/ap
+	pCloudDrive
+22
+D/home/ap/pCloudDrive
+	Getting started with pCloud.pdf
+7
+D
+
+# Command line history (oldest to newest):
+:touch primer.txt
+:touch primer2.txt
+:mkdir primer
+:to
+:mkdir beleske
+:marks
+:mkdir backup
+:q
+:zip backup
+:shell
+
+# Search history (oldest to newest):
+/con
+/Program
+/pac
+/makepk
+/pacman.con
+/pacman.conf
+
+# Prompt history (oldest to newest):
+pv.txt
+pvi.txt
+ppodaci
+
+# Local filter history (oldest to newest):
+
+# Registers:
+""/etc/pacman.conf
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/ap/.local/share/vifm/Trash/000_primer
+	/home/ap/primer
+t/home/ap/.local/share/vifm/Trash/000_deezer-4.18.40-1-any.pkg.tar.xz
+	/home/ap/Programs/deezer/deezer-4.18.40-1-any.pkg.tar.xz
+t/home/ap/.local/share/vifm/Trash/000_deezer-4.18.40-setup.exe
+	/home/ap/Programs/deezer/deezer-4.18.40-setup.exe
+t/home/ap/pCloudDrive/.vifm-Trash-1000/000_backup
+	/home/ap/pCloudDrive/backup
+
+# State:
+f
+i1
+[.0
+[F
+F
+I1
+].0
+]F
+s0
