@@ -1,0 +1,10 @@
+#!/bin/sh
+options(){
+	case $1 in
+		"Shutdown") poweroff;;
+		"Restart") reboot;;
+		"*") exit;;
+	esac
+}
+
+echo "Shutdown\nRestart" | options $(dmenu -p "exit" -i)  

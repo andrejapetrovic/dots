@@ -1,0 +1,54 @@
+#!/bin/sh
+
+search() {
+	echo "$@"
+	if [ "$1" = "!dd" ]
+	then
+		rm -f ~/dmenu-scripts/web-history
+		touch ~/dmenu-scripts/web-history
+		exit
+	fi
+
+	if [ -z $1 ]
+	then
+		exit
+	fi
+
+	s="$@"
+	first_arg="$1"
+	shift
+	SEARCH_QUERY="$@"
+	case $first_arg in
+		#google
+		"gg") LOC="https://www.google.com/search?q=$SEARCH_QUERY&ie=UTF-8";;
+		#reddit
+		"r") LOC="https://www.reddit.com/r/$SEARCH_QUERY";;
+		#youtube
+		"yt") LOC="https://www.youtube.com/results?search_query=$SEARCH_QUERY";;
+		#archwiki
+		"aw") LOC="https://wiki.archlinux.org/index.php?search=$SEARCH_QUERY&title=Special%3ASearch&go=Go";;	
+		#aur
+		"aur") LOC="https://aur.archlinux.org/packages/?O=0&K=$SEARCH_QUERY";;
+		#localhost
+		"loc") LOC="localhost:$SEARCH_QUERY";;
+		#moj github
+		"git") LOC="https://www.github.com/andrejapetrovic/$SEARCH_QUERY";;
+		#fb
+		"fb") LOC="https://www.facebook.com";;
+		#gdrive
+		"d1") LOC="https://drive.google.com/drive/my-drive";;
+		#onedrive
+		"d2") LOC="https://onedrive.live.com/?id=root&cid=3C111CCF104E908C";;
+		#pcloud
+		"c") LOC="https://my.pcloud.com/";;
+		#protonmail
+		"m") LOC="https://mail.protonmail.com/inbox";;
+		*) exit;;
+	esac
+	sed -i "/$s/d" ~/dmenu-scripts/web-history 
+	echo $s >> ~/dmenu-scripts/web-history
+
+	firefox "$LOC"
+}
+
+tac ~/dmenu-scripts/web-history | search $(dmenu -p "web") 

@@ -1,0 +1,12 @@
+tooltip  {
+    background-color: rgba(213, 216, 221, 0.5);
+}
+
+tooltip * {
+    background-color: transparent;
+}
+
+tooltip label {
+    color: #202020;
+}
+  
