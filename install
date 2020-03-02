@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [ ! -d "$HOME/.config" ]; then
+	mkdir -p $HOME/.config
+fi
+
+cp -r .config/* $HOME/.config
+cp .vimrc .gtkrc-2.0 .xinitrc $HOME
+echo "copied config files"
+cp -r dmenu-scripts $HOME
+echo "copied custom scripts"
