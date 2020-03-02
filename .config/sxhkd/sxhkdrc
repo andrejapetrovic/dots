@@ -3,8 +3,16 @@
 
 
 # terminal emulator
-super + Return
-	st -e fish
+super + {Return, ctrl + m}
+	st
+super + ctrl + n
+	bspc node -p south; \
+	bspc node -o 0.7; \
+	st
+
+# pandoc
+super + shift + p
+	~/Documents/CV/compile
 
 # program launcher
 super + space
@@ -40,13 +48,16 @@ super + e
 	st -e ~/.config/vifm/scripts/vifmrun &
 
 super + shift + e
-	thunar
+	pcmanfm
 
 Print
 	maim | xclip -selection clipboard -t image/png
-
 super + shift + s
 	maim -s | xclip -selection clipboard -t image/png
+shift + Print
+	maim ~/Pictures/Screenshots/$(date +%s).png
+super + shift + Print
+	maim -s ~/Pictures/Screenshots/$(date +%s).png
 
 super + backslash
 	playerctl --player=deezer play-pause
@@ -59,6 +70,23 @@ super + apostrophe
 
 super + shift + p
 	~/Downloads/pcloud
+
+XF86AudioRaiseVolume 
+	amixer set Master playback 1+
+XF86AudioLowerVolume 
+	amixer set Master playback 1-
+shift + XF86AudioRaiseVolume 
+	amixer set Master playback 10+
+shift + XF86AudioLowerVolume 
+	amixer set Master playback 10-
+XF86AudioMute
+	amixer set Master toggle
+XF86MonBrightnessDown
+	xbacklight -dec 10
+XF86MonBrightnessUp
+	xbacklight -inc 10
+
+#
 # bspwm hotkeys
 #
 
@@ -125,7 +153,9 @@ super + {o,i}
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}'
+	bspc {desktop -f,node -d} '^{1-9,10}' --follow
+alt + shift + {1-9,0}
+	bspc node -d '^{1-9,10}'
 
 #
 # preselect
@@ -153,7 +183,7 @@ super + ctrl + shift + space
 
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
-	bspc node -z {left -10,bottom 0 10,top 0 -10,right 10 0}
+	bspc node -z {left -10 0,bottom 0 10,top 0 -10,right 10 0}
 
 # contract a window by moving one of its side inward
 super + alt + shift + {h,j,k,l}
@@ -163,12 +193,5 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-
-XF86AudioRaiseVolume 
-	amixer set Master playback 10+
-XF86AudioLowerVolume 
-	amixer set Master playback 10-
-XF86MonBrightnessDown
-	brightnessctl set 10%-	
-XF86MonBrightnessUp
-	brightnessctl set +10%
+alt shift {h,j,k,l}
+	bspc node -n {west,south,north,east}

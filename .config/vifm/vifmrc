@@ -171,9 +171,8 @@ command! reload :write | restart
 " program.
 
 " Pdf
-" filextype *.pdf zathura %c %i &, apvlv %c, xpdf %c
+filextype *.pdf zathura %c %i &, apvlv %c, xpdf %c
 fileviewer *.pdf pdftotext -nopgbrk %c -
-filetype *.pdf mupdf &
 
 " PostScript
 filextype *.ps,*.eps,*.ps.gz
@@ -496,6 +495,6 @@ fileviewer *.gif
 
 command bg feh --bg-scale %d/%c
 
-source ~/Programs/vifm_devicons/SETUP
+" source ~/Programs/vifm_devicons/SETUP
 
 nnoremap ] :bg<cr>

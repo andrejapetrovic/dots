@@ -1,7 +1,5 @@
 #!/bin/sh
-xrandr --setprovideroutputsource modesetting NVIDIA-0
-xrandr --auto
-picom -b &
+#picom -b &
 setxkbmap -option -layout us,rs -variant ,latinunicodeyz -option grp:menu_toggle
 setxkbmap -option caps:escape &
 xsetroot -cursor_name left_ptr &
