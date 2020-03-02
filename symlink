@@ -1,0 +1,18 @@
+#!/bin/sh
+
+rm .xinitrc .vimrc .gtkrc-2.0
+rm -rf .config dmenu-scripts
+mkdir .config
+
+ln -s $HOME/.vimrc $PWD
+ln -s $HOME/.xinitrc $PWD
+ln -s $HOME/.gtkrc-2.0 $PWD
+ln -s $HOME/.config/bspwm $PWD/.config/
+ln -s $HOME/.config/sxhkd $PWD/.config/
+ln -s $HOME/.config/fish $PWD/.config/
+ln -s $HOME/.config/polybar $PWD/.config/
+ln -s $HOME/.config/picom $PWD/.config/
+ln -s $HOME/.config/vifm $PWD/.config/
+ln -s $HOME/.config/gtk-3.0 $PWD/.config/
+ln -s $HOME/.config/fontconfig $PWD/.config/
+ln -s $HOME/dmenu-scripts $PWD/dmenu-scripts

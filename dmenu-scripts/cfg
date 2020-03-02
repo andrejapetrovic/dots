@@ -1,4 +1,0 @@
-#!/bin/sh
-
-find ~/.config ~/dmenu-scripts ~/.vimrc -type f | egrep -vi "deezer|Code - OSS" | dmenu -p "config files" -l 15 | xargs -r st -e vim
-
