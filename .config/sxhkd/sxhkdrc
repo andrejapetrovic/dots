@@ -5,6 +5,7 @@
 # terminal emulator
 super + {Return, ctrl + m}
 	st
+
 super + ctrl + n
 	bspc node -p south; \
 	bspc node -o 0.7; \
@@ -26,69 +27,42 @@ super + alt + p
 	killall polybar; \
 	polybar example &
 
-super + d
-	~/dmenu-scripts/docs
+super + {d,c,v,ctrl + q}
+	~/dmenu-scripts/{docs,web-search,cfg,shutdown}
 
-super + c
-	~/dmenu-scripts/web-search
-
-super + v
-	~/dmenu-scripts/cfg
-
-ctrl + alt + q
-	~/dmenu-scripts/shutdown
-
-super + a
-	firefox
-
-super + shift + a
-	deezer 
+super + {_,shift + }a
+	{firefox, deezer} 
 
 super + e
 	st -e ~/.config/vifm/scripts/vifmrun &
 
-super + shift + e
-	pcmanfm
+super + shift + c
+	~/nmgui
 
 Print
 	maim | xclip -selection clipboard -t image/png
+
 super + shift + s
 	maim -s | xclip -selection clipboard -t image/png
-shift + Print
-	maim ~/Pictures/Screenshots/$(date +%s).png
-super + shift + Print
-	maim -s ~/Pictures/Screenshots/$(date +%s).png
 
-super + backslash
-	playerctl --player=deezer play-pause
+{_, super +} shift + Print
+	maim {_, -s + }~/Pictures/Screenshots/$(date +%s).png
 
-super + semicolon
-	playerctl --player=deezer previous
+super + {backslash, semicolon, apostrophe}
+	playerctl --player=deezer {play-pause, previous, next}
 
-super + apostrophe
-	playerctl --player=deezer next
+super + shift + z
+	slock
 
-super + shift + p
-	~/Downloads/pcloud
+{_,shift + }XF86Audio{Raise,Lower}Volume
+	amixer set Master playback {1+,10+,1-,10-}
 
-XF86AudioRaiseVolume 
-	amixer set Master playback 1+
-XF86AudioLowerVolume 
-	amixer set Master playback 1-
-shift + XF86AudioRaiseVolume 
-	amixer set Master playback 10+
-shift + XF86AudioLowerVolume 
-	amixer set Master playback 10-
 XF86AudioMute
 	amixer set Master toggle
-XF86MonBrightnessDown
-	xbacklight -dec 10
-XF86MonBrightnessUp
-	xbacklight -inc 10
 
-#
-# bspwm hotkeys
-#
+XF86MonBrightness{Down,Up}
+	xbacklight {-dec 10, -inc 10}
+
 
 # quit/restart bspwm
 super + alt + {q,r}

@@ -38,33 +38,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ap
-	Documents
-8
-d/home/ap/Documents
-	backup
-1
-d/home/ap/Documents/backup
-	.vimrc
-19
-d/home/ap/Documents
-	backup
-1
-d/home/ap
-	Documents
-8
-d/home/ap/Documents
-	backup
-1
-d/home/ap/Documents/backup
-	fontconfig
-9
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap/Pictures/Screenshots
-	1582661051.png
-4
 d/home/ap/Pictures
 	edited.jpg
 2
@@ -336,8 +309,35 @@ d/home/ap
 	Pictures
 15
 d/home/ap/Pictures
-	galaxy-3608029_1280.jpg
+	Screenshots
+1
+d/home/ap/Pictures/Screenshots
+	1583232473.png
+1
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap
+	Documents
+13
+d/home/ap/Documents
+	baze
 3
+d/home/ap
+	Pictures
+15
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap/Pictures/Screenshots
+	1583232473.png
+1
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap/Pictures/Screenshots
+	1583328751.png
+4
 d
 
 # Right window history (oldest to newest):
@@ -675,7 +675,7 @@ pph.jpg
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/ap/.local/share/vifm/Trash/000_New Tab.html
+""/home/ap/.local/share/vifm/Trash/000_placeholder
 
 # Directory stack (oldest to newest):
 
@@ -744,6 +744,22 @@ t/home/ap/.local/share/vifm/Trash/000_New Tab_files
 	/home/ap/Pictures/New Tab_files
 t/home/ap/.local/share/vifm/Trash/000_New Tab.html
 	/home/ap/Pictures/New Tab.html
+t/home/ap/.local/share/vifm/Trash/000_1582633370.png
+	/home/ap/Pictures/Screenshots/1582633370.png
+t/home/ap/.local/share/vifm/Trash/000_1582645143.png
+	/home/ap/Pictures/Screenshots/1582645143.png
+t/home/ap/.local/share/vifm/Trash/000_1582661051.png
+	/home/ap/Pictures/Screenshots/1582661051.png
+t/home/ap/.local/share/vifm/Trash/000_1582733551.png
+	/home/ap/Pictures/Screenshots/1582733551.png
+t/home/ap/.local/share/vifm/Trash/000_1582755740.png
+	/home/ap/Pictures/Screenshots/1582755740.png
+t/home/ap/.local/share/vifm/Trash/000_1583191977.png
+	/home/ap/Pictures/Screenshots/1583191977.png
+t/home/ap/.local/share/vifm/Trash/000_2020-02-10_114316-1366x768_scrot.png
+	/home/ap/Pictures/Screenshots/2020-02-10_114316-1366x768_scrot.png
+t/home/ap/.local/share/vifm/Trash/000_placeholder
+	/home/ap/Pictures/placeholder
 
 # State:
 f
