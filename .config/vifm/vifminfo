@@ -38,12 +38,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ap/Pictures
-	edited.jpg
-2
-d/home/ap
-	Documents
-8
 d/home/ap/Documents
 	backup
 1
@@ -336,8 +330,14 @@ d/home/ap/Pictures
 	Screenshots
 1
 d/home/ap/Pictures/Screenshots
-	1583328751.png
-4
+	1583328733.png
+3
+d/home/ap/Pictures
+	wallpaperflare.com_wallpaper(1).jpg
+7
+d/home/ap
+	.ssh
+10
 d
 
 # Right window history (oldest to newest):

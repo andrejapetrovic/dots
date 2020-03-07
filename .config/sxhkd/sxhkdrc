@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + {Return, ctrl + m}
-	st
+	st 
 
 super + ctrl + n
 	bspc node -p south; \
@@ -27,8 +27,8 @@ super + alt + p
 	killall polybar; \
 	polybar example &
 
-super + {d,c,v,ctrl + q}
-	~/dmenu-scripts/{docs,web-search,cfg,shutdown}
+super + {d,c,v,ctrl + q,shift + d}
+	~/dmenu-scripts/{docs,web-search,cfg,shutdown,proj}
 
 super + {_,shift + }a
 	{firefox, deezer} 
@@ -37,7 +37,7 @@ super + e
 	st -e ~/.config/vifm/scripts/vifmrun &
 
 super + shift + c
-	~/nmgui
+	~/dmenu-scripts/nmgui
 
 Print
 	maim | xclip -selection clipboard -t image/png

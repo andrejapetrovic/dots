@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ -z $(ps -ef | grep -v grep | grep nm-applet) ]
+then
+	nm-applet --no-agent &
+else
+	killall nm-applet
+fi
+

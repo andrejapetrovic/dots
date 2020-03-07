@@ -11,6 +11,7 @@ hi string ctermfg=yellow
 hi Type ctermfg=blue
 hi Comment ctermfg=DarkGray
 "hi Special ctermfg=Cyan
+hi Visual cterm=reverse ctermbg=NONE
 
 let NERDTreeMinimalUI = 1
 
@@ -20,9 +21,8 @@ autocmd FileType nerdtree setlocal relativenumber
 set fillchars+=vert:\ 
 hi VertSplit ctermfg=Black
 
-map t :NERDTree<CR>
-
 let g:loaded_matchparen=1
 set tabstop=4
 
-"test
+map t :NERDTreeToggle<CR>
+
