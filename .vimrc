@@ -1,4 +1,5 @@
 set number
+set ai
 
 syntax on
 "set laststatus=2
@@ -24,5 +25,19 @@ hi VertSplit ctermfg=Black
 let g:loaded_matchparen=1
 set tabstop=4
 
-map t :NERDTreeToggle<CR>
+map tt :NERDTreeToggle<CR>
+map <c-s> :shell<CR>
 
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+set shell=/usr/bin/fish
+
+set hlsearch
+hi Search cterm=NONE ctermfg=black ctermbg=green
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
+augroup modefeedback
+    autocmd!
+		autocmd InsertEnter * highlight CursorLine ctermbg=17
+	autocmd InsertLeave * highlight CursorLine ctermbg=none
+augroup END

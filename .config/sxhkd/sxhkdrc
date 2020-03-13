@@ -31,10 +31,10 @@ super + {d,c,v,ctrl + q,shift + d}
 	~/dmenu-scripts/{docs,web-search,cfg,shutdown,proj}
 
 super + {_,shift + }a
-	{firefox, deezer} 
+	{firefox, chromium} 
 
-super + e
-	st -e ~/.config/vifm/scripts/vifmrun &
+super + {_, shift +} e
+	{st -e ~/.config/vifm/scripts/vifmrun &, pcmanfm}
 
 super + shift + c
 	~/dmenu-scripts/nmgui
@@ -128,6 +128,7 @@ super + {o,i}
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}' --follow
+
 alt + shift + {1-9,0}
 	bspc node -d '^{1-9,10}'
 
@@ -167,5 +168,16 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-alt shift {h,j,k,l}
+# move window to a node
+alt + shift + {h,j,k,l}
 	bspc node -n {west,south,north,east}
+
+# replace focused node with selected workspace
+ctrl + {0,9,8,7,6}
+	bspc node -s $(bspc query -N -d {X, XI, VIII, VII, VI})
+
+# pull windows from workspace
+ctrl + shift + {0,9,8,7,6,5,4,3,2,1}
+	bspc node $(bspc query -N -d {X, IX, VIII, VII, VI, V, IV, III, II, I} | head -n 1) -d $(bspc query -D -d focused)
+	
+	

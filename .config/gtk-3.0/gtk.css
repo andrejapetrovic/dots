@@ -1,9 +1,5 @@
 tooltip  {
-    background-color: rgba(213, 216, 221, 0.85);
-}
-
-tooltip * {
-    background-color: transparent;
+    background-color: rgba(213, 216, 221, 1);
 }
 
 tooltip label {

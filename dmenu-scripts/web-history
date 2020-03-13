@@ -8,9 +8,9 @@ aw st
 aw ssh
 fb
 aw installation
-git
-git soft
 d1
-git st
 m
+aur vundle
 c
+loc 4000
+git

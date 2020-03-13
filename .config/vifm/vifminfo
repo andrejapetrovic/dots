@@ -38,306 +38,306 @@ l2
 r2
 
 # Left window history (oldest to newest):
+d/home/ap
+	Documents
+15
 d/home/ap/Documents
-	backup
-1
-d/home/ap/Documents/backup
-	fontconfig
-9
-d/home/ap/Documents/backup/fontconfig
-	fonts.conf
-1
-d/home/ap/Documents/backup
-	st
-13
-d/home/ap/Documents/backup/st
-	config.h
-10
-d/home/ap/Documents/backup
-	fontconfig
-9
-d/home/ap/Documents/backup/fontconfig
-	fonts.conf
-1
-d/home/ap/Documents/backup
-	fonts.conf
-18
-d/home/ap/Pictures
-	wallpaperflare.com_wallpaper(1).jpg
-5
-d/home/ap
-	.config
-2
-d/home/ap/.config
-	vifm
-14
-d/home/ap/.config/vifm
-	colors
-1
-d/home/ap/.config/vifm/colors
-	Default.vifm
-1
-d/home/ap/.config/vifm
-	colors
-1
-d/home/ap/.config
-	polybar
-12
-d/home/ap
-	.config
-2
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap/Pictures/Screenshots
-	1582661051.png
+	beleske
 4
-d/home/ap/Pictures
-	edited.jpg
-2
-d/home/ap
-	Pictures
-12
-d/home/ap/Pictures
-	edited.jpg
-2
-d/home/ap
-	Programs
-13
-d/home/ap/Programs
-	thermald
-8
-d/home/ap
-	Programs
-13
-d/home/ap/Programs
-	vifm_devicons
-9
-d/home/ap
-	..
-0
-d/home
-	ap
+d/home/ap/Documents/beleske
+	NetworkManager - ArchWiki_files
 1
+d/home/ap/Documents/beleske/NetworkManager - ArchWiki_files
+	Tango-edit-clear.png
+2
+d/home/ap/Documents/beleske
+	NetworkManager - ArchWiki_files
+1
+d/home/ap/Documents
+	c
+5
+d/home/ap/Documents/c
+	linked-list
+1
+d/home/ap/Documents/c/linked-list
+	a.out
+1
+d/home/ap/Documents/c
+	linked-list
+1
+d/home/ap/Documents
+	c
+5
 d/home/ap
 	.npm
-6
-d/home/ap/Pictures
-	nologo.jpg
-3
-d/home/ap
-	Pictures
-12
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap
-	Documents
-10
-d/home/ap/Documents
-	baze
-2
-d/home/ap/Documents/baze
-	04_BP_ER_Model_Osnove.pdf
-4
-d/home/ap/Documents
-	baze
-2
-d/home/ap/Documents/baze
-	04_BP_ER_Model_Osnove.pdf
-4
-d/home/ap/Documents
-	baze
-2
-d/home/ap
-	Desktop
 9
-d/home/ap/Desktop
+d/home/ap/.npm
 	..
 0
 d/home/ap
-	Documents
-10
-d/home/ap/Documents
-	beleske
-3
-d/home/ap/Documents/beleske
-	git.txt
-5
-d/home/ap/Documents
-	beleske
-3
+	.npm
+9
+d/home/ap/.npm
+	..
+0
 d/home/ap
-	.vimrc
-24
+	.npm
+9
+d/home/ap/.npm
+	..
+0
+d/home/ap
+	.npm
+9
+d/home/ap/.npm
+	..
+0
+d/home/ap
+	.xinitrc
+34
 d/home
 	ap
 1
 d/
-	home
-4
-d/home
-	ap
-1
-d/home/ap
-	Documents
-10
-d/home/ap/Documents
-	baze
+	lib64
+6
+d/lib64
+	ImageMagick-7.0.10
 2
-d/home/ap/Documents/baze
-	05_BP_Relacioni_model_koncepcija.pdf
+d/lib64/ImageMagick-7.0.10
+	config-Q16HDRI
+1
+d/lib64
+	coreutils
+23
+d/lib64/coreutils
+	libstdbuf.so
+1
+d/lib64
+	sysctl.d
+33
+d/
+	lib
 5
-d/home/ap/Documents
-	baze
-2
-d/home/ap
-	Downloads
-12
-d/home
-	ap
-1
-d/home/ap
-	Pictures
-13
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap
-	Documents
+d/lib
+	bash
 11
-d/home
-	ap
-1
-d/home/ap
-	Downloads
-12
-d/home/ap/Downloads
+d/lib/bash
+	mkdir
+11
+d/lib
+	gettext
+33
+d/
+	mnt
+8
+d/mnt
 	..
 0
-d/home/ap
-	Downloads
-12
-d/home/ap/Downloads
+d/
+	mnt
+8
+d/mnt
 	..
 0
-d/home/ap
-	Downloads
-12
-d/home/ap/Downloads
-	Internship-Resume-Example-Template.png
+d/
+	mnt
+8
+d/mnt
+	..
+0
+d/
+	mnt
+8
+d/mnt
+	..
+0
+d/
+	opt
+9
+d/opt
+	maven
 1
-d/home/ap
-	Programs
-14
-d/home/ap/Programs
-	consolas-font
-1
-d/home/ap/Programs/consolas-font
-	Consolas-Bold-Italic.ttf
+d/opt/maven
+	conf
 3
-d/home/ap/Programs
-	dots
-4
-d/home/ap
-	Documents
-11
-d/home/ap/Documents
-	backup
-2
-d/home/ap
-	Documents
-11
-d/home/ap/Documents
-	CV
+d/opt
+	maven
 1
-d/home/ap/Documents/CV
-	t.html
-1
-d/home/ap/Documents
-	CV
-1
-d/home/ap
-	.npm
-6
-d/home
-	ap
-1
-d/home/ap
-	Documents
-6
-d/home/ap/Documents
-	baze
-3
-d/home/ap/Documents/baze
-	11_OD_Rasute_datoteke.pdf
-11
-d/home/ap/Documents
-	baze
-3
-d/home/ap
-	Pictures
-13
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap
-	Downloads
-14
-d/home/ap/Downloads
-	Internship-Resume-Example-Template.png
-1
-d/home/ap
-	Pictures
-15
-d/home/ap/Pictures
-	New Tab_files
-1
-d/home/ap/Pictures/New Tab_files
-	favicon.ico
-1
-d/home/ap/Pictures
-	New Tab_files
-1
-d/home/ap
-	Pictures
-15
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap/Pictures/Screenshots
-	1583232473.png
-1
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap
-	Documents
-13
-d/home/ap/Documents
-	baze
-3
-d/home/ap
-	Pictures
-15
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap/Pictures/Screenshots
-	1583232473.png
-1
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap/Pictures/Screenshots
-	1583328733.png
-3
-d/home/ap/Pictures
-	wallpaperflare.com_wallpaper(1).jpg
-7
-d/home/ap
-	.ssh
+d/
+	proc
 10
+d/proc
+	1
+1
+d/proc/1
+	stat
+33
+d/proc
+	14
+13
+d/
+	run
+12
+d/run
+	blkid
+2
+d/run/blkid
+	blkid.tab
+1
+d/run
+	initramfs
+5
+d/run/initramfs
+	..
+0
+d/run
+	dbus
+4
+d/run/dbus
+	..
+0
+d/run
+	udev
+15
+d/run/udev
+	static_node-tags
+3
+d/run/udev/static_node-tags
+	uaccess
+1
+d/run/udev/static_node-tags/uaccess
+	snd\x2fseq
+1
+d/home/ap/Documents
+	c
+5
+d/home/ap/Documents/c
+	linked-list
+1
+d/home/ap/Documents
+	c
+5
+d/home/ap
+	Documents
+13
+d/home
+	ap
+1
+d/
+	run
+12
+d/run
+	systemd
+12
+d/run/systemd
+	show-status
+19
+d/run
+	thermald
+13
+d/run/thermald
+	thermald.pid
+1
+d/run
+	udev
+15
+d/run/udev
+	watch
+5
+d/run
+	dmeventd-server
+20
+d/
+	srv
+14
+d/srv
+	ftp
+1
+d/
+	sys
+15
+d/sys
+	..
+0
+d/
+	bin
+0
+d/bin
+	avahi-browse-domains
+33
+d/
+	boot
+1
+d/boot
+	loader
+3
+d/boot/loader
+	entries
+1
+d/boot
+	loader
+3
+d/
+	dev
+2
+d/dev
+	lightnvm
+11
+d/
+	etc
+3
+d/etc
+	java-8-openjdk
+25
+d/etc/java-8-openjdk
+	images
+2
+d/etc/java-8-openjdk/images
+	cursors
+1
+d/etc/java-8-openjdk/images/cursors
+	cursors.properties
+1
+d/etc/java-8-openjdk/images
+	cursors
+1
+d/etc/java-8-openjdk
+	images
+2
+d/etc
+	pacman.d
+30
+d/etc/pacman.d
+	hooks
+2
+d/etc/pacman.d/hooks
+	sh-dash.hook
+1
+d/etc/pacman.d
+	gnupg
+1
+d/etc/pacman.d/gnupg
+	S.gpg-agent.browser
+5
+d/etc/pacman.d
+	gnupg
+1
+d/etc
+	pacman.d
+30
+d/etc/pacman.d
+	mirrorlist
+3
+d/etc
+	libaudit.conf
+11
+d/home/ap
+	Pictures
+15
+d/home/ap/Pictures
+	edited.jpg
+2
 d
 
 # Right window history (oldest to newest):
@@ -639,8 +639,8 @@ D/home/ap
 	Downloads
 12
 D/home/ap/Downloads
-	Internship-Resume-Example-Template.png
-1
+	combinepdf.pdf
+3
 D
 
 # Command line history (oldest to newest):
@@ -655,6 +655,8 @@ D
 :marks
 :wq
 :unzip consolas.zip
+:source ~/Programs/vifm_devicons/SETUP
+:icon
 :shell
 :q
 
@@ -671,11 +673,12 @@ pv.txt
 pvi.txt
 ppodaci
 pph.jpg
+pn
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/ap/.local/share/vifm/Trash/000_placeholder
+""/home/ap/.local/share/vifm/Trash/000_.ngrok
 
 # Directory stack (oldest to newest):
 
@@ -760,6 +763,20 @@ t/home/ap/.local/share/vifm/Trash/000_2020-02-10_114316-1366x768_scrot.png
 	/home/ap/Pictures/Screenshots/2020-02-10_114316-1366x768_scrot.png
 t/home/ap/.local/share/vifm/Trash/000_placeholder
 	/home/ap/Pictures/placeholder
+t/home/ap/.local/share/vifm/Trash/000_cd
+	/home/ap/cd
+t/home/ap/.local/share/vifm/Trash/000_flash
+	/home/ap/flash
+t/home/ap/.local/share/vifm/Trash/000_1583328719.png
+	/home/ap/Pictures/Screenshots/1583328719.png
+t/home/ap/.local/share/vifm/Trash/000_1583328733.png
+	/home/ap/Pictures/Screenshots/1583328733.png
+t/home/ap/.local/share/vifm/Trash/000_1583328751.png
+	/home/ap/Pictures/Screenshots/1583328751.png
+t/home/ap/.local/share/vifm/Trash/000_.acetoneiso
+	/home/ap/.acetoneiso
+t/home/ap/.local/share/vifm/Trash/000_.ngrok
+	/home/ap/.ngrok
 
 # State:
 f
