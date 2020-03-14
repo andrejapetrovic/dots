@@ -1,4 +1,3 @@
-set number
 set ai
 
 syntax on
@@ -8,11 +7,14 @@ hi StatusLine ctermbg=white ctermfg=black
 hi StatusLineNC ctermbg=white ctermfg=black
 hi LineNr ctermfg=DarkGray
 hi Statement ctermfg=red
-hi string ctermfg=yellow
+hi String ctermfg=yellow
 hi Type ctermfg=blue
 hi Comment ctermfg=DarkGray
 "hi Special ctermfg=Cyan
-hi Visual cterm=reverse ctermbg=NONE
+"hi Visual cterm=reverse ctermbg=NONE
+hi Visual cterm=NONE ctermbg=23 ctermfg=None
+hi Error cterm=NONE ctermbg=160 ctermfg=white
+hi MatchParen cterm=NONE ctermbg=24 ctermfg=white
 
 let NERDTreeMinimalUI = 1
 
@@ -22,8 +24,9 @@ autocmd FileType nerdtree setlocal relativenumber
 set fillchars+=vert:\ 
 hi VertSplit ctermfg=Black
 
-let g:loaded_matchparen=1
+"let g:loaded_matchparen=1
 set tabstop=4
+set shiftwidth=4
 
 map tt :NERDTreeToggle<CR>
 map <c-s> :shell<CR>
@@ -41,3 +44,10 @@ augroup modefeedback
 		autocmd InsertEnter * highlight CursorLine ctermbg=17
 	autocmd InsertLeave * highlight CursorLine ctermbg=none
 augroup END
+
+set relativenumber number
+
+" new lines
+nnoremap <c-n> @="m`o\eg``"<cr>
+nnoremap <c-p> @="m`O\eg``"<cr>   
+

@@ -25,6 +25,10 @@
 	/home/ap/Pictures
 	edited.jpg
 1582631557
+'s
+	/home/ap/Pictures/Screenshots
+	1584185178.png
+1584185232
 
 # Bookmarks:
 
@@ -38,33 +42,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ap
-	Documents
-15
-d/home/ap/Documents
-	beleske
-4
-d/home/ap/Documents/beleske
-	NetworkManager - ArchWiki_files
-1
-d/home/ap/Documents/beleske/NetworkManager - ArchWiki_files
-	Tango-edit-clear.png
-2
-d/home/ap/Documents/beleske
-	NetworkManager - ArchWiki_files
-1
-d/home/ap/Documents
-	c
-5
-d/home/ap/Documents/c
-	linked-list
-1
-d/home/ap/Documents/c/linked-list
-	a.out
-1
-d/home/ap/Documents/c
-	linked-list
-1
 d/home/ap/Documents
 	c
 5
@@ -336,7 +313,34 @@ d/home/ap
 	Pictures
 15
 d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap/Pictures/Screenshots
+	..
+0
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap/Pictures/Screenshots
+	1583232473.png
+1
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap/Pictures/Screenshots
+	1584185178.png
+2
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap/Pictures/Screenshots
+	1584185178.png
+2
+d/home/ap/Pictures
 	edited.jpg
+2
+d/home/ap/Pictures/Screenshots
+	vim_comments.png
 2
 d
 
@@ -674,11 +678,14 @@ pvi.txt
 ppodaci
 pph.jpg
 pn
+p1584185178.png
+pvim_tabs.png
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/ap/.local/share/vifm/Trash/000_.ngrok
+""/home/ap/.local/share/vifm/Trash/000_1584215254.png
+""/home/ap/.local/share/vifm/Trash/000_1584215265.png
 
 # Directory stack (oldest to newest):
 
@@ -777,6 +784,14 @@ t/home/ap/.local/share/vifm/Trash/000_.acetoneiso
 	/home/ap/.acetoneiso
 t/home/ap/.local/share/vifm/Trash/000_.ngrok
 	/home/ap/.ngrok
+t/home/ap/.local/share/vifm/Trash/000_1584185147.png
+	/home/ap/Pictures/Screenshots/1584185147.png
+t/home/ap/.local/share/vifm/Trash/000_1584185178(1).png
+	/home/ap/Pictures/Screenshots/1584185178(1).png
+t/home/ap/.local/share/vifm/Trash/000_1584215254.png
+	/home/ap/Pictures/Screenshots/1584215254.png
+t/home/ap/.local/share/vifm/Trash/000_1584215265.png
+	/home/ap/Pictures/Screenshots/1584215265.png
 
 # State:
 f

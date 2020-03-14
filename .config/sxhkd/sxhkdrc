@@ -11,10 +11,6 @@ super + ctrl + n
 	bspc node -o 0.7; \
 	st
 
-# pandoc
-super + shift + p
-	~/Documents/CV/compile
-
 # program launcher
 super + space
 	dmenu_run -p "run" 
@@ -27,17 +23,17 @@ super + alt + p
 	killall polybar; \
 	polybar example &
 
-super + {d,c,v,ctrl + q,shift + d}
-	~/dmenu-scripts/{docs,web-search,cfg,shutdown,proj}
+super + {x,c,v,ctrl + q,shift + x}
+	$HOME/Scripts/{docs,web-search,cfg,shutdown,proj}
 
 super + {_,shift + }a
 	{firefox, chromium} 
 
 super + {_, shift +} e
-	{st -e ~/.config/vifm/scripts/vifmrun &, pcmanfm}
+	{st -e $HOME/.config/vifm/scripts/vifmrun &, pcmanfm}
 
 super + shift + c
-	~/dmenu-scripts/nmgui
+	$HOME/Scripts/nmgui
 
 Print
 	maim | xclip -selection clipboard -t image/png
@@ -45,8 +41,11 @@ Print
 super + shift + s
 	maim -s | xclip -selection clipboard -t image/png
 
-{_, super +} shift + Print
-	maim {_, -s + }~/Pictures/Screenshots/$(date +%s).png
+super + Print
+	maim $HOME/Pictures/Screenshots/$(date +%s).png
+
+super + shift + Print
+	maim -s $HOME/Pictures/Screenshots/$(date +%s).png
 
 super + {backslash, semicolon, apostrophe}
 	playerctl --player=deezer {play-pause, previous, next}
@@ -109,11 +108,11 @@ super + {p,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous node in the current desktop
-super + {_,shift + }x
+super + {_,shift + } d 
 	bspc node -f {next,prev}.local
 # focus the next/previous desktop in the current monitor
-super + bracket{left,right}
-	bspc desktop -f {prev,next}.local
+super + {_,shift + } bracketleft 
+	bspc desktop -f {next,prev}.local
 
 # focus the last node/desktop
 super + {grave,Tab}
