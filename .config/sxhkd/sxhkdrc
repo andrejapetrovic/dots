@@ -47,6 +47,9 @@ super + Print
 super + shift + Print
 	maim -s $HOME/Pictures/Screenshots/$(date +%s).png
 
+super + z 
+	$HOME/Scripts/save-scr
+
 super + {backslash, semicolon, apostrophe}
 	playerctl --player=deezer {play-pause, previous, next}
 
@@ -172,11 +175,11 @@ alt + shift + {h,j,k,l}
 	bspc node -n {west,south,north,east}
 
 # replace focused node with selected workspace
-ctrl + {0,9,8,7,6}
-	bspc node -s $(bspc query -N -d {X, XI, VIII, VII, VI})
+ctrl + {6-9,0}
+	bspc query -N -d '^{6-9,10}' | xargs bspc node -s
+	#bspc node -s $(bspc query -N -d {X, XI, VIII, VII, VI})
 
 # pull windows from workspace
-ctrl + shift + {0,9,8,7,6,5,4,3,2,1}
-	bspc node $(bspc query -N -d {X, IX, VIII, VII, VI, V, IV, III, II, I} | head -n 1) -d $(bspc query -D -d focused)
-	
+ctrl + shift + {1-9,0}
+	bspc node $(bspc query -N -d '^{1-9,10}' | head -n 1) -d $(bspc query -D -d focused)
 	

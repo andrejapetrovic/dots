@@ -1,0 +1,4 @@
+#!/bin/sh
+
+xclip -selection clipboard -t img/png -o > $(ls $HOME/Pictures/Screenshots | dmenu -p "Save image as: " | xargs -r echo $HOME | awk '{printf "%s/Pictures/Screenshots/%s.png", $1, $2}') 
+

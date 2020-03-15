@@ -27,8 +27,8 @@
 1582631557
 's
 	/home/ap/Pictures/Screenshots
-	1584185178.png
-1584185232
+	vim_comments.png
+1584225193
 
 # Bookmarks:
 
@@ -42,69 +42,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ap/Documents
-	c
-5
-d/home/ap
-	.npm
-9
-d/home/ap/.npm
-	..
-0
-d/home/ap
-	.npm
-9
-d/home/ap/.npm
-	..
-0
-d/home/ap
-	.npm
-9
-d/home/ap/.npm
-	..
-0
-d/home/ap
-	.npm
-9
-d/home/ap/.npm
-	..
-0
-d/home/ap
-	.xinitrc
-34
-d/home
-	ap
-1
-d/
-	lib64
-6
-d/lib64
-	ImageMagick-7.0.10
-2
-d/lib64/ImageMagick-7.0.10
-	config-Q16HDRI
-1
-d/lib64
-	coreutils
-23
-d/lib64/coreutils
-	libstdbuf.so
-1
-d/lib64
-	sysctl.d
-33
-d/
-	lib
-5
-d/lib
-	bash
-11
-d/lib/bash
-	mkdir
-11
-d/lib
-	gettext
-33
 d/
 	mnt
 8
@@ -342,6 +279,69 @@ d/home/ap/Pictures
 d/home/ap/Pictures/Screenshots
 	vim_comments.png
 2
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap
+	Downloads
+14
+d/home/ap/Downloads
+	OET.zip
+2
+d/home/ap
+	Downloads
+14
+d/home/ap/Downloads
+	zacloud
+1
+d/home/ap/Downloads/zacloud
+	Pictures
+2
+d/home/ap/Downloads/zacloud/Pictures
+	..
+0
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap/Pictures/Screenshots
+	1583232473.png
+1
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap/Pictures/Screenshots
+	vim-copy.png
+1
+d/home/ap/Pictures
+	edited.jpg
+2
+d/home/ap/Pictures/Screenshots
+	vim_comments.png
+2
+d/home/ap/Pictures
+	edited.jpg
+2
+d/home/ap/Pictures/Screenshots
+	vim_root_save.png
+3
+d/home/ap
+	Downloads
+4
+d/home/ap/Downloads
+	zacloud
+1
+d/home/ap
+	.gnupg
+3
+d/home/ap/.gnupg
+	..
+0
+d/home/ap
+	psqlcon
+39
+d/home/ap/Pictures/Screenshots
+	vim-copy.png
+1
 d
 
 # Right window history (oldest to newest):
@@ -643,8 +643,8 @@ D/home/ap
 	Downloads
 12
 D/home/ap/Downloads
-	combinepdf.pdf
-3
+	..
+0
 D
 
 # Command line history (oldest to newest):
@@ -680,12 +680,13 @@ pph.jpg
 pn
 p1584185178.png
 pvim_tabs.png
+pvim_root_save
+pw
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/ap/.local/share/vifm/Trash/000_1584215254.png
-""/home/ap/.local/share/vifm/Trash/000_1584215265.png
+""/home/ap/.local/share/vifm/Trash/000_radibre.png
 
 # Directory stack (oldest to newest):
 
@@ -792,6 +793,62 @@ t/home/ap/.local/share/vifm/Trash/000_1584215254.png
 	/home/ap/Pictures/Screenshots/1584215254.png
 t/home/ap/.local/share/vifm/Trash/000_1584215265.png
 	/home/ap/Pictures/Screenshots/1584215265.png
+t/home/ap/.local/share/vifm/Trash/000_01_BP_Osnovni pojmovi.pdf
+	/home/ap/Downloads/01_BP_Osnovni pojmovi.pdf
+t/home/ap/.local/share/vifm/Trash/000_02_BP_Koncepcija_baze_podataka.pdf
+	/home/ap/Downloads/02_BP_Koncepcija_baze_podataka.pdf
+t/home/ap/.local/share/vifm/Trash/000_03_BP_Modeli_podataka.pdf
+	/home/ap/Downloads/03_BP_Modeli_podataka.pdf
+t/home/ap/.local/share/vifm/Trash/000_04_BP_ER_Model_Osnove.pdf
+	/home/ap/Downloads/04_BP_ER_Model_Osnove.pdf
+t/home/ap/.local/share/vifm/Trash/000_05_BP_Relacioni_model_koncepcija.pdf
+	/home/ap/Downloads/05_BP_Relacioni_model_koncepcija.pdf
+t/home/ap/.local/share/vifm/Trash/000_06_BP_Relacioni_model_osnove.pdf
+	/home/ap/Downloads/06_BP_Relacioni_model_osnove.pdf
+t/home/ap/.local/share/vifm/Trash/000_06_Relaciona algebra - zadaci resenja.pdf
+	/home/ap/Downloads/06_Relaciona algebra - zadaci resenja.pdf
+t/home/ap/.local/share/vifm/Trash/000_07_OD_EkstMemFizickaOrganizacija.pdf
+	/home/ap/Downloads/07_OD_EkstMemFizickaOrganizacija.pdf
+t/home/ap/.local/share/vifm/Trash/000_08_OD_FileSistemOS.pdf
+	/home/ap/Downloads/08_OD_FileSistemOS.pdf
+t/home/ap/.local/share/vifm/Trash/000_09_OD_MetPristOrgDat.pdf
+	/home/ap/Downloads/09_OD_MetPristOrgDat.pdf
+t/home/ap/.local/share/vifm/Trash/000_10_OD_Serijska_Sekvencijalna_datoteka.pdf
+	/home/ap/Downloads/10_OD_Serijska_Sekvencijalna_datoteka.pdf
+t/home/ap/.local/share/vifm/Trash/000_11_OD_Rasute_datoteke.pdf
+	/home/ap/Downloads/11_OD_Rasute_datoteke.pdf
+t/home/ap/.local/share/vifm/Trash/000_12_OD_Indeks-sekvencijalna_staticka_datoteka.pdf
+	/home/ap/Downloads/12_OD_Indeks-sekvencijalna_staticka_datoteka.pdf
+t/home/ap/.local/share/vifm/Trash/000_13_OD_Indeksna_B_stablo.pdf
+	/home/ap/Downloads/13_OD_Indeksna_B_stablo.pdf
+t/home/ap/.local/share/vifm/Trash/000_14_OD_Indeksna_ViseKljuceva.pdf
+	/home/ap/Downloads/14_OD_Indeksna_ViseKljuceva.pdf
+t/home/ap/.local/share/vifm/Trash/000_kendrick-fernandez-Nn3LYKu1fUY-unsplash.jpg
+	/home/ap/Downloads/zacloud/Pictures/kendrick-fernandez-Nn3LYKu1fUY-unsplash.jpg
+t/home/ap/.local/share/vifm/Trash/000_test.png
+	/home/ap/test.png
+t/home/ap/.local/share/vifm/Trash/000_@
+	/home/ap/Pictures/Screenshots/@
+t/home/ap/.local/share/vifm/Trash/000_{}
+	/home/ap/Pictures/Screenshots/{}
+t/home/ap/.local/share/vifm/Trash/000_okok.png
+	/home/ap/Pictures/Screenshots/okok.png
+t/home/ap/.local/share/vifm/Trash/000_ajmo.png
+	/home/ap/Pictures/Screenshots/ajmo.png
+t/home/ap/.local/share/vifm/Trash/000_ok12.png
+	/home/ap/Pictures/Screenshots/ok12.png
+t/home/ap/.local/share/vifm/Trash/000_w.png.png
+	/home/ap/Pictures/Screenshots/w.png.png
+t/home/ap/.local/share/vifm/Trash/000_.png
+	/home/ap/Pictures/Screenshots/.png
+t/home/ap/.local/share/vifm/Trash/000_ajdedavidimo.png
+	/home/ap/Pictures/Screenshots/ajdedavidimo.png
+t/home/ap/.local/share/vifm/Trash/000_2.png
+	/home/ap/Pictures/Screenshots/2.png
+t/home/ap/.local/share/vifm/Trash/000_okidoki.png
+	/home/ap/Pictures/Screenshots/okidoki.png
+t/home/ap/.local/share/vifm/Trash/000_radibre.png
+	/home/ap/Pictures/Screenshots/radibre.png
 
 # State:
 f
