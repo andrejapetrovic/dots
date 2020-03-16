@@ -42,57 +42,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/
-	mnt
-8
-d/mnt
-	..
-0
-d/
-	mnt
-8
-d/mnt
-	..
-0
-d/
-	mnt
-8
-d/mnt
-	..
-0
-d/
-	mnt
-8
-d/mnt
-	..
-0
-d/
-	opt
-9
-d/opt
-	maven
-1
-d/opt/maven
-	conf
-3
-d/opt
-	maven
-1
-d/
-	proc
-10
-d/proc
-	1
-1
-d/proc/1
-	stat
-33
-d/proc
-	14
-13
-d/
-	run
-12
 d/run
 	blkid
 2
@@ -340,8 +289,59 @@ d/home/ap
 	psqlcon
 39
 d/home/ap/Pictures/Screenshots
-	vim-copy.png
+	entr_restart.png
 1
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap/Pictures/Screenshots
+	vim_comments.png
+3
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap
+	Pictures
+13
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap/Pictures/Screenshots
+	entr_restart.png
+1
+d/home/ap/Pictures
+	edited.jpg
+2
+d/home/ap
+	Pictures
+16
+d/home/ap/Pictures
+	edited.jpg
+2
+d/home/ap
+	Pictures
+16
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap/Pictures/Screenshots
+	entr_restart.png
+1
+d/home/ap/Pictures
+	nologo.jpg
+4
+d/home/ap
+	.bash_history
+21
+d/home/ap/Pictures/Screenshots
+	entr_restart.png
+2
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap/Pictures/Screenshots
+	vim_comments.png
+4
 d
 
 # Right window history (oldest to newest):
@@ -682,11 +682,14 @@ p1584185178.png
 pvim_tabs.png
 pvim_root_save
 pw
+pPrograms
+pmem
+pvim_copy
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/ap/.local/share/vifm/Trash/000_radibre.png
+""/home/ap/.local/share/vifm/Trash/001_test.png
 
 # Directory stack (oldest to newest):
 
@@ -848,7 +851,13 @@ t/home/ap/.local/share/vifm/Trash/000_2.png
 t/home/ap/.local/share/vifm/Trash/000_okidoki.png
 	/home/ap/Pictures/Screenshots/okidoki.png
 t/home/ap/.local/share/vifm/Trash/000_radibre.png
-	/home/ap/Pictures/Screenshots/radibre.png
+	/home/ap/Pictures/radibre.png
+t/home/ap/.local/share/vifm/Trash/000_mem.png
+	/home/ap/Pictures/Screenshots/mem.png
+t/home/ap/.local/share/vifm/Trash/000_vim_root_save.png.png
+	/home/ap/Pictures/Screenshots/vim_root_save.png.png
+t/home/ap/.local/share/vifm/Trash/001_test.png
+	/home/ap/Pictures/Screenshots/test.png
 
 # State:
 f

@@ -6,4 +6,4 @@ xsetroot -cursor_name left_ptr &
 sxhkd &
 polybar example &
 ~/.fehbg &
-exec bspwm 
+exec bspwm

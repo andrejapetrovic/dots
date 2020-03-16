@@ -23,17 +23,11 @@ super + alt + p
 	killall polybar; \
 	polybar example &
 
-super + {x,c,v,ctrl + q,shift + x}
-	$HOME/Scripts/{docs,web-search,cfg,shutdown,proj}
+super + {shift + c, c, v, ctrl + q, shift + x, x, ctrl + x}
+	$HOME/Scripts/{docs,web-search,cfg,shutdown,proj,search-scr,win-switch}
 
-super + {_,shift + }a
-	{firefox, chromium} 
-
-super + {_, shift +} e
-	{st -e $HOME/.config/vifm/scripts/vifmrun &, pcmanfm}
-
-super + shift + c
-	$HOME/Scripts/nmgui
+super + {a, shift + a, e, shift + e}
+	{firefox, chromium, st -e $HOME/.config/vifm/scripts/vifmrun &, pcmanfm} 
 
 Print
 	maim | xclip -selection clipboard -t image/png
@@ -67,7 +61,7 @@ XF86MonBrightness{Down,Up}
 
 
 # quit/restart bspwm
-super + alt + {q,r}
+super + q; {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
@@ -117,7 +111,7 @@ super + {_,shift + } d
 super + {_,shift + } bracketleft 
 	bspc desktop -f {next,prev}.local
 
-# focus the last node/desktop
+# focus the lrst node/desktop
 super + {grave,Tab}
 	bspc {node,desktop} -f last
 
@@ -139,19 +133,19 @@ alt + shift + {1-9,0}
 #
 
 # preselect the direction
-super + ctrl + {h,j,k,l}
+super + r; {h,j,k,l}
 	bspc node -p {west,south,north,east}
 
 # preselect the ratio
-super + ctrl + {1-9}
+super + r; {1-9}
 	bspc node -o 0.{1-9}
 
 # cancel the preselection for the focused node
-super + ctrl + space
+super + r; w
 	bspc node -p cancel
 
 # cancel the preselection for the focused desktop
-super + ctrl + shift + space
+super + r; q
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
 #
@@ -175,11 +169,11 @@ alt + shift + {h,j,k,l}
 	bspc node -n {west,south,north,east}
 
 # replace focused node with selected workspace
-ctrl + {6-9,0}
-	bspc query -N -d '^{6-9,10}' | xargs bspc node -s
+super + ctrl + {1-9,0} 
+	bspc query -N -d '^{1-9,10}' | xargs bspc node -s
 	#bspc node -s $(bspc query -N -d {X, XI, VIII, VII, VI})
 
 # pull windows from workspace
-ctrl + shift + {1-9,0}
-	bspc node $(bspc query -N -d '^{1-9,10}' | head -n 1) -d $(bspc query -D -d focused)
-	
+super + shift + ctrl + {1-9,0} 
+	bspc node $(bspc query -N -d '^{1-9,10}' | head -n 1) -d $(bspc query -D -d focused) --focus 
+

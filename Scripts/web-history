@@ -11,8 +11,10 @@ aw installation
 d1
 m
 aur vundle
-c
 loc 4000
-git
 loc 4200
 git st
+git
+c
+aur
+git dots

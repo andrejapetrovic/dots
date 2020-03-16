@@ -1,4 +1,7 @@
 #!/bin/sh
-
-xclip -selection clipboard -t img/png -o > $(ls $HOME/Pictures/Screenshots | dmenu -p "Save image as: " | xargs -r echo $HOME | awk '{printf "%s/Pictures/Screenshots/%s.png", $1, $2}') 
+IMG_PATH=$(ls $HOME/Pictures/Screenshots | dmenu -p "Save image as: " -l 15 -sb "#ba2631" | xargs -r echo $HOME | awk '{printf "%s/Pictures/Screenshots/%s.png", $1, $2}')
+if [ ! -z $IMG_PATH ] 
+then
+	xclip -selection clipboard -t img/png -o > $IMG_PATH
+fi
 

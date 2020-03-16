@@ -1,5 +1,4 @@
 #!/bin/sh
-
 DIR="$HOME/Scripts"
 
 search() {
@@ -46,7 +45,8 @@ search() {
 		"m") LOC="https://mail.protonmail.com/inbox";;
 		*) exit;;
 	esac
-	sed -i "/$s/d" "$DIR"/Scripts/web-history 
+	sed -i "/^$s$/d" "$DIR"/web-history
+	echo $s >> "$DIR"/web-history
 
 	firefox "$LOC"
 }
