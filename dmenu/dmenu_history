@@ -1,0 +1,4 @@
+#!/bin/sh
+${SHELL:-"/bin/sh"} & $1
+sed -i "/^$1$/d" "$HOME"/.cache/dmenu_run
+sed -i "1s/^/$1\n/" "$HOME"/.cache/dmenu_run

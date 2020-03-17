@@ -10,13 +10,25 @@
 	01_BP_Osnovni pojmovi.pdf
 1582215180
 'b
-	/home/ap/bin/
-	..
-1582118996
+	/home/ap/Documents/baze
+	01_BP_Osnovni pojmovi.pdf
+1584400878
+'d
+	/home/ap/Documents
+	baze
+1584400863
+'g
+	/home/ap/Documents/rg
+	1. Predavanje
+1584401150
 'h
 	/home/ap/
 	..
 1582631752
+'l
+	/home/ap/Downloads
+	zacloud
+1584401011
 'n
 	/home/ap/Documents/beleske
 	angular.txt
@@ -42,240 +54,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/run
-	blkid
-2
-d/run/blkid
-	blkid.tab
-1
-d/run
-	initramfs
-5
-d/run/initramfs
-	..
-0
-d/run
-	dbus
-4
-d/run/dbus
-	..
-0
-d/run
-	udev
-15
-d/run/udev
-	static_node-tags
-3
-d/run/udev/static_node-tags
-	uaccess
-1
-d/run/udev/static_node-tags/uaccess
-	snd\x2fseq
-1
-d/home/ap/Documents
-	c
-5
-d/home/ap/Documents/c
-	linked-list
-1
-d/home/ap/Documents
-	c
-5
-d/home/ap
-	Documents
-13
-d/home
-	ap
-1
-d/
-	run
-12
-d/run
-	systemd
-12
-d/run/systemd
-	show-status
-19
-d/run
-	thermald
-13
-d/run/thermald
-	thermald.pid
-1
-d/run
-	udev
-15
-d/run/udev
-	watch
-5
-d/run
-	dmeventd-server
-20
-d/
-	srv
-14
-d/srv
-	ftp
-1
-d/
-	sys
-15
-d/sys
-	..
-0
-d/
-	bin
-0
-d/bin
-	avahi-browse-domains
-33
-d/
-	boot
-1
-d/boot
-	loader
-3
-d/boot/loader
-	entries
-1
-d/boot
-	loader
-3
-d/
-	dev
-2
-d/dev
-	lightnvm
-11
-d/
-	etc
-3
-d/etc
-	java-8-openjdk
-25
-d/etc/java-8-openjdk
-	images
-2
-d/etc/java-8-openjdk/images
-	cursors
-1
-d/etc/java-8-openjdk/images/cursors
-	cursors.properties
-1
-d/etc/java-8-openjdk/images
-	cursors
-1
-d/etc/java-8-openjdk
-	images
-2
-d/etc
-	pacman.d
-30
-d/etc/pacman.d
-	hooks
-2
-d/etc/pacman.d/hooks
-	sh-dash.hook
-1
-d/etc/pacman.d
-	gnupg
-1
-d/etc/pacman.d/gnupg
-	S.gpg-agent.browser
-5
-d/etc/pacman.d
-	gnupg
-1
-d/etc
-	pacman.d
-30
-d/etc/pacman.d
-	mirrorlist
-3
-d/etc
-	libaudit.conf
-11
-d/home/ap
-	Pictures
-15
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap/Pictures/Screenshots
-	..
-0
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap/Pictures/Screenshots
-	1583232473.png
-1
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap/Pictures/Screenshots
-	1584185178.png
-2
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap/Pictures/Screenshots
-	1584185178.png
-2
-d/home/ap/Pictures
-	edited.jpg
-2
-d/home/ap/Pictures/Screenshots
-	vim_comments.png
-2
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap
-	Downloads
-14
-d/home/ap/Downloads
-	OET.zip
-2
-d/home/ap
-	Downloads
-14
-d/home/ap/Downloads
-	zacloud
-1
-d/home/ap/Downloads/zacloud
-	Pictures
-2
-d/home/ap/Downloads/zacloud/Pictures
-	..
-0
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap/Pictures/Screenshots
-	1583232473.png
-1
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap/Pictures/Screenshots
-	vim-copy.png
-1
-d/home/ap/Pictures
-	edited.jpg
-2
-d/home/ap/Pictures/Screenshots
-	vim_comments.png
-2
-d/home/ap/Pictures
-	edited.jpg
-2
-d/home/ap/Pictures/Screenshots
-	vim_root_save.png
-3
-d/home/ap
-	Downloads
-4
 d/home/ap/Downloads
 	zacloud
 1
@@ -340,8 +118,242 @@ d/home/ap/Pictures
 	Screenshots
 1
 d/home/ap/Pictures/Screenshots
+	vim_jumps.png
+6
+d/home/ap
+	Documents
+13
+d/home/ap/Documents
+	baze
+5
+d/home/ap/Documents/baze
+	01_BP_Osnovni pojmovi.pdf
+1
+d/home/ap/Documents
+	baze
+5
+d/home/ap/Documents/baze
+	01_BP_Osnovni pojmovi.pdf
+1
+d/home/ap/Documents
+	baze
+5
+d/home/ap/Documents/baze
+	01_BP_Osnovni pojmovi.pdf
+1
+d/home/ap/Documents
+	baze
+5
+d/home/ap
+	Documents
+13
+d/home
+	ap
+1
+d/
+	home
+4
+d/home
+	ap
+1
+d/home/ap
+	Programs
+18
+d/home/ap/Pictures
+	edited.jpg
+2
+d/home/ap/Pictures/Screenshots
 	vim_comments.png
 4
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap
+	Pictures
+17
+d/home/ap/Documents/baze
+	01_BP_Osnovni pojmovi.pdf
+1
+d/home/ap/Documents
+	baze
+5
+d/home/ap
+	Downloads
+16
+d/home/ap/Downloads
+	zacloud
+1
+d/home/ap
+	Downloads
+16
+d/home/ap/Downloads
+	zacloud
+1
+d/home/ap
+	Downloads
+16
+d/home/ap/Downloads
+	zacloud
+1
+d/home/ap
+	Projects
+19
+d/home/ap/Projects
+	angular-ngrx
+1
+d/home/ap
+	test
+21
+d/home/ap/test
+	drugi
+1
+d/home/ap
+	Scripts
+20
+d/home/ap/Scripts
+	nmgui
+3
+d/home/ap
+	.config
+2
+d/home/ap/.config
+	libfm
+16
+d/home/ap
+	Programs
+18
+d/home/ap/Pictures
+	edited.jpg
+2
+d/home/ap/Pictures/Screenshots
+	vim_comments.png
+4
+d/home/ap/Pictures
+	edited.jpg
+2
+d/home/ap
+	Programs
+18
+d/home/ap/Documents
+	CV
+1
+d/home/ap/Documents/CV
+	..
+0
+d/home/ap/Documents
+	CV
+1
+d/home/ap/Documents/CV
+	compile
+1
+d/home/ap/Documents
+	rg
+10
+d/home/ap/Documents/rg
+	..
+0
+d/home/ap/Documents
+	rg
+10
+d/home/ap/Documents/rg
+	Skripte
+12
+d/home/ap/Documents/rg/Skripte
+	Grafika_skripta - transkript.pdf
+1
+d/home/ap/Documents/rg
+	Skripte
+12
+d/home/ap/Documents
+	rg
+10
+d/home/ap/Documents/rg
+	1. Predavanje
+1
+d/home/ap/Documents/rg/1. Predavanje
+	grafika1.0.3gp
+1
+d/home/ap/Documents/rg
+	1. Predavanje
+1
+d/home/ap
+	Pictures
+17
+d/home/ap/Documents
+	rg
+10
+d/home/ap/Documents/rg
+	1. Predavanje
+1
+d/home/ap
+	Pictures
+17
+d/home/ap/Documents/rg
+	1. Predavanje
+1
+d/home/ap/Pictures/Screenshots
+	vim_comments.png
+4
+d/home/ap/Documents
+	backup
+4
+d/home/ap/Documents/backup
+	alacritty
+4
+d/home/ap/Documents/backup/alacritty
+	..
+0
+d/home/ap/Documents/backup
+	.xinitrc
+21
+d/home/ap/Documents
+	sau
+10
+d/home/ap/Documents/sau
+	sau
+1
+d/home/ap/Documents/sau/sau
+	predavanja2019
+1
+d/home/ap/Documents/sau
+	sau
+1
+d/home/ap/Documents
+	sau
+10
+d/home/ap/Documents/sau
+	..
+0
+d/home/ap/Documents
+	sau
+11
+d/home/ap/Documents/sau
+	..
+0
+d/home/ap/Documents
+	GRAFIKA
+2
+d/home/ap
+	Documents
+15
+d/home/ap/Documents
+	c
+8
+d/home/ap/Documents/c
+	..
+0
+d/home/ap/Documents
+	parts.txt
+13
+d/home/ap
+	Pictures
+14
+d/home/ap/Pictures
+	edited.jpg
+2
+d/home/ap
+	Documents
+15
 d
 
 # Right window history (oldest to newest):
@@ -662,6 +674,7 @@ D
 :source ~/Programs/vifm_devicons/SETUP
 :icon
 :shell
+:touch .hidden
 :q
 
 # Search history (oldest to newest):
@@ -685,11 +698,15 @@ pw
 pPrograms
 pmem
 pvim_copy
+pSAU
+pGRAFIKA
+p.mozilla
+p.thumbnails
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/ap/.local/share/vifm/Trash/001_test.png
+""/home/ap/.local/share/vifm/Trash/000_.hidden
 
 # Directory stack (oldest to newest):
 
@@ -858,6 +875,14 @@ t/home/ap/.local/share/vifm/Trash/000_vim_root_save.png.png
 	/home/ap/Pictures/Screenshots/vim_root_save.png.png
 t/home/ap/.local/share/vifm/Trash/001_test.png
 	/home/ap/Pictures/Screenshots/test.png
+t/home/ap/.local/share/vifm/Trash/000_test
+	/home/ap/test
+t/home/ap/.local/share/vifm/Trash/000_backup
+	/home/ap/Documents/backup
+t/home/ap/.local/share/vifm/Trash/000_sau
+	/home/ap/Documents/sau
+t/home/ap/.local/share/vifm/Trash/000_.hidden
+	/home/ap/Pictures/.hidden
 
 # State:
 f
