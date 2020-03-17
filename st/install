@@ -1,0 +1,12 @@
+#!/bin/sh
+ST_DIR="$PWD"
+BUILD_DIR="$HOME"/Programs/st
+mkdir -p $BUILD_DIR
+git clone https://git.suckless.org/st $BUILD_DIR
+cd $BUILD_DIR
+wget https://st.suckless.org/patches/scrollback/st-scrollback-20190331-21367a0.diff
+wget https://st.suckless.org/patches/scrollback/st-scrollback-mouse-20191024-a2c479c.diff
+git apply st-scrollback-20190331-21367a0.diff
+git apply st-scrollback-mouse-20170427-5a10aca.diff
+cp "$ST_DIR"/config.h .
+make clean install

@@ -125,7 +125,7 @@ super + {o,i}
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}' --follow
 
-alt + shift + {1-9,0}
+super + alt + {1-9,0}
 	bspc node -d '^{1-9,10}'
 
 #
@@ -175,5 +175,5 @@ super + ctrl + {1-9,0}
 
 # pull windows from workspace
 super + shift + ctrl + {1-9,0} 
-	bspc node $(bspc query -N -d '^{1-9,10}' | head -n 1) -d $(bspc query -D -d focused) --focus 
+	bspc node $(bspc query -N -d '^{1-9,10}' | head -n 1) -d $(bspc query -D -d) --focus 
 

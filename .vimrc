@@ -13,15 +13,15 @@ hi ErrorMsg cterm=NONE ctermbg=160 ctermfg=white
 hi MatchParen cterm=NONE ctermbg=24 ctermfg=white
 hi Search cterm=NONE ctermfg=232 ctermbg=72
 hi Visual cterm=NONE ctermbg=23 ctermfg=None
-"hi LineNr ctermfg=DarkGray
-"hi String ctermfg=yellow
-"hi Type ctermfg=blue
-"hi Comment ctermfg=DarkGray
-"hi Statement ctermfg=red
-"hi Special ctermfg=Cyan
-"hi TabLine ctermbg=0 ctermfg=245
-"hi TablineFill ctermbg=7 ctermfg=0
-"hi NonText ctermfg=DarkGray
+hi LineNr ctermfg=DarkGray
+hi String ctermfg=yellow
+hi Type ctermfg=blue
+hi Comment ctermfg=DarkGray
+hi Statement ctermfg=red
+hi Special ctermfg=Cyan
+hi TabLine ctermbg=0 ctermfg=245
+hi TablineFill ctermbg=7 ctermfg=0
+hi NonText ctermfg=DarkGray
 
 let NERDTreeHighlightCursorline=0
 let NERDTreeShowLineNumbers=1
