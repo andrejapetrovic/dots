@@ -15,6 +15,7 @@ cp -r $HOME/.config/picom $PWD/.config/
 cp -r $HOME/.config/vifm $PWD/.config/
 cp -r $HOME/.config/gtk-3.0 $PWD/.config/
 cp -r $HOME/.config/fontconfig $PWD/.config/
+cp -r $HOME/.config/nvim $PWD/.config/
 cp -r $HOME/Scripts $PWD/Scripts
 
 git add .
