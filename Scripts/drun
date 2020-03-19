@@ -1,0 +1,2 @@
+#!/bin/sh
+cat $HOME/.cache/drun_cache | dmenu "$@" -p "run" | xargs -r dmenu_history

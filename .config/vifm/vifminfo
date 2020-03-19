@@ -10,9 +10,9 @@
 	01_BP_Osnovni pojmovi.pdf
 1582215180
 'b
-	/home/ap/Documents/baze
-	01_BP_Osnovni pojmovi.pdf
-1584400878
+	/home/ap/bin/
+	..
+1584482414
 'd
 	/home/ap/Documents
 	baze
@@ -54,39 +54,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ap/Downloads
-	zacloud
-1
-d/home/ap
-	.gnupg
-3
-d/home/ap/.gnupg
-	..
-0
-d/home/ap
-	psqlcon
-39
-d/home/ap/Pictures/Screenshots
-	entr_restart.png
-1
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap/Pictures/Screenshots
-	vim_comments.png
-3
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap
-	Pictures
-13
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap/Pictures/Screenshots
-	entr_restart.png
-1
 d/home/ap/Pictures
 	edited.jpg
 2
@@ -354,12 +321,42 @@ d/home/ap/Pictures
 d/home/ap
 	Documents
 15
+d/home/ap/Pictures/Screenshots
+	vim_tabs.png
+11
+d/usr/share/applications
+	feh.desktop
+11
+d/home/ap/Pictures
+	galaxy-3608029_1280.jpg
+3
+d/home/ap
+	Projects
+4
+d/home
+	ap
+1
+d/home/ap/Pictures/Screenshots
+	vim_copy.png
+4
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap
+	Pictures
+4
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap/Pictures/Screenshots
+	dmenu_man.png
+1
+d/home/ap/Pictures
+	Screenshots
+1
 d
 
 # Right window history (oldest to newest):
-D/home/ap
-	.config
-3
 D/home/ap/.config
 	Code - OSS
 1
@@ -657,6 +654,9 @@ D/home/ap
 D/home/ap/Downloads
 	..
 0
+D/home/ap
+	..
+0
 D
 
 # Command line history (oldest to newest):
@@ -702,11 +702,12 @@ pSAU
 pGRAFIKA
 p.mozilla
 p.thumbnails
+pdmenu_ypadding.png
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/ap/.local/share/vifm/Trash/000_.hidden
+""/usr/share/applications/deezer.desktop
 
 # Directory stack (oldest to newest):
 
@@ -883,6 +884,8 @@ t/home/ap/.local/share/vifm/Trash/000_sau
 	/home/ap/Documents/sau
 t/home/ap/.local/share/vifm/Trash/000_.hidden
 	/home/ap/Pictures/.hidden
+t/home/ap/.local/share/vifm/Trash/000_dmenu_man.png.png.png
+	/home/ap/Pictures/Screenshots/dmenu_man.png.png.png
 
 # State:
 f

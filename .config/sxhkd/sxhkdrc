@@ -6,14 +6,15 @@
 super + {Return, ctrl + m}
 	st 
 
-super + ctrl + n
+super + n
 	bspc node -p south; \
-	bspc node -o 0.7; \
-	st
+	bspc node -o 0.7;
 
-# program launcher
+super + i 
+	$HOME/Scripts/drun
+
 super + space
-	dmenu_run -p "run" 
+	dmenu_run -p "run"
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -23,11 +24,11 @@ super + alt + p
 	killall polybar; \
 	polybar example &
 
-super + {shift + c, c, v, ctrl + q, shift + x, x, ctrl + x}
+super + {shift + c, c, v, ctrl + q, shift + x, x, ctrl + n}
 	$HOME/Scripts/{docs,web-search,cfg,shutdown,proj,search-scr,win-switch}
 
 super + {a, shift + a, e, shift + e}
-	{firefox, chromium, st -e $HOME/.config/vifm/scripts/vifmrun &, pcmanfm} 
+	{firefox, chromium, vifmi, pcmanfm} 
 
 Print
 	maim | xclip -selection clipboard -t image/png
@@ -61,7 +62,7 @@ XF86MonBrightness{Down,Up}
 
 
 # quit/restart bspwm
-super + q; {q,r}
+super + q; super + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
@@ -116,7 +117,7 @@ super + {grave,Tab}
 	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
-super + {o,i}
+super + {_,shift +} o
 	bspc wm -h off; \
 	bspc node {older,newer} -f; \
 	bspc wm -h on
@@ -133,19 +134,19 @@ super + alt + {1-9,0}
 #
 
 # preselect the direction
-super + r; {h,j,k,l}
+super + r; super + {h,j,k,l}
 	bspc node -p {west,south,north,east}
 
 # preselect the ratio
-super + r; {1-9}
+super + r; super + {1-9}
 	bspc node -o 0.{1-9}
 
 # cancel the preselection for the focused node
-super + r; w
+super + r; super + w
 	bspc node -p cancel
 
 # cancel the preselection for the focused desktop
-super + r; q
+super + r; super + q
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
 #

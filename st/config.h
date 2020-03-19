@@ -42,8 +42,8 @@ static unsigned int tripleclicktimeout = 600;
 int allowaltscreen = 1;
 
 /* frames per second st should at maximum draw to the screen */
-static unsigned int xfps = 120;
-static unsigned int actionfps = 30;
+static unsigned int xfps = 300;
+static unsigned int actionfps = 300;
 
 /*
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
@@ -80,37 +80,53 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
+
+static const char black[8] = "#282c34";
+static const char red[8] = "#e9837b";
+static const char green[8] = "#63d674";
+static const char yellow[8] = "#f9dc5c";
+static const char blue[8] = "#7cb7ff";
+static const char magenta[8] = "#7878b0";
+static const char cyan[8] = "#23edda";
+static const char white[8] = "#dcdfe4";
+
+static const char bblack[8] = "#557171";
+
+static const char fgcolor[8] = "#dcdfe5";
+static const char bgcolor[8] = "#161925";
+static const char crscolor[8] = "#ffff00";
+static const char icrscolor[8] = "#555555";
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#282c34",
-	"#e9837b",
-	"#71f79f",
-	"#f9dc5c",
-	"#7cb7ff",
-	"#c48ae4",
-	"#23edda",
-	"#dcdfe4",
+	black,
+	red,
+	green,
+	yellow,
+	blue,
+	magenta,
+	cyan,
+	white,
 
 	/* 8 bright colors */
-	"#557171",
-	"#e9837b",
-	"#71f79f",
-	"#f9dc5c",
-	"#7cb7ff",
-	"#c48ae4",
-	"#23edda",
-	"#dcdfe4",
+	bblack,
+	red,
+	green,
+	yellow,
+	blue,
+	magenta,
+	cyan,
+	white,
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#dcdfe5",
-	"#161925",
-	"#ffff00",
-	"#555555",
+	fgcolor,
+	bgcolor,
+	crscolor,
+	icrscolor,
 };
 
 
@@ -130,7 +146,7 @@ static unsigned int defaultrcs = 259;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 4;
+static unsigned int cursorshape = 2;
 
 /*
  * Default columns and rows numbers
@@ -192,6 +208,7 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_0,           zoomreset,      {.f =  0} },
 	{ MODKEY,            	XK_p,     		kscrollup,      {.i = -1} },
 	{ MODKEY,            	XK_n,   		kscrolldown,    {.i = -1} },
+	{ MODKEY,               XK_m,           newterm,        {.i =  0} },
 };
 
 /*

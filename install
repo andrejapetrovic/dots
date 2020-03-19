@@ -1,8 +1,6 @@
 #!/bin/sh
 
-if [ ! -d "$HOME/.config" ]; then
-	mkdir -p $HOME/.config
-fi
+[ -d "$HOME/.config" ] ||  mkdir -p $HOME/.config;
 
 cp -r .config/* $HOME/.config
 cp .vimrc .gtkrc-2.0 .xinitrc $HOME

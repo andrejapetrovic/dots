@@ -1,18 +1,10 @@
 #!/bin/sh
 DIR="$HOME/Scripts"
-
+HISTORY="$HOME/.cache/dmenu-web-history"
 search() {
-	if [ "$1" = "!dd" ]
-	then
-		rm -f "$DIR"/web-history
-		touch "$DIR"/web-history
-		exit
-	fi
 
-	if [ -z $1 ]
-	then
-		exit
-	fi
+	[ "$1" = "!dd" ] && { rm -f "$HISTORY"; touch "$HISTORY"; exit; } 
+	[ -z $1 ] && exit;
 
 	s="$@"
 	first_arg="$1"
@@ -45,10 +37,10 @@ search() {
 		"m") LOC="https://mail.protonmail.com/inbox";;
 		*) exit;;
 	esac
-	sed -i "/^$s$/d" "$DIR"/web-history
-	echo $s >> "$DIR"/web-history
+	sed -i "/^$s$/d" "$HISTORY"
+	echo $s >> "$HISTORY"
 
 	firefox "$LOC"
 }
 
-tac "$DIR"/web-history | search $(dmenu -p "web") 
+tac "$HISTORY" | search $(dmenu -p "web") 

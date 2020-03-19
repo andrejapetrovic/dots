@@ -29,7 +29,7 @@ alert = #bd2c40
 icon-p = #a296ff
 icon-b = #596ed8
 icon-g = #51c15c
-icon-r = #c64242
+icon-r = #b33b44
 icon-w = #5f5e63
 icon-y = #ffb52a
 icon-c = #a4f9ff
@@ -59,13 +59,13 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 3
 
-font-0 = Source Sans Pro:style=semibold:pixelsize=10:antialias=true;2
-font-1 = SaucecodePro Nerd Font:fontformat=truetype:size=11:antialias=true;2
+font-0 = Source Sans Pro:style=semibold:pixelsize=10:antialias=true;3
+font-1 = SaucecodePro Nerd Font:fontformat=truetype:size=11:antialias=true;3
 
 modules-left = bspwm 
 ;modules-center = mpd
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = alsa xkeyboard memory cpu wlan eth battery date
+modules-right = alsa xkeyboard memory cpu wlan battery date
 
 tray-position = right
 tray-padding = 2
@@ -120,9 +120,9 @@ type = internal/bspwm
 
 label-focused = %index%
 ;label-focused =   
-;label-focused-background = ${colors.icon-r}
+label-focused-background = ${colors.icon-r}
 ;label-focused-foreground = ${colors.icon-r}
-label-focused-underline = ${colors.icon-r}
+;label-focused-underline = ${colors.icon-r}
 ;label-focused-foreground = ${colors.primary}
 label-focused-padding = 2
 
@@ -133,7 +133,7 @@ label-occupied-padding = 2
 
 label-urgent = %index%!
 ;label-urgent = 
-label-urgent-background = ${colors.alert}
+label-urgent-background = ${colors.icon-y}
 label-urgent-padding = 2
 
 label-empty = %index%
@@ -290,29 +290,14 @@ type = internal/alsa
 
 ;format-volume = <label-volume> <bar-volume>
 format-volume = <label-volume>
-label-volume = " %percentage%%"
+format-volume-prefix-foreground = #9bb7d4
+format-volume-prefix =" "
+label-volume = "%percentage%%"
 label-volume-foreground = ${root.foreground}
 
 ;format-muted-prefix = ""
 format-muted-foreground = ${colors.foreground-alt}
-label-muted = sound muted
-
-bar-volume-width = 10
-bar-volume-foreground-0 = ${colors.icon-g}
-bar-volume-foreground-1 = ${colors.icon-g}
-bar-volume-foreground-2 = ${colors.icon-g}
-bar-volume-foreground-3 = ${colors.icon-g}
-bar-volume-foreground-4 = ${colors.icon-g}
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
-bar-volume-gradient = false
-bar-volume-indicator = 
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 10
-bar-volume-empty = ─
-bar-volume-empty-font = 10
-bar-volume-empty-foreground = ${colors.foreground-alt}
+label-muted = 婢
 
 [module/battery]
 type = internal/battery
@@ -327,19 +312,10 @@ format-discharging = <animation-discharging> <label-discharging>
 ;format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = " "
-;format-full-prefix-foreground = ${colors.icon-p}
-;format-full-underline = ${self.format-charging-underline}
-;format-full-prefix-foreground = ${self.format-charging-underline}
 
-ramp-capacity-0 = "  "
-ramp-capacity-1 = "  "
-ramp-capacity-2 = "  "
-ramp-capacity-3 = "  "
-ramp-capacity-foreground = ${colors.foreground-alt}
-
-animation-charging-0 = "   "
-animation-charging-1 = "   " 
-animation-charging-2 = "   "
+animation-charging-0 = " "
+animation-charging-1 = " " 
+animation-charging-2 = " "
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 720
 

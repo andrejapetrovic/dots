@@ -1,0 +1,4 @@
+#!/bin/sh
+CACHE_DIR="$HOME/.cache"
+FILE_LIST=$(cat "$CACHE_DIR"/dmenu_run_bk "$CACHE_DIR"/dmenu_run) 
+echo $FILE_LIST | sed 's/\s\+/\n/g' | awk '!seen[$0]++' > "$CACHE_DIR"/dmenu_run

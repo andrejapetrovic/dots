@@ -5,20 +5,20 @@ syntax on
 "set statusline=%F\ %=%p%%\ [%l:%c]
 let NERDTreeMinimalUI = 1
 
-colorscheme pablo
-hi StatusLineNC ctermbg=white ctermfg=black
-hi StatusLine ctermbg=8 ctermfg=7
+"colorscheme pablo
+hi StatusLineNC ctermbg=white ctermfg=0
+hi StatusLine ctermbg=white ctermfg=black
 hi Error cterm=NONE ctermbg=160 ctermfg=white
 hi ErrorMsg cterm=NONE ctermbg=160 ctermfg=white
 hi MatchParen cterm=NONE ctermbg=24 ctermfg=white
-hi Search cterm=NONE ctermfg=232 ctermbg=72
+hi Search cterm=NONE ctermfg=235 ctermbg=blue
 hi Visual cterm=NONE ctermbg=23 ctermfg=None
-hi LineNr ctermfg=DarkGray
-hi String ctermfg=yellow
+"hi LineNr ctermfg=DarkGray
+"hi String ctermfg=yellow
 hi Type ctermfg=blue
 hi Comment ctermfg=DarkGray
-hi Statement ctermfg=red
-hi Special ctermfg=Cyan
+hi Statement ctermfg=green
+"hi Special ctermfg=Cyan
 hi TabLine ctermbg=0 ctermfg=245
 hi TablineFill ctermbg=7 ctermfg=0
 hi NonText ctermfg=DarkGray
@@ -33,20 +33,14 @@ set tabstop=4
 set shiftwidth=4
 
 map tt :NERDTreeToggle<CR>
-map <c-s> :shell<CR>
+map <c-s> :terminal<CR>
 
 filetype plugin on
-set omnifunc=syntaxcomplete#Complete
+"set omnifunc=syntaxcomplete#Complete
 set shell=/usr/bin/fish
 
 set hlsearch
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
-
-augroup modefeedback
-    autocmd!
-		autocmd InsertEnter * highlight CursorLine ctermbg=17
-	autocmd InsertLeave * highlight CursorLine ctermbg=none
-augroup END
 
 set relativenumber number
 
