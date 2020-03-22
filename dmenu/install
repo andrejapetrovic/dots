@@ -1,8 +1,0 @@
-#!/bin/sh
-ST_DIR="$PWD"
-BUILD_DIR="$HOME"/Programs/dmenu
-mkdir -p $BUILD_DIR
-git clone https://git.suckless.org/dmenu $BUILD_DIR
-cp config.h dmenu_history dmenu_run Makefile $BUILD_DIR
-cd $BUILD_DIR
-make install
