@@ -1,4 +1,6 @@
 #!/bin/sh
-#cat /home/ap/.cache/drun_cache | xargs which | grep -o '[^/]*$' | tee /home/ap/.cache/drun_cache
-cached=$(cat /home/ap/.cache/drun_cache)
-dmenu_path | grep -Fx "$cached" | tee /home/ap/.cache/drun_cache
+cache_path="/home/ap/.cache/drun_cache"
+d=$(dmenu_path)
+g=$(grep -xF "$d" "$cache_path")
+echo "$g" | tee "$cache_path"
+

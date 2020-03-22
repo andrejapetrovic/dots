@@ -3,7 +3,8 @@ function fish_greeting
 end
 
 set fish_color_command green
-set fish_color_error red 
+#set fish_color_error red 
 
-alias c='find ~/.config ~/Scripts ~/.vimrc -type f | egrep -vi "deezer|chromium|GIMP|Code - OSS" | fzf | xargs -ro vim'
-alias b='cd ~/Documents/beleske/'
+alias c='find ~/.config ~/Scripts ~/.vimrc -type f | egrep -vi "deezer|chromium|GIMP|Code - OSS" | fzf | xargs -ro $EDITOR'
+alias o='ls $HOME/Documents/notes/ | fzf -m --preview \'cat $HOME/Documents/notes/{1}\' --preview-window=right:80% | xargs -r -I{} cat $HOME/Documents/notes/{}'
+alias d='. $HOME/Scripts/fzfdir'

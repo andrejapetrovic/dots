@@ -54,27 +54,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ap/Pictures
-	edited.jpg
-2
-d/home/ap
-	Pictures
-16
-d/home/ap/Pictures
-	edited.jpg
-2
-d/home/ap
-	Pictures
-16
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap/Pictures/Screenshots
-	entr_restart.png
-1
-d/home/ap/Pictures
-	nologo.jpg
-4
 d/home/ap
 	.bash_history
 21
@@ -354,6 +333,27 @@ d/home/ap/Pictures/Screenshots
 d/home/ap/Pictures
 	Screenshots
 1
+d/home/ap/Pictures/Screenshots
+	entr_restart.png
+3
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap/Pictures/Screenshots
+	dmenu_man.png
+1
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap
+	Projects
+19
+d/home/ap/Projects
+	isa2018
+3
+d/home/ap
+	Projects
+12
 d
 
 # Right window history (oldest to newest):
@@ -707,7 +707,8 @@ pdmenu_ypadding.png
 # Local filter history (oldest to newest):
 
 # Registers:
-""/usr/share/applications/deezer.desktop
+""/home/ap/.local/share/vifm/Trash/001_ajmo.png
+""/home/ap/.local/share/vifm/Trash/000_testic.png
 
 # Directory stack (oldest to newest):
 
@@ -886,6 +887,8 @@ t/home/ap/.local/share/vifm/Trash/000_.hidden
 	/home/ap/Pictures/.hidden
 t/home/ap/.local/share/vifm/Trash/000_dmenu_man.png.png.png
 	/home/ap/Pictures/Screenshots/dmenu_man.png.png.png
+t/home/ap/.local/share/vifm/Trash/000_testic.png
+	/home/ap/Pictures/Screenshots/testic.png
 
 # State:
 f

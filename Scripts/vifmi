@@ -1,2 +1,2 @@
 #!/bin/sh
-st -e $HOME/.config/vifm/scripts/vifmrun
+$TERMINAL -e $HOME/.config/vifm/scripts/vifmrun

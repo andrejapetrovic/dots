@@ -40,7 +40,7 @@ search() {
 	sed -i "/^$s$/d" "$HISTORY"
 	echo $s >> "$HISTORY"
 
-	firefox "$LOC"
+	$BROWSER "$LOC"
 }
 
 tac "$HISTORY" | search $(dmenu -p "web") 

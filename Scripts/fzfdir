@@ -1,0 +1,4 @@
+#!/bin/fish
+
+set dir (find /* -maxdepth 4 -type d -print 2>/dev/null | fzf)
+cd $dir
