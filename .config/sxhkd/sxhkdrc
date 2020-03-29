@@ -13,7 +13,7 @@ super + n
 super + i 
 	$HOME/Scripts/drun
 
-super + space
+super + shift + i
 	dmenu_run -p "run"
 
 # make sxhkd reload its configuration files:
@@ -24,11 +24,14 @@ super + alt + p
 	killall polybar; \
 	polybar example &
 
-super + {shift + c, c, v, ctrl + q, shift + x, x, ctrl + n}
-	$HOME/Scripts/{docs,web-search,cfg,shutdown,proj,search-scr,win-switch}
+super + {shift + c, c, v, ctrl + q, shift + x, x, ctrl + n, shift + v}
+	$HOME/Scripts/{docs,web-search,cfg,shutdown-dmenu,proj,search-scr,win-switch}
 
 super + {a, shift + a, e, shift + e}
 	{firefox, chromium, vifmi, pcmanfm} 
+
+super + ctrl + c
+	st -c Nmtui-st -e nmtui-connect
 
 Print
 	maim | xclip -selection clipboard -t image/png
@@ -48,9 +51,6 @@ super + z
 super + {backslash, semicolon, apostrophe}
 	playerctl --player=deezer {play-pause, previous, next}
 
-super + shift + z
-	slock
-
 {_,shift + }XF86Audio{Raise,Lower}Volume
 	amixer set Master playback {1+,10+,1-,10-}
 
@@ -62,8 +62,11 @@ XF86MonBrightness{Down,Up}
 
 
 # quit/restart bspwm
-super + q; super + {q,r}
+super + q; super + {q,e}
 	bspc {quit,wm -r}
+
+super + q; super + w
+	slock
 
 # close and kill
 super + {_,shift + }w
@@ -78,8 +81,8 @@ super + y
 	bspc node newest.marked.local -n newest.!automatic.local
 
 # swap the current node and the biggest node
-super + g
-	bspc node -s biggest
+super + space
+	bspc node -s biggest.tiled.local
 
 #
 # state/flags
@@ -102,7 +105,7 @@ super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
-super + {p,b,comma,period}
+super + {p,o,comma,period}
 	bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous node in the current desktop
@@ -117,7 +120,7 @@ super + {grave,Tab}
 	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
-super + {_,shift +} o
+super + {_,shift +} b
 	bspc wm -h off; \
 	bspc node {older,newer} -f; \
 	bspc wm -h on
@@ -126,7 +129,7 @@ super + {_,shift +} o
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}' --follow
 
-super + alt + {1-9,0}
+super + shift + alt + {1-9,0}
 	bspc node -d '^{1-9,10}'
 
 #
@@ -174,7 +177,35 @@ super + ctrl + {1-9,0}
 	bspc query -N -d '^{1-9,10}' | xargs bspc node -s
 	#bspc node -s $(bspc query -N -d {X, XI, VIII, VII, VI})
 
+# replaces brother of the focused node with selected workspace
+super + ctrl + shift + {1-9,0} 
+	bspc query -N -d '^{1-9,10}' | xargs bspc node @brother -s
+
 # pull windows from workspace
-super + shift + ctrl + {1-9,0} 
+super + alt + {1-9,0} 
 	bspc node $(bspc query -N -d '^{1-9,10}' | head -n 1) -d $(bspc query -D -d) --focus 
+
+super + minus 
+	 echo "0\n10\n20\n30\n40\n50\n60\n70\n80\n90\n100" | dmenu -p "gaps" | xargs bspc config window_gap
+
+super + F3; super + {1-9,0}
+	bspc config window_gap {10,20,30,40,50,15,25,35,45,0}
+
+# swap with brother
+super + shift + o
+	bspc node -s @brother
+
+super + shift + {comma,period}
+	foc=$(bspc query -N -n focused); \
+	bspc node -f @brother && bspc node -f @{first,second} && bspc node -s "$foc";
+
+super + shift + {ctrl,alt} + {comma,period}
+	foc=$(bspc query -N -n focused); \
+	bspc node -f @brother && bspc node -f @{first,second} && bspc node -f @{first,second} && bspc node -s "$foc";
+	
+super + equal
+	bspc node -R 90
+
+super + {shift +, ctrl +} equal 
+	bspc node -{B,E}
 

@@ -19,6 +19,8 @@ bspc config presel_feedback_color "#a296ff"
 #bspc rule -a Screenkey manage=off
 bspc rule -a Deezer state=pseudo_tiled 
 bspc rule -a feh state=floating
-bspc rule -a Pcmanfm state=floating
+#bspc rule -a Pcmanfm state=floating
 bspc rule -a Gpick state=floating
+bspc rule -a Nm-connection-editor state=floating
+bspc rule -a Nmtui-st state=floating
 

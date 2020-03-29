@@ -54,48 +54,285 @@ l2
 r2
 
 # Left window history (oldest to newest):
+d/home/ap/Pictures
+	serbia-1938958_1920.jpg
+6
 d/home/ap
-	.bash_history
-21
+	Projects
+19
+d/home/ap/Projects
+	tsc-node
+7
+d/home/ap
+	Scripts
+20
+d/home/ap/Scripts
+	dmenu-restore
+4
+d/home/ap
+	Downloads
+15
+d/home/ap/Downloads
+	..
+0
+d/home/ap/Pictures
+	edited.jpg
+3
 d/home/ap/Pictures/Screenshots
 	entr_restart.png
-2
+3
 d/home/ap/Pictures
 	Screenshots
 1
-d/home/ap/Pictures/Screenshots
-	vim_jumps.png
-6
 d/home/ap
-	Documents
+	Programs
+17
+d/home/ap/Programs
+	esy
+7
+d/home/ap/Programs/esy
+	..
+0
+d/home/ap/Programs
+	esy
+7
+d/home/ap/Programs/esy
+	..
+0
+d/home/ap/Programs
+	node_modules
+8
+d/home/ap/Programs/node_modules
+	esy
+2
+d/home/ap/Programs/node_modules/esy
+	platform-linux
+3
+d/home/ap/Programs/node_modules/esy/platform-linux
+	_build
+1
+d/home/ap/Programs/node_modules/esy/platform-linux/_build
+	default
+1
+d/home/ap/Programs/node_modules/esy/platform-linux/_build/default
+	bin
+1
+d/home/ap/Programs/node_modules/esy/platform-linux/_build/default/bin
+	esy.exe
+1
+d/home/ap/Programs/node_modules/esy/platform-linux/_build/default
+	esy-build-package
+2
+d/home/ap/Programs/node_modules/esy/platform-linux/_build/default/esy-build-package
+	bin
+1
+d/home/ap/Programs/node_modules/esy/platform-linux/_build/default/esy-build-package/bin
+	esyBuildPackageCommand.exe
+1
+d/home/ap/Programs/node_modules/esy/platform-linux/_build/default/esy-build-package
+	bin
+1
+d/home/ap/Programs/node_modules/esy/platform-linux/_build/default
+	esy-build-package
+2
+d/home/ap/Programs/node_modules/esy/platform-linux/_build
+	default
+1
+d/home/ap/Programs/node_modules/esy/platform-linux
+	_build
+1
+d/home/ap/Programs/node_modules/esy
+	_build
+1
+d/home/ap/Programs/node_modules/esy/_build
+	default
+1
+d/home/ap/Programs/node_modules/esy/_build/default
+	bin
+1
+d/home/ap/Programs/node_modules/esy/_build/default/bin
+	esy.exe
+1
+d/home/ap/Programs/node_modules/esy/_build/default
+	bin
+1
+d/home/ap/Programs/node_modules/esy/_build
+	default
+1
+d/home/ap/Programs/node_modules/esy
+	platform-win32
+4
+d/home/ap/Programs/node_modules/esy/platform-win32
+	_build
+1
+d/home/ap/Programs/node_modules/esy/platform-win32/_build
+	default
+1
+d/home/ap/Programs/node_modules/esy/platform-win32/_build/default
+	bin
+1
+d/home/ap/Programs/node_modules/esy/platform-win32/_build/default/bin
+	esy.exe
+1
+d/home/ap/Programs/node_modules/esy/platform-win32/_build/default
+	bin
+1
+d/home/ap/Programs/node_modules/esy/platform-win32/_build
+	default
+1
+d/home/ap/Programs/node_modules/esy/platform-win32
+	_build
+1
+d/home/ap/Programs/node_modules/esy
+	platform-linux
+3
+d/home/ap/Programs/node_modules/esy/platform-linux
+	_build
+1
+d/home/ap/Programs/node_modules/esy/platform-linux/_build
+	default
+1
+d/home/ap/Programs/node_modules/esy/platform-linux/_build/default
+	esy-build-package
+2
+d/home/ap/Programs/node_modules/esy/platform-linux/_build/default/esy-build-package
+	bin
+1
+d/home/ap/Programs/node_modules/esy/platform-linux/_build/default/esy-build-package/bin
+	esyBuildPackageCommand.exe
+1
+d/home/ap/Programs
+	oni2
+8
+d/home/ap/Programs/oni2
+	node_modules
+14
+d/home/ap/Programs/oni2/node_modules
+	.bin
+1
+d/home/ap/Programs/oni2/node_modules/.bin
+	..
+0
+d/home/ap/Programs/oni2/node_modules
+	esy
+2
+d/home/ap/Programs/oni2/node_modules/esy
+	..
+0
+d/home/ap/Programs/oni2/node_modules
+	esy
+2
+d/home/ap/Programs/oni2
+	node_modules
+14
+d/home/ap/Programs/oni2/node_modules
+	esy
+2
+d/home/ap/Programs/oni2
+	node_modules
+14
+d/home/ap/Programs/oni2/node_modules
+	esy
+2
+d/home/ap/Programs/oni2
+	node_modules
+14
+d/home/ap/Programs
+	oni2
+9
+d/home/ap/Programs/oni2
+	node
 13
-d/home/ap/Documents
-	baze
-5
-d/home/ap/Documents/baze
-	01_BP_Osnovni pojmovi.pdf
+d/home/ap/Programs/oni2/node
+	add-to-path.js
 1
-d/home/ap/Documents
-	baze
-5
-d/home/ap/Documents/baze
-	01_BP_Osnovni pojmovi.pdf
+d/home/ap/Programs/oni2
+	node_modules
+14
+d/home/ap/Programs/oni2/node_modules
+	esy
+2
+d/home/ap/Programs/oni2/node_modules/esy
+	..
+0
+d/home/ap/Programs/oni2/node_modules
+	.bin
 1
-d/home/ap/Documents
-	baze
-5
-d/home/ap/Documents/baze
-	01_BP_Osnovni pojmovi.pdf
+d/home/ap/Programs/oni2/node_modules/.bin
+	esy
 1
-d/home/ap/Documents
-	baze
-5
+d/home/ap/Programs/oni2/node_modules
+	esy
+2
+d/home/ap/Programs/oni2/node_modules/esy
+	platform-linux
+3
+d/home/ap/Programs/oni2/node_modules/esy/platform-linux
+	_build
+1
+d/home/ap/Programs/oni2/node_modules/esy/platform-linux/_build
+	default
+1
+d/home/ap/Programs/oni2/node_modules/esy/platform-linux/_build/default
+	bin
+1
+d/home/ap/Programs/oni2/node_modules/esy/platform-linux/_build/default/bin
+	esy.exe
+1
+d/home/ap/Programs/oni2/node_modules/esy/platform-linux/_build/default
+	bin
+1
+d/home/ap/Programs/oni2/node_modules/esy/platform-linux/_build
+	default
+1
+d/home/ap/Programs/oni2/node_modules/esy/platform-linux
+	_build
+1
+d/home/ap/Programs/oni2/node_modules/esy
+	postinstall.js
+8
+d/home/ap/Programs/oni2
+	docs
+7
+d/home/ap/Programs
+	node_modules
+8
+d/home/ap/Programs/node_modules
+	.bin
+1
+d/home/ap/Programs/node_modules/.bin
+	esy
+1
+d/home/ap/Programs/node_modules
+	.bin
+1
+d/home/ap/Programs
+	..
+0
 d/home/ap
-	Documents
-13
+	.thumbnails
+11
 d/home
 	ap
 1
+d/
+	lib
+5
+d/lib
+	libFLAC++.so.6.3.0
+35
+d/
+	lib
+5
+d/lib
+	libFLAC++.so.6.3.0
+35
+d/
+	lib
+5
+d/lib
+	libFLAC.so
+35
 d/
 	home
 4
@@ -103,263 +340,23 @@ d/home
 	ap
 1
 d/home/ap
-	Programs
-18
-d/home/ap/Pictures
-	edited.jpg
-2
-d/home/ap/Pictures/Screenshots
-	vim_comments.png
-4
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap
-	Pictures
-17
-d/home/ap/Documents/baze
-	01_BP_Osnovni pojmovi.pdf
-1
-d/home/ap/Documents
-	baze
-5
-d/home/ap
-	Downloads
-16
-d/home/ap/Downloads
-	zacloud
-1
-d/home/ap
-	Downloads
-16
-d/home/ap/Downloads
-	zacloud
-1
-d/home/ap
-	Downloads
-16
-d/home/ap/Downloads
-	zacloud
-1
-d/home/ap
-	Projects
-19
-d/home/ap/Projects
-	angular-ngrx
-1
-d/home/ap
-	test
-21
-d/home/ap/test
-	drugi
-1
-d/home/ap
-	Scripts
-20
-d/home/ap/Scripts
-	nmgui
-3
-d/home/ap
-	.config
-2
-d/home/ap/.config
-	libfm
-16
-d/home/ap
-	Programs
-18
-d/home/ap/Pictures
-	edited.jpg
-2
-d/home/ap/Pictures/Screenshots
-	vim_comments.png
-4
-d/home/ap/Pictures
-	edited.jpg
-2
-d/home/ap
-	Programs
-18
-d/home/ap/Documents
-	CV
-1
-d/home/ap/Documents/CV
-	..
-0
-d/home/ap/Documents
-	CV
-1
-d/home/ap/Documents/CV
-	compile
-1
-d/home/ap/Documents
-	rg
-10
-d/home/ap/Documents/rg
-	..
-0
-d/home/ap/Documents
-	rg
-10
-d/home/ap/Documents/rg
-	Skripte
+	.vim
 12
-d/home/ap/Documents/rg/Skripte
-	Grafika_skripta - transkript.pdf
-1
-d/home/ap/Documents/rg
-	Skripte
-12
-d/home/ap/Documents
-	rg
-10
-d/home/ap/Documents/rg
-	1. Predavanje
-1
-d/home/ap/Documents/rg/1. Predavanje
-	grafika1.0.3gp
-1
-d/home/ap/Documents/rg
-	1. Predavanje
-1
-d/home/ap
-	Pictures
-17
-d/home/ap/Documents
-	rg
-10
-d/home/ap/Documents/rg
-	1. Predavanje
-1
-d/home/ap
-	Pictures
-17
-d/home/ap/Documents/rg
-	1. Predavanje
-1
 d/home/ap/Pictures/Screenshots
-	vim_comments.png
-4
-d/home/ap/Documents
-	backup
-4
-d/home/ap/Documents/backup
-	alacritty
-4
-d/home/ap/Documents/backup/alacritty
-	..
-0
-d/home/ap/Documents/backup
-	.xinitrc
-21
-d/home/ap/Documents
-	sau
-10
-d/home/ap/Documents/sau
-	sau
-1
-d/home/ap/Documents/sau/sau
-	predavanja2019
-1
-d/home/ap/Documents/sau
-	sau
-1
-d/home/ap/Documents
-	sau
-10
-d/home/ap/Documents/sau
-	..
-0
-d/home/ap/Documents
-	sau
-11
-d/home/ap/Documents/sau
-	..
-0
-d/home/ap/Documents
-	GRAFIKA
+	dmenu_ypadding.png
+2
+d/home/ap/Pictures
+	60745_mountains_snow_milky_way_snowy_mountains_and_milky_way.jpg
 2
 d/home/ap
-	Documents
-15
-d/home/ap/Documents
-	c
-8
-d/home/ap/Documents/c
-	..
-0
-d/home/ap/Documents
-	parts.txt
-13
-d/home/ap
 	Pictures
-14
+16
 d/home/ap/Pictures
-	edited.jpg
-2
-d/home/ap
-	Documents
-15
-d/home/ap/Pictures/Screenshots
-	vim_tabs.png
-11
-d/usr/share/applications
-	feh.desktop
-11
-d/home/ap/Pictures
-	galaxy-3608029_1280.jpg
-3
-d/home/ap
-	Projects
-4
-d/home
-	ap
-1
-d/home/ap/Pictures/Screenshots
-	vim_copy.png
-4
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap
-	Pictures
-4
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap/Pictures/Screenshots
-	dmenu_man.png
-1
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap/Pictures/Screenshots
-	entr_restart.png
-3
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap/Pictures/Screenshots
-	dmenu_man.png
-1
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap
-	Projects
-19
-d/home/ap/Projects
-	isa2018
-3
-d/home/ap
-	Projects
-12
+	nologo.jpg
+6
 d
 
 # Right window history (oldest to newest):
-D/home/ap/.config
-	Code - OSS
-1
 D/home/ap
 	.local
 5
@@ -657,6 +654,9 @@ D/home/ap/Downloads
 D/home/ap
 	..
 0
+D/home/ap/Pictures
+	..
+0
 D
 
 # Command line history (oldest to newest):
@@ -675,6 +675,11 @@ D
 :icon
 :shell
 :touch .hidden
+:set number
+:res 20
+:resize +20
+:vertical res 40
+:lsview
 :q
 
 # Search history (oldest to newest):
@@ -684,6 +689,7 @@ D
 /makepk
 /pacman.con
 /pacman.conf
+/confi
 
 # Prompt history (oldest to newest):
 pv.txt
@@ -703,12 +709,12 @@ pGRAFIKA
 p.mozilla
 p.thumbnails
 pdmenu_ypadding.png
+p.pki
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/ap/.local/share/vifm/Trash/001_ajmo.png
-""/home/ap/.local/share/vifm/Trash/000_testic.png
+""/home/ap/.local/share/vifm/Trash/000_vim_colors.png
 
 # Directory stack (oldest to newest):
 
@@ -888,7 +894,21 @@ t/home/ap/.local/share/vifm/Trash/000_.hidden
 t/home/ap/.local/share/vifm/Trash/000_dmenu_man.png.png.png
 	/home/ap/Pictures/Screenshots/dmenu_man.png.png.png
 t/home/ap/.local/share/vifm/Trash/000_testic.png
-	/home/ap/Pictures/Screenshots/testic.png
+	/home/ap/testic.png
+t/home/ap/.local/share/vifm/Trash/001_ajmo.png
+	/home/ap/ajmo.png
+t/home/ap/.local/share/vifm/Trash/000_zacloud
+	/home/ap/Downloads/zacloud
+t/home/ap/.local/share/vifm/Trash/000_wj.jpg
+	/home/ap/Pictures/wj.jpg
+t/home/ap/.local/share/vifm/Trash/000_wp.jpg
+	/home/ap/Pictures/wp.jpg
+t/home/ap/.local/share/vifm/Trash/000_dmenu_man.png.png
+	/home/ap/Pictures/Screenshots/dmenu_man.png.png
+t/home/ap/.local/share/vifm/Trash/000_esy
+	/home/ap/Programs/esy
+t/home/ap/.local/share/vifm/Trash/000_vim_colors.png
+	/home/ap/Pictures/Screenshots/vim_colors.png
 
 # State:
 f

@@ -7,6 +7,7 @@ mkdir .config
 cp $HOME/.vimrc $PWD
 cp $HOME/.xinitrc $PWD
 cp $HOME/.gtkrc-2.0 $PWD
+cp $HOME/.cfignore $PWD
 cp -r $HOME/.config/bspwm $PWD/.config/
 cp -r $HOME/.config/sxhkd $PWD/.config/
 cp -r $HOME/.config/fish $PWD/.config/

@@ -84,18 +84,18 @@ unsigned int tabspaces = 4;
 
 static const char black[8] = "#282c34";
 static const char red[8] = "#e9837b";
-static const char green[8] = "#63d674";
-static const char yellow[8] = "#f9dc5c";
+static const char green[8] = "#a3be8c";
+static const char yellow[8] = "#ebcb8b";
 static const char blue[8] = "#7cb7ff";
 static const char magenta[8] = "#7878b0";
-static const char cyan[8] = "#23edda";
-static const char white[8] = "#dcdfe4";
+static const char cyan[8] = "#88c0d0";
+static const char white[8] = "#e5e9f0";
 
-static const char bblack[8] = "#557171";
+static const char bblack[8] = "#3b4252";
 
 static const char fgcolor[8] = "#dcdfe5";
 static const char bgcolor[8] = "#161925";
-static const char crscolor[8] = "#ffff00";
+static const char crscolor[8] = "#fece35";
 static const char icrscolor[8] = "#555555";
 
 /* Terminal colors (16 first used in escape sequence) */
@@ -153,7 +153,7 @@ static unsigned int cursorshape = 2;
  */
 
 static unsigned int cols = 80;
-static unsigned int rows = 24;
+static unsigned int rows = 40;
 
 /*
  * Default colour and shape of the mouse cursor
