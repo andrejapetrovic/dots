@@ -3,6 +3,8 @@
 [ -d "$HOME/.config" ] ||  mkdir -p $HOME/.config;
 
 cp $PWD/.vimrc $HOME
+cp $PWD/.bashrc $HOME
+cp $PWD/.zshrc $HOME
 cp $PWD/.xinitrc $HOME
 cp $PWD/.gtkrc-2.0 $HOME
 cp $PWD/.cfignore $HOME
