@@ -17,7 +17,7 @@ static int borderpx = 2;
  * 5: value of shell in config.h
  */
 static char *shell = "/bin/sh";
-char *utmp = "/bin/fish";
+char *utmp = "/bin/zsh";
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
 /* identification sequence returned in DA and DECID */
@@ -203,11 +203,13 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ MODKEY,               XK_k,           zoom,           {.f = +1} },
-	{ MODKEY,               XK_j,           zoom,           {.f = -1} },
-	{ MODKEY,               XK_0,           zoomreset,      {.f =  0} },
-	{ MODKEY,            	XK_p,     		kscrollup,      {.i = -1} },
-	{ MODKEY,            	XK_n,   		kscrolldown,    {.i = -1} },
+	{ MODKEY|ShiftMask,     XK_plus,       zoom,           {.f = +1} },
+	{ MODKEY,               XK_minus,       zoom,           {.f = -1} },
+	{ MODKEY,               XK_equal,       zoomreset,      {.f =  0} },
+	{ MODKEY|ShiftMask,   	XK_U,     		kscrollup,      {.i = -1} },
+	{ MODKEY|ShiftMask,   	XK_D,   		kscrolldown,    {.i = -1} },
+	{ MODKEY|ShiftMask,   	XK_K,     		kscrollup,      {.i = 1} },
+	{ MODKEY|ShiftMask,   	XK_J,   		kscrolldown,    {.i = 1} },
 	{ MODKEY,               XK_m,           newterm,        {.i =  0} },
 };
 

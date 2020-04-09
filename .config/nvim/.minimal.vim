@@ -6,8 +6,6 @@ call plug#begin('~/.config/nvim/plugged')
 call plug#end()
 
 set mouse=a
-set shell=/usr/bin/zsh
-set relativenumber number
 
 colorscheme nord
 hi Error cterm=NONE ctermbg=160 ctermfg=white
@@ -22,13 +20,23 @@ set tabstop=4
 set shiftwidth=4
 
 " netrw
+nnoremap <c-m><c-t> :Lex<CR>
 let g:netrw_liststyle = 3
 let g:netrw_banner = 0
 let g:netrw_cursor = 0
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 let g:netrw_winsize = 20
 
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
+set shell=/usr/bin/fish
+
+set relativenumber number
+
 let g:fzf_buffers_jump = 1
+nnoremap <c-k> :bnext<CR>
+nnoremap <c-j> :bprevious<CR>
+
 let g:fzf_action = {
       \ 'ctrl-s': 'split',
       \ 'ctrl-v': 'vsplit',
@@ -39,40 +47,20 @@ command Fzfp call fzf#run(fzf#wrap({'source': 'rg --files'}))
 command Conf call fzf#run(fzf#wrap({'source': 'rg --ignore-file ~/.cfgignore --files ~/'}))
 command OSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': 'source', 'down': '40%'})
 
-" hotkeys
-let mapleader = " "
+nnoremap <c-p> :Fzfp<CR>
+nnoremap <c-m><c-p> :GFiles<CR>
+nnoremap <c-l> :Lines 
+nnoremap <a-l> :BLines 
+nnoremap <c-x> :Buffers<CR>
+nnoremap <c-a> :Rg 
+nnoremap <c-h> :History<CR>
 
-vnoremap <C-c> "+y
-nnoremap <leader>y "+
-nnoremap <silent> <leader>n :nohlsearch<Bar>:echo<CR>
-
-nnoremap <leader>] :bnext<CR>
-nnoremap <leader>[ :bprevious<CR>
-
-" fzf (mostly)
-nnoremap <leader>p :Fzfp<CR>
-nnoremap <leader>el :Lines 
-nnoremap <leader>eb :BLines 
-nnoremap <leader>o :Buffers<CR>
-nnoremap <leader>i :History<CR>
-
-nnoremap <leader>so :OSess<CR>
-nnoremap <leader>ss :mks! ~/.local/share/sess/
-nnoremap <leader>c :Conf<CR> 
-nnoremap <leader>sd :cd %:p:h<CR> 
-nnoremap <leader>ra :term<CR>
-nnoremap <leader>rs :sp \| term<CR>
-nnoremap <leader>rv :vsp \| term<CR>
-nnoremap <leader>re :Lex<CR>
-
-" windows
-nnoremap <leader>h <c-w>h
-nnoremap <leader>j <c-w>j
-nnoremap <leader>k <c-w>k
-nnoremap <leader>l <c-w>l
-nnoremap <leader>q <c-w>q
-nnoremap <leader>w <c-w>w
-tnoremap <c-Space> <c-\><c-n>
+"open and save session
+nnoremap <c-m><c-o> :OSess<CR>
+nnoremap <c-m><c-s> :mks! ~/.local/share/sess/
+nnoremap <c-m><c-x> :Conf<CR> 
+nnoremap <c-m><c-d> :cd %:p:h<CR> 
+nnoremap <c-m><c-e> :term<CR>
 
 "coc
 set signcolumn=yes
@@ -106,8 +94,3 @@ function! s:show_documentation()
   endif
 endfunction
 
-" term buffer
-augroup custom_term
-	autocmd!
-	autocmd TermOpen * setlocal bufhidden=hide
-augroup END

@@ -1,2 +1,2 @@
 #!/bin/sh
-rg --files ~/Documents -g '*.pdf' | awk -F '/' '{ print substr($0, index($0,$5)) }' | sort -g | dmenu -i -p "pdf documents" -l 20 | awk '{printf "\"Documents/%s\"",$0}' | xargs -r zathura
+rg --files ~/Documents -g '*.pdf' | cut -d '/' -f 5- | sort -g | dmenu -i -p "pdf documents" -l 20 | xargs -r -I@ zathura $HOME/Documents/@

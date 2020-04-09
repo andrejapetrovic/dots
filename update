@@ -1,10 +1,12 @@
 #!/bin/sh
 
-rm .xinitrc .vimrc .gtkrc-2.0
+rm .xinitrc .vimrc .gtkrc-2.0 .zshrc .bashrc
 rm -rf .config Scripts
 mkdir .config
 
 cp $HOME/.vimrc $PWD
+cp $HOME/.zshrc $PWD
+cp $HOME/.bashrc $PWD
 cp $HOME/.xinitrc $PWD
 cp $HOME/.gtkrc-2.0 $PWD
 cp $HOME/.cfignore $PWD
@@ -18,6 +20,9 @@ cp -r $HOME/.config/gtk-3.0 $PWD/.config/
 cp -r $HOME/.config/fontconfig $PWD/.config/
 cp -r $HOME/.config/nvim $PWD/.config/
 cp -r $HOME/Scripts $PWD/Scripts
+cp $HOME/Programs/dmenu/dmenu_history $PWD/dmenu
+cp $HOME/Programs/dmenu/config.h $PWD/dmenu
+cp $HOME/Programs/st/config.h $PWD/st
 
 git add .
 git commit -m "$1"

@@ -24,14 +24,14 @@ super + alt + p
 	killall polybar; \
 	polybar example &
 
-super + {shift + c, c, v, ctrl + q, shift + x, x, ctrl + n, shift + v}
-	$HOME/Scripts/{docs,web-search,cfg,shutdown-dmenu,proj,search-scr,win-switch}
+super + {shift + x, c, v, ctrl + q, x, z}
+	$HOME/Scripts/{docs,web-search,cfg,shutdown-dmenu,search-scr,save-scr}
 
 super + {a, shift + a, e, shift + e}
 	{firefox, chromium, vifmi, pcmanfm} 
 
 super + ctrl + c
-	st -c Nmtui-st -e nmtui-connect
+	nmtui-st
 
 Print
 	maim | xclip -selection clipboard -t image/png
@@ -40,13 +40,7 @@ super + shift + s
 	maim -s | xclip -selection clipboard -t image/png
 
 super + Print
-	maim $HOME/Pictures/Screenshots/$(date +%s).png
-
-super + shift + Print
-	maim -s $HOME/Pictures/Screenshots/$(date +%s).png
-
-super + z 
-	$HOME/Scripts/save-scr
+	xdotool getactivewindow | xargs -r maim -i | xclip -selection clipboard -t image/png
 
 super + {backslash, semicolon, apostrophe}
 	playerctl --player=deezer {play-pause, previous, next}
@@ -120,7 +114,7 @@ super + {grave,Tab}
 	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
-super + {_,shift +} b
+super + ctrl + {o,i}
 	bspc wm -h off; \
 	bspc node {older,newer} -f; \
 	bspc wm -h on
@@ -169,7 +163,7 @@ super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # move window to a node
-alt + shift + {h,j,k,l}
+super + ctrl + {h,j,k,l}
 	bspc node -n {west,south,north,east}
 
 # replace focused node with selected workspace

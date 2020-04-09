@@ -70,7 +70,7 @@ function fish_prompt --description 'Write out the prompt'
     end
 
     # PWD
-    set_color $color_cwd
+    set_color $color_cwd --bold
     echo -n (prompt_pwd)
     set_color normal
 

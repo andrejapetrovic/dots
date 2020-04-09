@@ -29,6 +29,10 @@
 	/home/ap/Downloads
 	zacloud
 1584401011
+'m
+	/home/ap/.config
+	libfm
+1585937604
 'n
 	/home/ap/Documents/beleske
 	angular.txt
@@ -46,7 +50,7 @@
 
 # TUI:
 al
-q1
+q0
 v2
 ov
 m-1
@@ -54,351 +58,309 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ap/Pictures
-	serbia-1938958_1920.jpg
-6
-d/home/ap
-	Projects
-19
+d/home/ap/Projects/test
+	colors
+2
+d/home/ap/Projects/test/colors
+	..
+0
+d/home/ap/Projects/test
+	colors
+2
 d/home/ap/Projects
 	tsc-node
 7
-d/home/ap
-	Scripts
-20
-d/home/ap/Scripts
-	dmenu-restore
+d/home/ap/Projects/tsc-node
+	src
 4
+d/home/ap/Projects
+	test
+6
+d/home/ap/Projects/test
+	c
+1
+d/home/ap/Projects/test/c
+	linked-list
+1
+d/home/ap/Projects/test/c/linked-list
+	compile
+2
+d/home/ap/Projects/test/c
+	linked-list
+1
+d/home/ap/Projects/test
+	js
+3
+d/home/ap/Projects/test/js
+	reactive
+1
+d/home/ap/Projects/test
+	js
+3
+d/home/ap/Projects
+	scripts
+4
+d/home/ap
+	.gnupg
+3
+d/home/ap/.gnupg
+	pubring.kbx
+1
+d/home/ap
+	.thumbnails
+12
+d/home/ap/.thumbnails
+	..
+0
+d/home/ap
+	.thumbnails
+12
+d/home/ap/.thumbnails
+	..
+0
+d/home/ap
+	.vscode-oss
+13
+d/home/ap/.vscode-oss
+	argv.json
+2
+d/home/ap
+	Documents
+14
+d/home/ap/Documents
+	..
+0
+d/home/ap
+	Programs
+17
+d/home/ap/Programs
+	..
+0
+d/home/ap
+	Pictures
+16
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap
+	Documents
+14
+d/home/ap/Documents
+	..
+0
+d/home/ap
+	Documents
+14
+d/home/ap/Documents
+	CV
+1
+d/home/ap/Documents/CV
+	compile
+1
+d/home/ap/Documents
+	GRAFIKA
+2
+d/home/ap
+	Documents
+14
+d/home/ap/Pictures/Screenshots
+	vim_comments.png
+10
+d/home/ap/Pictures
+	galaxy-3608029_1280.jpg
+4
+d/home/ap
+	.thumbnails
+12
+d/home/ap/Programs/optimus-manager
+	..
+0
+d/home/ap/Programs
+	optimus-manager
+5
+d/home/ap/Programs/optimus-manager
+	src
+4
+d/home/ap/Programs/optimus-manager/src
+	optimus-manager
+1
+d/home/ap/Programs/optimus-manager/src/optimus-manager
+	build
+3
+d/home/ap/Programs/optimus-manager/src
+	optimus-manager
+1
+d/home/ap/Programs/optimus-manager
+	src
+4
+d/home/ap/Programs/optimus-manager/src
+	optimus-manager
+1
+d/home/ap/Programs/optimus-manager/src/optimus-manager
+	optimus_manager
+7
+d/home/ap/Programs/optimus-manager/src/optimus-manager/optimus_manager
+	config_schema.json
+8
+d/home/ap/Programs/optimus-manager/src/optimus-manager
+	optimus_manager
+7
+d/home/ap/Programs/optimus-manager/src
+	optimus-manager
+1
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Documents/baze
+	01_BP_Osnovni pojmovi.pdf
+1
+d/home/ap/Documents
+	keys
+7
+d/home/ap
+	Documents
+14
+d/home
+	ap
+1
 d/home/ap
 	Downloads
 15
 d/home/ap/Downloads
 	..
 0
-d/home/ap/Pictures
-	edited.jpg
-3
-d/home/ap/Pictures/Screenshots
-	entr_restart.png
-3
-d/home/ap/Pictures
-	Screenshots
-1
 d/home/ap
-	Programs
-17
-d/home/ap/Programs
-	esy
-7
-d/home/ap/Programs/esy
+	Downloads
+15
+d/home/ap/Downloads
 	..
 0
-d/home/ap/Programs
-	esy
-7
-d/home/ap/Programs/esy
-	..
-0
-d/home/ap/Programs
-	node_modules
-8
-d/home/ap/Programs/node_modules
-	esy
-2
-d/home/ap/Programs/node_modules/esy
-	platform-linux
-3
-d/home/ap/Programs/node_modules/esy/platform-linux
-	_build
-1
-d/home/ap/Programs/node_modules/esy/platform-linux/_build
-	default
-1
-d/home/ap/Programs/node_modules/esy/platform-linux/_build/default
-	bin
-1
-d/home/ap/Programs/node_modules/esy/platform-linux/_build/default/bin
-	esy.exe
-1
-d/home/ap/Programs/node_modules/esy/platform-linux/_build/default
-	esy-build-package
-2
-d/home/ap/Programs/node_modules/esy/platform-linux/_build/default/esy-build-package
-	bin
-1
-d/home/ap/Programs/node_modules/esy/platform-linux/_build/default/esy-build-package/bin
-	esyBuildPackageCommand.exe
-1
-d/home/ap/Programs/node_modules/esy/platform-linux/_build/default/esy-build-package
-	bin
-1
-d/home/ap/Programs/node_modules/esy/platform-linux/_build/default
-	esy-build-package
-2
-d/home/ap/Programs/node_modules/esy/platform-linux/_build
-	default
-1
-d/home/ap/Programs/node_modules/esy/platform-linux
-	_build
-1
-d/home/ap/Programs/node_modules/esy
-	_build
-1
-d/home/ap/Programs/node_modules/esy/_build
-	default
-1
-d/home/ap/Programs/node_modules/esy/_build/default
-	bin
-1
-d/home/ap/Programs/node_modules/esy/_build/default/bin
-	esy.exe
-1
-d/home/ap/Programs/node_modules/esy/_build/default
-	bin
-1
-d/home/ap/Programs/node_modules/esy/_build
-	default
-1
-d/home/ap/Programs/node_modules/esy
-	platform-win32
-4
-d/home/ap/Programs/node_modules/esy/platform-win32
-	_build
-1
-d/home/ap/Programs/node_modules/esy/platform-win32/_build
-	default
-1
-d/home/ap/Programs/node_modules/esy/platform-win32/_build/default
-	bin
-1
-d/home/ap/Programs/node_modules/esy/platform-win32/_build/default/bin
-	esy.exe
-1
-d/home/ap/Programs/node_modules/esy/platform-win32/_build/default
-	bin
-1
-d/home/ap/Programs/node_modules/esy/platform-win32/_build
-	default
-1
-d/home/ap/Programs/node_modules/esy/platform-win32
-	_build
-1
-d/home/ap/Programs/node_modules/esy
-	platform-linux
-3
-d/home/ap/Programs/node_modules/esy/platform-linux
-	_build
-1
-d/home/ap/Programs/node_modules/esy/platform-linux/_build
-	default
-1
-d/home/ap/Programs/node_modules/esy/platform-linux/_build/default
-	esy-build-package
-2
-d/home/ap/Programs/node_modules/esy/platform-linux/_build/default/esy-build-package
-	bin
-1
-d/home/ap/Programs/node_modules/esy/platform-linux/_build/default/esy-build-package/bin
-	esyBuildPackageCommand.exe
-1
-d/home/ap/Programs
-	oni2
-8
-d/home/ap/Programs/oni2
-	node_modules
+d/home/ap
+	Documents
 14
-d/home/ap/Programs/oni2/node_modules
-	.bin
-1
-d/home/ap/Programs/oni2/node_modules/.bin
-	..
-0
-d/home/ap/Programs/oni2/node_modules
-	esy
-2
-d/home/ap/Programs/oni2/node_modules/esy
-	..
-0
-d/home/ap/Programs/oni2/node_modules
-	esy
-2
-d/home/ap/Programs/oni2
-	node_modules
-14
-d/home/ap/Programs/oni2/node_modules
-	esy
-2
-d/home/ap/Programs/oni2
-	node_modules
-14
-d/home/ap/Programs/oni2/node_modules
-	esy
-2
-d/home/ap/Programs/oni2
-	node_modules
-14
-d/home/ap/Programs
-	oni2
+d/home/ap/Documents
+	pyscraper
 9
-d/home/ap/Programs/oni2
-	node
-13
-d/home/ap/Programs/oni2/node
-	add-to-path.js
+d/home/ap/Documents/pyscraper
+	pyscraper
 1
-d/home/ap/Programs/oni2
-	node_modules
-14
-d/home/ap/Programs/oni2/node_modules
-	esy
-2
-d/home/ap/Programs/oni2/node_modules/esy
-	..
-0
-d/home/ap/Programs/oni2/node_modules
-	.bin
-1
-d/home/ap/Programs/oni2/node_modules/.bin
-	esy
-1
-d/home/ap/Programs/oni2/node_modules
-	esy
-2
-d/home/ap/Programs/oni2/node_modules/esy
-	platform-linux
-3
-d/home/ap/Programs/oni2/node_modules/esy/platform-linux
-	_build
-1
-d/home/ap/Programs/oni2/node_modules/esy/platform-linux/_build
-	default
-1
-d/home/ap/Programs/oni2/node_modules/esy/platform-linux/_build/default
-	bin
-1
-d/home/ap/Programs/oni2/node_modules/esy/platform-linux/_build/default/bin
-	esy.exe
-1
-d/home/ap/Programs/oni2/node_modules/esy/platform-linux/_build/default
-	bin
-1
-d/home/ap/Programs/oni2/node_modules/esy/platform-linux/_build
-	default
-1
-d/home/ap/Programs/oni2/node_modules/esy/platform-linux
-	_build
-1
-d/home/ap/Programs/oni2/node_modules/esy
-	postinstall.js
-8
-d/home/ap/Programs/oni2
-	docs
+d/home/ap/Documents/pyscraper/pyscraper
+	scraper.py
 7
-d/home/ap/Programs
-	node_modules
-8
-d/home/ap/Programs/node_modules
-	.bin
+d/home/ap/Documents/pyscraper
+	pyscraper
 1
-d/home/ap/Programs/node_modules/.bin
-	esy
+d/home/ap/Documents
+	keys
+7
+d/home/ap/Documents/keys
+	keys.png
 1
-d/home/ap/Programs/node_modules
-	.bin
+d/home/ap/Documents
+	keys
+7
+d/home/ap/Documents/keys
+	keys.png
 1
-d/home/ap/Programs
+d/home/ap/Documents
+	analiza2
+5
+d/home/ap/Documents/analiza2
+	Ispiti
+1
+d/home/ap/Documents
 	..
 0
 d/home/ap
-	.thumbnails
+	.npm
+9
+d/home
+	ap
+1
+d/
+	lib
+5
+d/lib
+	zathura
+35
+d/
+	lib
+5
+d/lib
+	zsh
+35
+d/lib/zsh
+	5.8
+1
+d/lib/zsh/5.8
+	zsh
+1
+d/lib/zsh/5.8/zsh
+	curses.so
 11
-d/home
-	ap
+d/lib/zsh/5.8
+	zsh
 1
-d/
-	lib
-5
+d/lib/zsh
+	5.8
+1
 d/lib
-	libFLAC++.so.6.3.0
+	zsh
 35
 d/
-	lib
-5
-d/lib
-	libFLAC++.so.6.3.0
+	etc
+3
+d/etc
+	zsh
 35
+d/etc/zsh
+	zprofile
+1
+d/etc
+	shadow-
+31
 d/
-	lib
-5
-d/lib
-	libFLAC.so
-35
+	boot
+1
+d/boot
+	..
+0
 d/
-	home
+	bin
+0
+d/bin
+	zramctl
+29
+d/
+	var
+18
+d/var
+	cache
+1
+d/var/cache
+	pacman
 4
-d/home
-	ap
+d/var/cache/pacman
+	pkg
 1
-d/home/ap
-	.vim
-12
-d/home/ap/Pictures/Screenshots
-	dmenu_ypadding.png
-2
-d/home/ap/Pictures
-	60745_mountains_snow_milky_way_snowy_mountains_and_milky_way.jpg
-2
-d/home/ap
-	Pictures
-16
-d/home/ap/Pictures
-	nologo.jpg
-6
+d/var/cache/pacman/pkg
+	asar-3.0.3-1-any.pkg.tar.zst
+1
+d/var/cache/pacman
+	pkg
+1
+d/var/cache
+	pacman
+4
+d/var
+	cache
+1
+d/
+	var
+18
 d
 
 # Right window history (oldest to newest):
-D/home/ap
-	.local
-5
-D/home/ap/.local
-	share
-1
-D/home/ap/.local/share
-	fonts
-4
-D/home/ap/.local
-	share
-1
-D/home/ap
-	Documents
-15
-D/home/ap/Documents
-	beleske
-2
-D/home/ap
-	Pictures
-17
-D/home/ap/Pictures
-	Screenshots
-1
-D/home/ap
-	Programs
-18
-D/home/ap/Programs
-	vifm_devicons
-9
-D/home/ap/Programs/vifm_devicons
-	..
-0
-D/home/ap/Programs
-	vundle
-10
-D/home/ap/Programs/vundle
-	pkg
-2
-D/home/ap/Programs
-	optimus-manager
-3
 D/home/ap
 	Desktop
 14
@@ -657,6 +619,39 @@ D/home/ap
 D/home/ap/Pictures
 	..
 0
+D/home/ap
+	Programs
+12
+D/home/ap/Programs
+	dots
+5
+D/home/ap/Programs/dots
+	dmenu
+4
+D/home/ap/Programs/dots/dmenu
+	config.h
+2
+D/home/ap/Programs/dots
+	dmenu
+4
+D/home/ap/Programs
+	consolas-font
+2
+D/home/ap
+	Pictures
+17
+D/home/ap/Pictures
+	..
+0
+D/home/ap
+	Projects
+19
+D/home/ap/Projects
+	sumitech
+5
+D/home/ap/Projects/sumitech
+	..
+0
 D
 
 # Command line history (oldest to newest):
@@ -669,20 +664,27 @@ D
 :zip backup
 :unzip
 :marks
-:wq
 :unzip consolas.zip
 :source ~/Programs/vifm_devicons/SETUP
 :icon
-:shell
 :touch .hidden
-:set number
 :res 20
 :resize +20
 :vertical res 40
 :lsview
+:Tree
+:tree
+:Qa
+:qa
+:set number
+:set relativenum
+:shell
+:wq
 :q
 
 # Search history (oldest to newest):
+/ja
+/java
 /con
 /Program
 /pac
@@ -690,6 +692,10 @@ D
 /pacman.con
 /pacman.conf
 /confi
+/fin ~/.vimrc
+/vim
+/code
+/new
 
 # Prompt history (oldest to newest):
 pv.txt
@@ -710,11 +716,15 @@ p.mozilla
 p.thumbnails
 pdmenu_ypadding.png
 p.pki
+pwh3
+pwheat
+pvim_indent
+pvim_newline
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/ap/.local/share/vifm/Trash/000_vim_colors.png
+""/home/ap/.local/share/vifm/Trash/002_test.png
 
 # Directory stack (oldest to newest):
 
@@ -909,6 +919,64 @@ t/home/ap/.local/share/vifm/Trash/000_esy
 	/home/ap/Programs/esy
 t/home/ap/.local/share/vifm/Trash/000_vim_colors.png
 	/home/ap/Pictures/Screenshots/vim_colors.png
+t/home/ap/.local/share/vifm/Trash/000_njiva.jpg
+	/home/ap/Projects/sumitech/static/images/njiva.jpg
+t/home/ap/.local/share/vifm/Trash/000_slika.jpg
+	/home/ap/Projects/sumitech/static/images/slika.jpg
+t/home/ap/.local/share/vifm/Trash/000_unnamed.jpg
+	/home/ap/Projects/sumitech/static/images/unnamed.jpg
+t/home/ap/.local/share/vifm/Trash/000_wheat.jpg
+	/home/ap/Projects/sumitech/static/images/wheat.jpg
+t/home/ap/.local/share/vifm/Trash/000_wheat2.xcf
+	/home/ap/Projects/sumitech/static/images/wheat2.xcf
+t/home/ap/.local/share/vifm/Trash/000_vziw3.jpg
+	/home/ap/Projects/sumitech/static/images/vziw3.jpg
+t/home/ap/.local/share/vifm/Trash/000_photo-of-wheat-fields-1723778.jpg
+	/home/ap/Projects/sumitech/static/images/photo-of-wheat-fields-1723778.jpg
+t/home/ap/.local/share/vifm/Trash/000_wheat2.jpg
+	/home/ap/Projects/angular-ngrx/.git/wheat2.jpg
+t/home/ap/.local/share/vifm/Trash/001_wheat.jpg
+	/home/ap/Projects/angular-ngrx/.git/wheat.jpg
+t/home/ap/.local/share/vifm/Trash/000_Word1 1 1.docx
+	/home/ap/Downloads/Word1 1 1.docx
+t/home/ap/.local/share/vifm/Trash/000_generate.vim
+	/home/ap/Downloads/generate.vim
+t/home/ap/.local/share/vifm/Trash/000_drb
+	/home/ap/.cache/drb
+t/home/ap/.local/share/vifm/Trash/000_sxiv
+	/home/ap/.cache/sxiv
+t/home/ap/.local/share/vifm/Trash/000_Consolas-Bold-Italic.ttf
+	/home/ap/.local/share/fonts/Consolas-Bold-Italic.ttf
+t/home/ap/.local/share/vifm/Trash/000_Consolas-Bold.ttf
+	/home/ap/.local/share/fonts/Consolas-Bold.ttf
+t/home/ap/.local/share/vifm/Trash/000_Consolas-Italic.ttf
+	/home/ap/.local/share/fonts/Consolas-Italic.ttf
+t/home/ap/.local/share/vifm/Trash/000_Consolas-Regular.ttf
+	/home/ap/.local/share/fonts/Consolas-Regular.ttf
+t/home/ap/.local/share/vifm/Trash/000_Fura Code Bold Nerd Font Complete.otf
+	/home/ap/.local/share/fonts/Fura Code Bold Nerd Font Complete.otf
+t/home/ap/.local/share/vifm/Trash/000_Fura Code Regular Nerd Font Complete.otf
+	/home/ap/.local/share/fonts/Fura Code Regular Nerd Font Complete.otf
+t/home/ap/.local/share/vifm/Trash/000_Inconsolata Bold Nerd Font Complete Mono.otf
+	/home/ap/.local/share/fonts/Inconsolata Bold Nerd Font Complete Mono.otf
+t/home/ap/.local/share/vifm/Trash/000_Inconsolata Nerd Font Complete Mono.otf
+	/home/ap/.local/share/fonts/Inconsolata Nerd Font Complete Mono.otf
+t/home/ap/.local/share/vifm/Trash/000_Noto Sans Display Light Nerd Font Complete.ttf
+	/home/ap/.local/share/fonts/Noto Sans Display Light Nerd Font Complete.ttf
+t/home/ap/.local/share/vifm/Trash/000_javascript.snippets
+	/home/ap/.config/coc/ultisnips/javascript.snippets
+t/home/ap/.local/share/vifm/Trash/000_vim_surround_add.png.png
+	/home/ap/Pictures/Screenshots/vim_surround_add.png.png
+t/home/ap/.local/share/vifm/Trash/000_test.png.png
+	/home/ap/Pictures/Screenshots/test.png.png
+t/home/ap/.local/share/vifm/Trash/000_sumitechl_logo.png
+	/home/ap/Pictures/Screenshots/sumitechl_logo.png
+t/home/ap/.local/share/vifm/Trash/000_test2.png
+	/home/ap/Pictures/Screenshots/test2.png
+t/home/ap/.local/share/vifm/Trash/000_ok.png
+	/home/ap/Pictures/Screenshots/ok.png
+t/home/ap/.local/share/vifm/Trash/000_Screenshotstest
+	/home/ap/Pictures/Screenshotstest
 
 # State:
 f

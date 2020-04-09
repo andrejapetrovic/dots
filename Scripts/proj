@@ -1,4 +1,0 @@
-#!/bin/sh
-
-ls ~/Projects/ | dmenu -i -p "Projects" | xargs -I@ -r code ~/Projects/@
-
