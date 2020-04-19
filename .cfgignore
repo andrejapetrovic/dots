@@ -3,3 +3,13 @@ deezer-desktop
 GIMP
 Code - OSS
 node_modules
+Documents
+Pictures
+Programs
+Projects
+!.config
+!.bashrc
+!.zshrc
+!.xinitrc
+!.gtkrc-2.0
+!.cfgignore
