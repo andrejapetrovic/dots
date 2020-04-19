@@ -17,3 +17,6 @@ bspc rule -a Deezer state=pseudo_tiled
 bspc rule -a feh state=floating
 bspc rule -a Nmtui-st state=floating
 bspc rule -a Zathura state=tiled
+bspc rule -a mpv state=floating
+bspc rule -a Sxiv state=floating
+

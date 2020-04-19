@@ -2,19 +2,19 @@
 
 [ -d "$HOME/.config" ] ||  mkdir -p $HOME/.config;
 
-cp $PWD/.vimrc $HOME
+#cp $PWD/.vimrc $HOME
 cp $PWD/.bashrc $HOME
 cp $PWD/.zshrc $HOME
-cp $PWD/.xinitrc $HOME
-cp $PWD/.gtkrc-2.0 $HOME
-cp $PWD/.cfignore $HOME
-cp -r $PWD/.config/bspwm $HOME/.config/
+#cp $PWD/.xinitrc $HOME
+#cp $PWD/.gtkrc-2.0 $HOME
+#cp $PWD/.cfignore $HOME
+#cp -r $PWD/.config/bspwm $HOME/.config/
 cp -r $PWD/.config/sxhkd $HOME/.config/
-cp -r $PWD/.config/fish $HOME/.config/
-cp -r $PWD/.config/polybar $HOME/.config/
-cp -r $PWD/.config/picom $HOME/.config/
+#cp -r $PWD/.config/fish $HOME/.config/
+#cp -r $PWD/.config/polybar $HOME/.config/
+#cp -r $PWD/.config/picom $HOME/.config/
 cp -r $PWD/.config/vifm $HOME/.config/
-cp -r $PWD/.config/gtk-3.0 $HOME/.config/
-cp -r $PWD/.config/fontconfig $HOME/.config/
+#cp -r $PWD/.config/gtk-3.0 $HOME/.config/
+#cp -r $PWD/.config/fontconfig $HOME/.config/
 cp -r $PWD/.config/nvim $HOME/.config/
 cp -r $PWD/Scripts $HOME/Scripts

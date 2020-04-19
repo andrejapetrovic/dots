@@ -60,7 +60,7 @@ nnoremap <leader>so :OSess<CR>
 nnoremap <leader>ss :mks! ~/.local/share/sess/
 nnoremap <leader>c :Conf<CR> 
 nnoremap <leader>sd :cd %:p:h<CR> 
-nnoremap <leader>ra :term<CR>
+nnoremap <leader>rr :term<CR>
 nnoremap <leader>rs :sp \| term<CR>
 nnoremap <leader>rv :vsp \| term<CR>
 nnoremap <leader>re :Lex<CR>
@@ -74,18 +74,16 @@ nnoremap <leader>q <c-w>q
 nnoremap <leader>w <c-w>w
 tnoremap <c-Space> <c-\><c-n>
 
+inoremap <c-l> <c-n><c-g>u
+
 "coc
 set signcolumn=yes
+set updatetime=300
 inoremap <silent><expr> <c-space> coc#refresh()
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
 " position. Coc only does snippet and additional edit on confirm.
-if has('patch8.1.1068')
-  " Use `complete_info` if your (Neo)Vim version supports it.
-  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
-else
-  imap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-endif
+inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " Use `[g` and `]g` to navigate diagnostics
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
@@ -105,6 +103,11 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
+
+" Remap keys for applying codeAction to the current line.
+nmap <leader>aa  <Plug>(coc-codeaction)
+" Apply AutoFix to problem on the current line.
+nmap <leader>af  <Plug>(coc-fix-current)
 
 " term buffer
 augroup custom_term

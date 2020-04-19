@@ -30,6 +30,9 @@ super + {shift + x, c, v, ctrl + q, x, z}
 super + {a, shift + a, e, shift + e}
 	{firefox, chromium, vifmi, pcmanfm} 
 
+super + {ctrl,alt} s
+	sxiv -t {$HOME/Pictures,$HOME/Pictures/Screenshots}
+
 super + ctrl + c
 	nmtui-st
 
@@ -106,7 +109,7 @@ super + {p,o,comma,period}
 super + {_,shift + } d 
 	bspc node -f {next,prev}.local
 # focus the next/previous desktop in the current monitor
-super + {_,shift + } bracketleft 
+super + bracket{right,left}
 	bspc desktop -f {next,prev}.local
 
 # focus the lrst node/desktop
