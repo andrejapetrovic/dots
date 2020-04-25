@@ -4,7 +4,6 @@ rm .xinitrc .vimrc .gtkrc-2.0 .zshrc .bashrc
 rm -rf .config Scripts
 mkdir .config
 
-cp $HOME/.vimrc $PWD
 cp $HOME/.zshrc $PWD
 cp $HOME/.bashrc $PWD
 cp $HOME/.xinitrc $PWD
@@ -12,7 +11,6 @@ cp $HOME/.gtkrc-2.0 $PWD
 cp $HOME/.cfgignore $PWD
 cp -r $HOME/.config/bspwm $PWD/.config/
 cp -r $HOME/.config/sxhkd $PWD/.config/
-cp -r $HOME/.config/fish $PWD/.config/
 cp -r $HOME/.config/polybar $PWD/.config/
 cp -r $HOME/.config/picom $PWD/.config/
 cp -r $HOME/.config/vifm $PWD/.config/
