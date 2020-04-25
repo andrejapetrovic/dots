@@ -17,7 +17,7 @@ icon-y = #ffb52a
 icon-c = #a4f9ff
 
 [bar/example]
-overide-redirect = true
+;overide-redirect = true
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 20
@@ -95,8 +95,8 @@ type = internal/bspwm
 
 label-focused = %index%
 ;label-focused =   
+#label-focused-foreground = ${colors.background}
 label-focused-background = ${colors.icon-r}
-;label-focused-foreground = ${colors.background}
 label-focused-padding = 2
 
 label-occupied = %index%

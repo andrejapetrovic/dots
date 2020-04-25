@@ -6,3 +6,7 @@ tooltip label {
     color: #202020;
 }
   
+menu menuitem:hover,
+.menu menuitem:hover {
+     background-color: #565656;
+}

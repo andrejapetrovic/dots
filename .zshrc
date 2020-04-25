@@ -13,11 +13,9 @@ compinit
 # End of lines added by compinstall
 
 alias ls='ls --color=auto'
-alias c="rg --ignore-file ~/.cfgignore --files ~/ | fzf | xargs -ro $EDITOR"
-alias o="ls $HOME/Documents/notes/ | fzf -m --preview 'cat $HOME/Documents/notes/{1}' --preview-window=right:80% | xargs -r -I{} cat $HOME/Documents/notes/{}"
 
-bindkey -s '\ec' 'c\n'
-bindkey -s '\eo' 'o\n'
+bindkey -s '\ec' 'fzfc\n'
+bindkey -s '\eo' 'fzfn\n'
 
 export LESS=-R
 export LESS_TERMCAP_mb=$'\E[1;31m'     # begin blink

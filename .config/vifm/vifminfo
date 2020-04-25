@@ -13,6 +13,10 @@
 	/home/ap/bin/
 	..
 1584482414
+'c
+	/home/ap/.config
+	mpv
+1587390298
 'd
 	/home/ap/Documents
 	baze
@@ -60,201 +64,183 @@
 al
 q1
 v2
-ov
+oh
 m-1
 l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ap/.node-gyp/13.9.0/include/node/openssl/archs
-	BSD-x86_64
-2
-d/home/ap/.node-gyp/13.9.0/include/node/openssl
-	archs
+d/home/ap/.config/bspwm
+	bspwmrc
 1
-d/home/ap/.node-gyp/13.9.0/include/node/openssl/archs
-	BSD-x86_64
+d/home/ap/.config
+	coc
+6
+d/home/ap/.config/coc
+	ultisnips
 2
-d/home/ap/.node-gyp/13.9.0/include/node/openssl
-	aes.h
-2
-d/home/ap/.node-gyp/13.9.0/include/node
-	openssl
-2
-d/home/ap/.node-gyp/13.9.0/include
-	node
+d/home/ap/.config
+	mpv
+14
+d/home/ap/.config/mpv
+	scripts
 1
-d/home/ap/.node-gyp/13.9.0
-	installVersion
-2
-d/home/ap/.node-gyp
-	13.9.0
+d/home/ap/.config/mpv/scripts
+	autoload.lua
 1
-d/home/ap
-	.node-gyp
-7
-d/home
-	ap
+d/home/ap/.config/mpv
+	scripts
 1
-d/
-	home
-4
-d/home
-	ap
+d/home/ap/.config
+	nvim
+14
+d/home/ap/.config/nvim
+	plugged
 1
-d/home/ap
-	.local
-4
-d/home/ap/Pictures/Screenshots
-	vim_comments.png
-9
-d/home/ap/Pictures
-	edited.jpg
+d/home/ap/.config/nvim/plugged
+	nord-vim
 3
-d/home/ap/Videos
-	Mr.Robot.Season.4.720p
-4
-d/home/ap/Videos/Mr.Robot.Season.4.720p
-	Mr.Robot.S04E02.mkv
+d/home/ap/.config/nvim/plugged/nord-vim
+	autoload
 2
-d/home/ap/Videos
-	Mr.Robot.Season.4.720p
-4
-d/home/ap/Videos/Mr.Robot.Season.4.720p
-	Mr.Robot.S04E02.mkv
-2
-d/home/ap/Videos
-	Mr.Robot.Season.4.720p
-4
-d/home/ap
-	Projects
-17
-d/home/ap/Projects
-	sumitech
+d/home/ap/.config/nvim/plugged
+	nord-vim
+3
+d/home/ap/.config/nvim
+	plugged
+1
+d/home/ap/.config
+	nvim
+14
+d/home/ap/.config/nvim
+	minimal.vim
 5
-d/home/ap/Projects/sumitech
-	static
-3
-d/home/ap/Projects/sumitech/static
-	images
+d/home/ap/.config
+	pcmanfm
+14
+d/home/ap/.config/pcmanfm
+	default
 1
-d/home/ap/Projects/sumitech/static/images
-	wheat.png
+d/home/ap/.config/pcmanfm/default
+	pcmanfm.conf
 1
-d/home/ap/Projects/sumitech/static
-	images
+d/home/ap/.config/pcmanfm
+	default
 1
-d/home/ap/Projects/sumitech
-	static
-3
-d/home/ap/Projects
-	test
-6
-d/home/ap/Projects/test
-	js
-2
-d/home/ap/Projects/test/js
-	reactive
+d/home/ap/.config
+	picom
+14
+d/home/ap/.config/picom
+	picom.conf
 1
-d/home/ap/Projects/test/js/reactive
-	node_modules
-1
-d/home/ap/Projects/test/js/reactive/node_modules
-	rxjs
-1
-d/home/ap/Projects/test/js/reactive/node_modules/rxjs
-	add
-3
-d/home/ap/Projects/test/js/reactive/node_modules/rxjs/add
-	observable
-1
-d/home/ap/Projects/test/js/reactive/node_modules/rxjs/add/observable
-	dom
-1
-d/home/ap/Projects/test/js/reactive/node_modules/rxjs/add
-	observable
-1
-d/home/ap/Projects/test/js/reactive/node_modules/rxjs
-	add
-3
-d/home/ap/Projects/test/js/reactive/node_modules/rxjs/add
-	operator
-2
-d/home/ap/Projects/test/js/reactive/node_modules/rxjs
-	add
-3
-d/home/ap/Projects/test/js/reactive/node_modules/rxjs/add
-	operator
-2
-d/home/ap/Projects/test/js/reactive/node_modules/rxjs/add/operator
-	audit.js.map
-3
-d/home/ap/Projects/test/js/reactive/node_modules/rxjs/add
-	operator
-2
-d/home/ap/Projects/test/js/reactive/node_modules/rxjs
-	observable
-10
-d/home/ap/Projects/test/js/reactive/node_modules/rxjs/observable
-	dom
-1
-d/home/ap/Projects/test/js/reactive/node_modules/rxjs/observable/dom
-	AjaxObservable.d.ts
-1
-d/home/ap/Projects/test/js/reactive/node_modules/rxjs/observable
-	dom
-1
-d/home/ap/Projects/test/js/reactive/node_modules/rxjs
-	scheduler
-13
-d/home/ap/Projects/test/js/reactive/node_modules/rxjs/scheduler
-	animationFrame.js
-2
-d/home/ap/Projects/test/js/reactive/node_modules/rxjs
-	AsyncSubject.d.ts
-19
-d/home/ap/Projects/test/js/reactive/node_modules
-	rxjs
-1
-d/home/ap/Projects/test/js/reactive
-	node_modules
-1
-d/home/ap/Projects/test/js
-	reactive
-1
-d/home/ap/Projects/test
-	js
-2
-d/home/ap/Projects
-	test
-6
-d/home/ap
-	Programs
-16
-d/home/ap/Programs
+d/home/ap/.config
 	polybar
-7
-d/home/ap
-	Documents
-13
-d/home/ap/Documents
-	notes
-8
-d/home/ap/Documents/notes
-	angular.txt
+14
+d/home/ap/.config/polybar
+	config
 1
+d/home/ap/.config
+	procps
+14
+d/home/ap/.config/procps
+	..
+0
+d/home/ap/.config
+	procps
+13
+d/home/ap/.config/procps
+	..
+0
+d/home/ap/.config
+	zathura
+16
+d/home/ap/.config/zathura
+	..
+0
+d/home/ap/.config
+	vifm
+15
+d/home/ap/.config/vifm
+	colors
+1
+d/home/ap/.config/vifm/colors
+	Default.vifm
+1
+d/home/ap/.config/vifm
+	scripts
+2
+d/home/ap/.config/vifm/scripts
+	vifmimg
+2
+d/home/ap/.config/vifm
+	scripts
+2
+d/home/ap/.config/vifm/scripts
+	README
+1
+d/home/ap/.config/vifm
+	colors
+1
+d/home/ap/.config/vifm/colors
+	Default.vifm
+1
+d/home/ap/.config/vifm
+	colors
+1
+d/home/ap/.config
+	neofetch
+6
+d/home/ap/.config/neofetch
+	config.conf
+1
+d/home/ap/.config
+	inkscape
+4
+d/home/ap/.config/inkscape
+	..
+0
+d/home/ap/.config
+	inkscape
+4
+d/home/ap
+	.config
+2
 d/home/ap/Documents
-	notes
-8
+	analiza2
+5
+d/home/ap/Documents/analiza2
+	Kolokvijum 2
+3
+d/home/ap/Documents/analiza2/Kolokvijum 2
+	01.02.2014.pdf
+2
+d/home/ap/Documents/analiza2
+	Kolokvijum 1
+2
+d/home/ap/Documents/analiza2/Kolokvijum 1
+	2007-11-23-k1-e2.pdf
+6
+d/home/ap/Documents/analiza2
+	Kolokvijum 1
+2
+d/home/ap/Documents
+	OET
+3
 d/home/ap
 	Documents
-13
+14
 d/home/ap/Documents
 	baze
 6
 d/home/ap/Documents/baze
-	03_BP_Modeli_podataka.pdf
-3
+	06_BP_Relacioni_model_osnove.pdf
+6
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Documents/baze
+	04_BP_ER_Model_Osnove.pdf
+4
 d/home/ap/Documents
 	baze
 6
@@ -262,188 +248,131 @@ d/home/ap/Documents/baze
 	05_BP_Relacioni_model_koncepcija.pdf
 5
 d/home/ap/Documents
-	pyscraper
-9
-d/home/ap
-	Projects
-17
-d/home/ap/Projects
-	sumitech
-5
-d/home/ap/Projects/sumitech
-	node_modules
-2
-d/home/ap/Projects
-	sumitech
-5
-d/home/ap
-	Videos
-19
-d/home/ap/Videos
-	Mr.Robot.Season.3.720p
+	baze
+6
+d/home/ap/Documents/baze
+	10_OD_Serijska_Sekvencijalna_datoteka.pdf
+10
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Documents/baze
+	10_OD_Serijska_Sekvencijalna_datoteka.pdf
+10
+d/home/ap/Documents
+	OET
 3
-d/home/ap/Videos/Mr.Robot.Season.3.720p
+d/home/ap/Documents/OET
+	Mart28b.pdf
+3
+d/home/ap/Documents
+	OET
+3
+d/home/ap
+	Pictures
+16
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap
+	Desktop
+13
+d/home/ap/Desktop
 	..
 0
-d/home/ap/Videos
-	Mr.Robot.Season.4.720p
-4
-d/home/ap/Videos/Mr.Robot.Season.4.720p
-	Mr.Robot.S04E04.mkv
-4
-d/home/ap/Videos
-	Mr.Robot.Season.4.720p
-4
-d/home/ap/Videos/Mr.Robot.Season.4.720p
-	Mr.Robot.S04E05.mkv
-5
-d/home/ap/Videos
-	Mr.Robot.Season.4.720p
-4
 d/home/ap
-	Videos
-19
-d/home/ap/Videos
-	Mr.Robot.Season.4.720p
-4
-d/home/ap/Videos/Mr.Robot.Season.4.720p
-	Mr.Robot.S04E06.mkv
+	.vscode-oss
+11
+d/home/ap/.vscode-oss
+	extensions
+1
+d/home/ap/.vscode-oss/extensions
+	..
+0
+d/home/ap/.vscode-oss
+	extensions
+1
+d/home/ap
+	Scripts
+14
+d/home/ap/Scripts
+	fzfc
 6
-d/home/ap/Videos
-	Mr.Robot.Season.4.720p
-4
 d/home/ap
-	.config
-2
-d/home/ap/.config
-	mpv
-18
-d/home/ap/.config/mpv
-	mpv.conf
-2
-d/home/ap/.config
-	mpv
-18
-d/home/ap/Videos
-	Mr.Robot.Season.4.720p
-4
-d/home/ap/Videos/Mr.Robot.Season.4.720p
-	Mr.Robot.S04E09.mkv
-9
-d/home/ap/Videos
-	Mr.Robot.Season.1.720p
-1
-d/home/ap/Videos/Mr.Robot.Season.1.720p
-	Mr.Robot.S01E04.mkv
-4
-d/home/ap/Videos
-	Mr.Robot.Season.2.720p
-2
-d/home/ap/Videos/Mr.Robot.Season.2.720p
-	Mr.Robot.S02E12.mkv
+	Programs
 12
-d/home/ap/Videos
-	Fight Club (1999) [1080p]
+d/home/ap/Programs
+	st
+8
+d/home/ap
+	st
+14
+d/home/ap/st
+	config.h
+10
+d/home/ap
+	Programs
+10
+d/home/ap/Programs
+	st
+8
+d/home/ap/Programs/st
+	.git
 1
-d/home/ap/Videos/Fight Club (1999) [1080p]
-	Fight.Club.10th.Anniversary.Edition.1999.1080p.BrRip.x264.YIFY.mp4
-1
-d/home/ap/Videos
-	Mr.Robot.Season.1.720p
+d/home/ap/Programs/st/.git
+	hooks
 2
-d/home/ap/Videos/Mr.Robot.Season.1.720p
-	Mr.Robot.S01E04.mkv
+d/home/ap/Programs/st/.git/hooks
+	pre-applypatch.sample
+5
+d/home/ap/Programs/st/.git
+	hooks
+2
+d/home/ap/Programs/st
+	config.def.h
+9
+d/home/ap/Programs
+	st
+8
+d/home/ap
+	Programs
+10
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Documents/baze
+	07_OD_EkstMemFizickaOrganizacija.pdf
+7
+d/home/ap/Documents
+	visp
+10
+d/home/ap/Documents/visp
+	02.09.2015.pdf
+3
+d/home/ap/Documents
+	keys
+7
+d/home/ap
+	Documents
+7
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Documents/baze
+	05_BP_Relacioni_model_koncepcija.pdf
+5
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Documents/baze
+	04_BP_ER_Model_Osnove.pdf
 4
-d/home/ap/Videos
-	Mr.Robot.Season.1.720p
-2
-d/home/ap/Videos/Mr.Robot.Season.1.720p
-	Mr.Robot.S01E01.mkv
-1
-d/home/ap/Videos
-	Fight Club (1999) [1080p]
-1
-d/home/ap/Videos/Fight Club (1999) [1080p]
-	Fight.Club.10th.Anniversary.Edition.1999.1080p.BrRip.x264.YIFY.mp4
-1
+d/home/ap/Documents
+	baze
+6
 d
 
 # Right window history (oldest to newest):
-D/home/ap/Documents/baze
-	..
-0
-D/home/ap/Documents
-	dots
-3
-D/home/ap/Documents/dots
-	..
-0
-D/home/ap/Documents
-	dots
-3
-D/home/ap
-	fonts.txt
-37
-D/home
-	ap
-1
-D/
-	lib
-5
-D/lib
-	..
-0
-D/
-	home
-4
-D/home
-	ap
-1
-D/home/ap
-	.vscode-oss
-10
-D/home/ap/.vscode-oss
-	extensions
-1
-D/home/ap
-	.vscode-oss
-10
-D/home/ap/.vscode-oss
-	extensions
-1
-D/home/ap/.vscode-oss/extensions
-	ginfuru.ginfuru-better-solarized-dark-theme-0.9.3
-2
-D/home/ap/.vscode-oss
-	extensions
-1
-D/home/ap
-	.config
-3
-D/home/ap/.config
-	Code - OSS
-1
-D/home/ap/.config/Code - OSS
-	CachedData
-3
-D/home/ap/.config/Code - OSS/CachedData
-	..
-0
-D/home/ap/.config/Code - OSS
-	Cache
-2
-D/home/ap/.config/Code - OSS/Cache
-	..
-0
-D/home/ap/.config/Code - OSS
-	blob_storage
-8
-D/home/ap/.config/Code - OSS/blob_storage
-	48cd5ad4-845f-44ce-8210-b65dee5a0901
-1
-D/home/ap/.config/Code - OSS/blob_storage/48cd5ad4-845f-44ce-8210-b65dee5a0901
-	..
-0
 D/home/ap/.config/Code - OSS/blob_storage
 	48cd5ad4-845f-44ce-8210-b65dee5a0901
 1
@@ -667,6 +596,81 @@ D/home/ap
 	Videos
 20
 D/home/ap/Videos
+	Mr.Robot.Season.1.720p
+2
+D/home/ap/Videos/Mr.Robot.Season.1.720p
+	Mr.Robot.S01E01.mkv
+1
+D/home/ap/Videos
+	Fight Club (1999) [1080p]
+1
+D/home/ap/Videos/Fight Club (1999) [1080p]
+	Fight.Club.10th.Anniversary.Edition.1999.1080p.BrRip.x264.YIFY.mp4
+1
+D/home/ap/Videos
+	Mr.Robot.Season.2.720p
+3
+D/home/ap/Videos/Mr.Robot.Season.2.720p
+	Mr.Robot.S02E01.mkv
+1
+D/home/ap/Videos
+	Mr.Robot.Season.1.720p
+2
+D/home/ap
+	Documents
+14
+D/home/ap/Documents
+	analiza2
+5
+D/home/ap/Documents/analiza2
+	Rokovi - analiza
+4
+D/home/ap/Documents/analiza2/Rokovi - analiza
+	IMG_20170112_213226.jpg
+1
+D/home/ap/Documents/analiza2
+	Kolokvijum 2
+3
+D/home/ap/Documents/analiza2/Kolokvijum 2
+	..
+0
+D/home/ap/Documents/analiza2
+	Ispiti
+1
+D/home/ap/Documents/analiza2/Ispiti
+	09.07.2013.pdf
+1
+D/home/ap/Documents/analiza2
+	Kolokvijum 1
+2
+D/home/ap/Documents/analiza2/Kolokvijum 1
+	Teorija
+1
+D/home/ap/Documents/analiza2/Kolokvijum 1/Teorija
+	12573103_10206502267093304_3578717122642619495_n.jpg
+3
+D/home/ap/Documents/analiza2/Kolokvijum 1
+	2007-11-23-k1-e2.pdf
+6
+D/home/ap/Documents/analiza2
+	Kolokvijum 1
+2
+D/home/ap/Documents/analiza2/Kolokvijum 1
+	2007-11-23-k1-e2.pdf
+6
+D/home/ap/Documents/analiza2
+	Rokovi - analiza
+4
+D/home/ap/Documents/analiza2/Rokovi - analiza
+	IMG_20170112_213226.jpg
+1
+D/home/ap/Documents/analiza2
+	Kolokvijum 2
+3
+D/home/ap/Documents/analiza2/Kolokvijum 2
+	01.02.2014.jpg
+1
+D/home/ap/Documents/analiza2
 	..
 0
 D
@@ -682,7 +686,6 @@ D
 :mkdir beleske
 :mkdir backup
 :zip backup
-:unzip
 :unzip consolas.zip
 :source ~/Programs/vifm_devicons/SETUP
 :icon
@@ -697,7 +700,6 @@ D
 :qa
 :set number
 :set relativenum
-:shell
 :wq
 :! mpv Mr.Robot.S01E01.720p.BluRay.x264.ShAaNiG.mkv
 :vi %f
@@ -705,8 +707,6 @@ D
 :/^/ok/g
 :! nvim Mr.Robot.S02E01.mkv
 :marks
-:tabnew
-:tabclose
 :s/\s\{3}//
 :s/\s\{3}/g/
 :s/\s{3}/g/
@@ -720,7 +720,31 @@ D
 :s/\s/r/
 :%s/\s//g
 :terminal
+:! zip Mr.Robot.Season.1.720p/
+:mpv
+:mpv %f
+:\ mpv %f
+:!mpv grafika1.0.3gp
+:term
+:shell
+:! sudo nvim default.theme
+:! convert \*.jpg test.pdf
+:unzip
+:!unzip
+:! unzip test.zip
+:zip test
+:zip
+:! zip RA.pdf parts.txt uns
+:! zip -r test.zip RA.pdf parts.txt uns
+:! zip -r test.zip
+:! convert *.jpg analiza-rokovi.pdf
 :sh
+:! convert \*.jpg
+:! convert 01.02.2014.jpg 01.02.2014.pdf
+:tabnew
+:tabkill
+:tabclose
+:mkdir test
 :q
 
 # Search history (oldest to newest):
@@ -773,14 +797,13 @@ pwheat
 pvim_indent
 pvim_newline
 pfile1
+pteorija.pdf
 
 # Local filter history (oldest to newest):
+|config/
 
 # Registers:
-""/home/ap/.local/share/vifm/Trash/000_bookmarks
-""/home/ap/.local/share/vifm/Trash/000_history
-""/home/ap/.local/share/vifm/Trash/000_input-history
-""/home/ap/.local/share/vifm/Trash/000_links
+""/home/ap/.local/share/vifm/Trash/000_st
 
 # Directory stack (oldest to newest):
 
@@ -949,8 +972,6 @@ t/home/ap/.local/share/vifm/Trash/000_vim_root_save.png.png
 	/home/ap/Pictures/Screenshots/vim_root_save.png.png
 t/home/ap/.local/share/vifm/Trash/001_test.png
 	/home/ap/Pictures/Screenshots/test.png
-t/home/ap/.local/share/vifm/Trash/000_test
-	/home/ap/test
 t/home/ap/.local/share/vifm/Trash/000_backup
 	/home/ap/Documents/backup
 t/home/ap/.local/share/vifm/Trash/000_sau
@@ -1051,6 +1072,26 @@ t/home/ap/.local/share/vifm/Trash/000_links
 	/home/ap/Documents/baze/links
 t/home/ap/.local/share/vifm/Trash/001_mpv-shot0001.jpg
 	/home/ap/Videos/Mr.Robot.Season.3.720p/mpv-shot0001.jpg
+t/home/ap/.local/share/vifm/Trash/000_serbia-1938958_1920.jpg
+	/home/ap/Pictures/serbia-1938958_1920.jpg
+t/home/ap/.local/share/vifm/Trash/000_teorija
+	/home/ap/Documents/visp/teorija
+t/home/ap/.local/share/vifm/Trash/000_teorija.pdf
+	/home/ap/Documents/visp/teorija.pdf
+t/home/ap/.local/share/vifm/Trash/000_test.pdf
+	/home/ap/Documents/visp/Vjerovatnoca - teorija/test.pdf
+t/home/ap/.local/share/vifm/Trash/000_test
+	/home/ap/test
+t/home/ap/.local/share/vifm/Trash/000_test.zip
+	/home/ap/test.zip
+t/home/ap/.local/share/vifm/Trash/000_RA.pdf.zip
+	/home/ap/Documents/RA.pdf.zip
+t/home/ap/.local/share/vifm/Trash/001_test.zip
+	/home/ap/Documents/test.zip
+t/home/ap/.local/share/vifm/Trash/000_Matematicka analiza 2.pdf
+	/home/ap/Documents/analiza2/Kolokvijum 1/Matematicka analiza 2.pdf
+t/home/ap/.local/share/vifm/Trash/000_st
+	/home/ap/st
 
 # State:
 f

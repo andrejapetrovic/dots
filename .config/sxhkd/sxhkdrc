@@ -4,7 +4,10 @@
 
 # terminal emulator
 super + {Return, ctrl + m}
-	$TERMINAL 
+	$TERMINAL -e zsh
+
+Menu
+	$TERMINAL -e tmux
 
 super + n
 	bspc node -p south; \
@@ -62,10 +65,6 @@ XF86MonBrightness{Down,Up}
 super + q; super + {q,e}
 	bspc {quit,wm -r}
 
-super + q; super + w
-	slock
-
-# close and kill
 super + {_,shift + }w
 	bspc node -{c,k}
 

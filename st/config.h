@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "Noto Sans Mono:pixelsize=12:antialias=true:hintstyle=hintslight:rgba=rgb:weight=100";
-static int borderpx = 2;
+static int borderpx = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -17,7 +17,8 @@ static int borderpx = 2;
  * 5: value of shell in config.h
  */
 static char *shell = "/bin/sh";
-char *utmp = "/bin/zsh";
+char *utmp = NULL;
+char *scroll = NULL;
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
 /* identification sequence returned in DA and DECID */
@@ -181,8 +182,6 @@ static uint forcemousemod = ShiftMask;
  */
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
-	{ ShiftMask,            Button4, kscrollup,      {.i = 1} },
-	{ ShiftMask,            Button5, kscrolldown,    {.i = 1} },
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
 	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
@@ -206,11 +205,6 @@ static Shortcut shortcuts[] = {
 	{ MODKEY|ShiftMask,     XK_plus,        zoom,           {.f = +1} },
 	{ MODKEY,               XK_minus,       zoom,           {.f = -1} },
 	{ MODKEY,               XK_equal,       zoomreset,      {.f =  0} },
-	{ MODKEY,   			XK_0,     		kscrollup,      {.i = -1} },
-	{ MODKEY,   			XK_9,   		kscrolldown,    {.i = -1} },
-	{ ControlMask,   		XK_0,     		kscrollup,      {.i =  1} },
-	{ ControlMask,   		XK_9,   		kscrolldown,    {.i =  1} },
-	{ MODKEY,               XK_m,           newterm,        {.i =  0} },
 };
 
 /*

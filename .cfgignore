@@ -7,9 +7,12 @@ Documents
 Pictures
 Programs
 Projects
+Videos
+discord
 !.config
 !.bashrc
 !.zshrc
 !.xinitrc
 !.gtkrc-2.0
 !.cfgignore
+!.tmux.conf

@@ -35,9 +35,11 @@ let g:fzf_action = {
       \ 'ctrl-t': 'tab split'
       \ }
 
-command Fzfp call fzf#run(fzf#wrap({'source': 'rg --files'}))
-command Conf call fzf#run(fzf#wrap({'source': 'rg --ignore-file ~/.cfgignore --files ~/'}))
+command Fzfp call fzf#run(fzf#wrap({'source': 'rg --files', 'options': '--multi'}))
+command Conf call fzf#run(fzf#wrap({'source': 'rg --ignore-file ~/.cfgignore --files ~/', 'options': '--multi'}))
 command OSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': 'source', 'down': '40%'})
+command OProj call fzf#run({'source': 'ls', 'dir': '~/Projects', 'sink': 'cd', 'down': '40%'})
+command RSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': '! rm', 'down': '40%', 'options': '--multi'})
 
 " hotkeys
 let mapleader = " "
@@ -51,12 +53,16 @@ nnoremap <leader>[ :bprevious<CR>
 
 " fzf (mostly)
 nnoremap <leader>p :Fzfp<CR>
+nnoremap <leader>g :GFiles<CR>
 nnoremap <leader>el :Lines 
 nnoremap <leader>eb :BLines 
 nnoremap <leader>o :Buffers<CR>
 nnoremap <leader>i :History<CR>
+nnoremap <leader>m :Marks<CR>
 
 nnoremap <leader>so :OSess<CR>
+nnoremap <leader>sp :OProj<CR>
+nnoremap <leader>sr :RSess<CR>
 nnoremap <leader>ss :mks! ~/.local/share/sess/
 nnoremap <leader>c :Conf<CR> 
 nnoremap <leader>sd :cd %:p:h<CR> 
@@ -72,7 +78,7 @@ nnoremap <leader>k <c-w>k
 nnoremap <leader>l <c-w>l
 nnoremap <leader>q <c-w>q
 nnoremap <leader>w <c-w>w
-tnoremap <c-Space> <c-\><c-n>
+tnoremap <a-Space> <c-\><c-n>
 
 inoremap <c-l> <c-n><c-g>u
 
