@@ -1,6 +1,8 @@
 #!/bin/sh
 
 [ -d "$HOME/.config" ] ||  mkdir -p $HOME/.config;
+[ -f "$HOME/.cache/drun_cache" ] || touch $HOME/.cache/drun_cache
+[ -f "$HOME/.cache/dmenu-web-history" ] || touch $HOME/.cache/dmenu-web-history
 
 #cp $PWD/.vimrc $HOME
 cp $PWD/.bashrc $HOME
@@ -18,3 +20,5 @@ cp -r $PWD/.config/vifm $HOME/.config/
 #cp -r $PWD/.config/fontconfig $HOME/.config/
 cp -r $PWD/.config/nvim $HOME/.config/
 cp -r $PWD/.tmux.conf $HOME
+
+
