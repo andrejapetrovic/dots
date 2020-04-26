@@ -6,8 +6,11 @@
 super + {Return, ctrl + m}
 	$TERMINAL -e zsh
 
-Menu
-	$TERMINAL -e tmux
+super + shift + b
+	$TERMINAL -e tmux 
+
+super + b
+	tmux ls && $TERMINAL -e tmux a -t 0 || $TERMINAL -e tmux
 
 super + n
 	bspc node -p south; \
@@ -29,6 +32,9 @@ super + alt + p
 
 super + {shift + x, c, v, ctrl + q, x, z}
 	$HOME/Scripts/{docs,web-search,cfg,shutdown-dmenu,search-scr,save-scr}
+
+Menu
+	$HOME/Scripts/tmux-attach
 
 super + {a, shift + a, e, shift + e}
 	{firefox, chromium, vifmi, pcmanfm} 

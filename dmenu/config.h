@@ -16,6 +16,13 @@ static const char *colors[SchemeLast][2] = {
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
 
+static int dmx = 203; /* put dmenu at this x offset */
+static int dmy = 0; /* put dmenu at this y offset (measured from the bottom if topbar is 0) */
+static unsigned int dmw = 680; /* make dmenu this wide */
+
+/* padding between font and top and bottom edges */ 
+static int fpadd = 3;
+
 /*
  * Characters not considered part of a word while deleting words
  * for example: " /?\"&[]"

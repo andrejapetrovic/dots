@@ -491,7 +491,6 @@ fileviewer *.gif
 		\ vifmimg clear
 
 command bg feh --bg-scale %d/%c
-command icon :source ~/Programs/vifm_devicons/SETUP
 
 nnoremap <c-s> :bg<cr>
 

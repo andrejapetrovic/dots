@@ -1,0 +1,2 @@
+#!/bin/sh
+tmux ls | dmenu -l 15 -p 'tmux attach' | cut -d ':' -f 1 | xargs -r st -e tmux a -t

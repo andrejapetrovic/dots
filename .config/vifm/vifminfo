@@ -61,8 +61,8 @@
 # Bookmarks:
 
 # TUI:
-al
-q1
+ar
+q0
 v2
 oh
 m-1
@@ -70,252 +70,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ap/.config/bspwm
-	bspwmrc
-1
-d/home/ap/.config
-	coc
-6
-d/home/ap/.config/coc
-	ultisnips
-2
-d/home/ap/.config
-	mpv
-14
-d/home/ap/.config/mpv
-	scripts
-1
-d/home/ap/.config/mpv/scripts
-	autoload.lua
-1
-d/home/ap/.config/mpv
-	scripts
-1
-d/home/ap/.config
-	nvim
-14
-d/home/ap/.config/nvim
-	plugged
-1
-d/home/ap/.config/nvim/plugged
-	nord-vim
-3
-d/home/ap/.config/nvim/plugged/nord-vim
-	autoload
-2
-d/home/ap/.config/nvim/plugged
-	nord-vim
-3
-d/home/ap/.config/nvim
-	plugged
-1
-d/home/ap/.config
-	nvim
-14
-d/home/ap/.config/nvim
-	minimal.vim
-5
-d/home/ap/.config
-	pcmanfm
-14
-d/home/ap/.config/pcmanfm
-	default
-1
-d/home/ap/.config/pcmanfm/default
-	pcmanfm.conf
-1
-d/home/ap/.config/pcmanfm
-	default
-1
-d/home/ap/.config
-	picom
-14
-d/home/ap/.config/picom
-	picom.conf
-1
-d/home/ap/.config
-	polybar
-14
-d/home/ap/.config/polybar
-	config
-1
-d/home/ap/.config
-	procps
-14
-d/home/ap/.config/procps
-	..
-0
-d/home/ap/.config
-	procps
-13
-d/home/ap/.config/procps
-	..
-0
-d/home/ap/.config
-	zathura
-16
-d/home/ap/.config/zathura
-	..
-0
-d/home/ap/.config
-	vifm
-15
-d/home/ap/.config/vifm
-	colors
-1
-d/home/ap/.config/vifm/colors
-	Default.vifm
-1
-d/home/ap/.config/vifm
-	scripts
-2
-d/home/ap/.config/vifm/scripts
-	vifmimg
-2
-d/home/ap/.config/vifm
-	scripts
-2
-d/home/ap/.config/vifm/scripts
-	README
-1
-d/home/ap/.config/vifm
-	colors
-1
-d/home/ap/.config/vifm/colors
-	Default.vifm
-1
-d/home/ap/.config/vifm
-	colors
-1
-d/home/ap/.config
-	neofetch
-6
-d/home/ap/.config/neofetch
-	config.conf
-1
-d/home/ap/.config
-	inkscape
-4
-d/home/ap/.config/inkscape
-	..
-0
-d/home/ap/.config
-	inkscape
-4
-d/home/ap
-	.config
-2
-d/home/ap/Documents
-	analiza2
-5
-d/home/ap/Documents/analiza2
-	Kolokvijum 2
-3
-d/home/ap/Documents/analiza2/Kolokvijum 2
-	01.02.2014.pdf
-2
-d/home/ap/Documents/analiza2
-	Kolokvijum 1
-2
-d/home/ap/Documents/analiza2/Kolokvijum 1
-	2007-11-23-k1-e2.pdf
-6
-d/home/ap/Documents/analiza2
-	Kolokvijum 1
-2
-d/home/ap/Documents
-	OET
-3
-d/home/ap
-	Documents
-14
-d/home/ap/Documents
-	baze
-6
-d/home/ap/Documents/baze
-	06_BP_Relacioni_model_osnove.pdf
-6
-d/home/ap/Documents
-	baze
-6
-d/home/ap/Documents/baze
-	04_BP_ER_Model_Osnove.pdf
-4
-d/home/ap/Documents
-	baze
-6
-d/home/ap/Documents/baze
-	05_BP_Relacioni_model_koncepcija.pdf
-5
-d/home/ap/Documents
-	baze
-6
-d/home/ap/Documents/baze
-	10_OD_Serijska_Sekvencijalna_datoteka.pdf
-10
-d/home/ap/Documents
-	baze
-6
-d/home/ap/Documents/baze
-	10_OD_Serijska_Sekvencijalna_datoteka.pdf
-10
-d/home/ap/Documents
-	OET
-3
-d/home/ap/Documents/OET
-	Mart28b.pdf
-3
-d/home/ap/Documents
-	OET
-3
-d/home/ap
-	Pictures
-16
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap
-	Desktop
-13
-d/home/ap/Desktop
-	..
-0
-d/home/ap
-	.vscode-oss
-11
-d/home/ap/.vscode-oss
-	extensions
-1
-d/home/ap/.vscode-oss/extensions
-	..
-0
-d/home/ap/.vscode-oss
-	extensions
-1
-d/home/ap
-	Scripts
-14
-d/home/ap/Scripts
-	fzfc
-6
-d/home/ap
-	Programs
-12
-d/home/ap/Programs
-	st
-8
-d/home/ap
-	st
-14
-d/home/ap/st
-	config.h
-10
-d/home/ap
-	Programs
-10
-d/home/ap/Programs
-	st
-8
 d/home/ap/Programs/st
 	.git
 1
@@ -368,8 +122,254 @@ d/home/ap/Documents/baze
 	04_BP_ER_Model_Osnove.pdf
 4
 d/home/ap/Documents
+	SAU
+4
+d/home/ap/Documents/SAU
+	predavanja2019
+1
+d/home/ap/Documents/SAU/predavanja2019
+	09_10_Spektralna_analiza_signala_dodatni_materijal.pdf
+2
+d/home/ap/Documents/SAU
+	sau-testovi
+2
+d/home/ap/Documents
 	baze
 6
+d/home/ap/Documents/baze
+	09_OD_MetPristOrgDat.pdf
+9
+d/home/ap/Pictures
+	nologo.jpg
+6
+d/home/ap
+	Pictures
+9
+d/home/ap/Pictures
+	nature-1585132421660-7433.jpg
+5
+d/home/ap
+	Pictures
+9
+d/home/ap/Pictures
+	nologo.jpg
+6
+d/home/ap
+	Documents
+11
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Documents/baze
+	01_BP_Osnovni_pojmovi.pdf
+1
+d/home/ap/Documents/visp/Vjerovatnoca - teorija
+	..
+0
+d/home/ap/Documents/visp
+	Vjerovatnoca - teorija
+2
+d/home/ap/Documents/visp/Vjerovatnoca - teorija
+	v01.jpg
+2
+d/home/ap/Documents/visp
+	teorija.pdf
+17
+d/home/ap/Documents
+	visp
+10
+d/home/ap
+	Documents
+11
+d/home/ap/Documents
+	analiza2
+5
+d/home/ap/Documents/analiza2
+	rokovi.pdf
+6
+d/home/ap/Documents/visp/Vjerovatnoca - teorija
+	v01.jpg
+1
+d/home/ap/Documents/visp
+	Vjerovatnoca
+1
+d/home/ap/Documents/visp/Vjerovatnoca
+	..
+0
+d/home/ap/Documents/visp
+	Vjerovatnoca - teorija
+2
+d/home/ap/Documents/visp/Vjerovatnoca - teorija
+	v02.jpg
+2
+d/home/ap/Documents/visp
+	Vjerovatnoca
+1
+d/home/ap/Documents/visp/Vjerovatnoca
+	vezbe.pdf
+33
+d/home/ap/Documents/visp
+	Vjerovatnoca - teorija
+2
+d/home/ap/Documents
+	pyscraper
+9
+d/home/ap
+	Desktop
+10
+d/home
+	ap
+1
+d/home/ap
+	Desktop
+10
+d/home/ap/Desktop
+	..
+0
+d/home/ap
+	Downloads
+12
+d/home/ap/Downloads
+	Win10_1909_English_x64.iso
+2
+d/home/ap
+	.pki
+5
+d/home
+	ap
+1
+d/
+	home
+4
+d/home
+	ap
+1
+d/home/ap
+	Documents
+11
+d/home/ap/Documents
+	keys
+7
+d/home/ap/Documents/keys
+	keys.png
+1
+d/home/ap/Documents
+	OET
+3
+d/home/ap/Documents/OET
+	Primer K1.pdf
+4
+d/home/ap/Documents
+	GRAFIKA
+2
+d/home/ap/Documents/GRAFIKA
+	2. Predavanje
+2
+d/home/ap/Documents/GRAFIKA/2. Predavanje
+	grafika2.1.m4a
+2
+d/home/ap/Documents/GRAFIKA
+	3. Predavanje
+3
+d/home/ap/Documents/GRAFIKA/3. Predavanje
+	grafika3.3gp
+1
+d/home/ap/Documents/GRAFIKA
+	3. Predavanje
+3
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Documents/baze
+	12_OD_Indeks-sekvencijalna_staticka_datoteka.pdf
+12
+d/home/ap/Documents
+	notes
+8
+d/home/ap/Documents/notes
+	angular.txt
+1
+d/home/ap/Documents
+	analiza2
+5
+d/home/ap/Documents/analiza2
+	Rokovi - analiza
+4
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Documents/baze
+	12_OD_Indeks-sekvencijalna_staticka_datoteka.pdf
+12
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Pictures
+	edited.jpg
+3
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Pictures
+	edited.jpg
+3
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap/Pictures/Screenshots
+	netcat.png
+6
+d/home/ap/Pictures
+	60745_mountains_snow_milky_way_snowy_mountains_and_milky_way.jpg
+2
+d/home/ap
+	.weechat
+9
+d/home/ap/.weechat
+	guile
+1
+d/home/ap/.weechat/guile
+	autoload
+1
+d/home/ap/.weechat/guile/autoload
+	..
+0
+d/home/ap/.weechat/guile
+	autoload
+1
+d/home/ap/.weechat
+	guile
+1
+d/home/ap
+	.mozilla
+9
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Documents/baze
+	01_BP_Osnovni_pojmovi.pdf
+1
+d/home/ap/Documents
+	notes
+8
+d/home/ap
+	.vscode-oss
+15
+d/home/ap/.vscode-oss
+	extensions
+1
+d/home/ap/.vscode-oss/extensions
+	dracula-theme.theme-dracula-2.21.0
+4
+d/home/ap/.vscode-oss
+	extensions
+1
+d/home/ap
+	.node-gyp
+9
 d
 
 # Right window history (oldest to newest):
@@ -786,7 +786,6 @@ pw
 pPrograms
 pmem
 pvim_copy
-pSAU
 pGRAFIKA
 p.mozilla
 p.thumbnails
@@ -798,12 +797,12 @@ pvim_indent
 pvim_newline
 pfile1
 pteorija.pdf
+pSAU
 
 # Local filter history (oldest to newest):
 |config/
 
 # Registers:
-""/home/ap/.local/share/vifm/Trash/000_st
 
 # Directory stack (oldest to newest):
 
