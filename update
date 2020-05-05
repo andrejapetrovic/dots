@@ -21,7 +21,7 @@ cp -r $HOME/Scripts $PWD/Scripts
 cp $HOME/Programs/dmenu/dmenu_history $PWD/dmenu
 cp $HOME/Programs/dmenu/config.h $PWD/dmenu
 cp $HOME/Programs/st/config.h $PWD/st
-cp $HOME/tmux.conf $PWD
+cp $HOME/.tmux.conf $PWD
 
 git add .
 git commit -m "$1"
