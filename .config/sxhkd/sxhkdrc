@@ -1,16 +1,11 @@
 #
 # wm independent hotkeys
 
-
-# terminal emulator
-super + {Return, ctrl + m}
-	$TERMINAL -e zsh
-
-super + shift + b
+super + Return
 	$TERMINAL -e tmux 
 
 super + b
-	tmux ls && $TERMINAL -e tmux a -t 0 || $TERMINAL -e tmux
+	tmux ls && $TERMINAL -e tmux a || $TERMINAL -e tmux
 
 super + n
 	bspc node -p south; \
@@ -54,8 +49,11 @@ super + shift + s
 super + Print
 	xdotool getactivewindow | xargs -r maim -i | xclip -selection clipboard -t image/png
 
-super + {backslash, semicolon, apostrophe}
+{XF86AudioPlay, XF86AudioPrev, XF86AudioNext}
 	playerctl --player=deezer {play-pause, previous, next}
+
+super + {backslash, semicolon, apostrophe, shift + backslash}
+	mpc {toggle, prev, next, stop}
 
 {_,shift + }XF86Audio{Raise,Lower}Volume
 	amixer set Master playback {1+,10+,1-,10-}
@@ -68,8 +66,11 @@ XF86MonBrightness{Down,Up}
 
 
 # quit/restart bspwm
-super + q; super + {q,e}
+super + q; super + {q,r}
 	bspc {quit,wm -r}
+
+super + q; super + s
+	slock
 
 super + {_,shift + }w
 	bspc node -{c,k}

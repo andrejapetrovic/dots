@@ -61,339 +61,318 @@
 # Bookmarks:
 
 # TUI:
-ar
+al
 q0
-v2
+v1
 oh
 m-1
 l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ap/Programs/st
-	.git
-1
-d/home/ap/Programs/st/.git
-	hooks
+d/home/ap/.config/coc/extensions
+	node_modules
 2
-d/home/ap/Programs/st/.git/hooks
-	pre-applypatch.sample
-5
-d/home/ap/Programs/st/.git
-	hooks
-2
-d/home/ap/Programs/st
-	config.def.h
-9
-d/home/ap/Programs
-	st
-8
-d/home/ap
-	Programs
-10
-d/home/ap/Documents
-	baze
-6
-d/home/ap/Documents/baze
-	07_OD_EkstMemFizickaOrganizacija.pdf
+d/home/ap/.config/coc
+	mru
 7
-d/home/ap/Documents
-	visp
-10
-d/home/ap/Documents/visp
-	02.09.2015.pdf
-3
-d/home/ap/Documents
-	keys
+d/home/ap/.config
+	coc
 7
-d/home/ap
-	Documents
-7
-d/home/ap/Documents
-	baze
-6
-d/home/ap/Documents/baze
-	05_BP_Relacioni_model_koncepcija.pdf
-5
-d/home/ap/Documents
-	baze
-6
-d/home/ap/Documents/baze
-	04_BP_ER_Model_Osnove.pdf
-4
-d/home/ap/Documents
-	SAU
-4
-d/home/ap/Documents/SAU
-	predavanja2019
-1
-d/home/ap/Documents/SAU/predavanja2019
-	09_10_Spektralna_analiza_signala_dodatni_materijal.pdf
+d/home/ap/.config/coc
+	ultisnips
 2
-d/home/ap/Documents/SAU
-	sau-testovi
-2
-d/home/ap/Documents
-	baze
-6
-d/home/ap/Documents/baze
-	09_OD_MetPristOrgDat.pdf
-9
-d/home/ap/Pictures
-	nologo.jpg
-6
-d/home/ap
-	Pictures
-9
-d/home/ap/Pictures
-	nature-1585132421660-7433.jpg
-5
-d/home/ap
-	Pictures
-9
-d/home/ap/Pictures
-	nologo.jpg
-6
-d/home/ap
-	Documents
-11
-d/home/ap/Documents
-	baze
-6
-d/home/ap/Documents/baze
-	01_BP_Osnovni_pojmovi.pdf
-1
-d/home/ap/Documents/visp/Vjerovatnoca - teorija
+d/home/ap/.config/coc/ultisnips
 	..
 0
-d/home/ap/Documents/visp
-	Vjerovatnoca - teorija
+d/home/ap/.config/coc
+	extensions
+1
+d/home/ap/.config/coc/extensions
+	coc-lua-data
+1
+d/home/ap/.config/coc/extensions/coc-lua-data
+	tools
+1
+d/home/ap/.config/coc/extensions/coc-lua-data/tools
+	bin
+1
+d/home/ap/.config/coc/extensions/coc-lua-data/tools/bin
+	..
+0
+d/home/ap/.config/coc/extensions/coc-lua-data/tools
+	bin
+1
+d/home/ap/.config/coc/extensions/coc-lua-data
+	tools
+1
+d/home/ap/.config/coc/extensions
+	node_modules
+1
+d/home/ap/.config/coc/extensions/node_modules
+	.cache
+1
+d/home/ap/.config/coc/extensions/node_modules/.cache
+	..
+0
+d/home/ap/.config/coc/extensions/node_modules
+	coc-marketplace
+6
+d/home/ap/.config/coc/extensions/node_modules/coc-marketplace
+	lib
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-marketplace/lib
+	index.js
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-marketplace
+	package.json
+5
+d/home/ap/.config/coc/extensions/node_modules
+	coc-tsserver
+8
+d/home/ap/.config/coc/extensions/node_modules/coc-tsserver
+	snippets
+4
+d/home/ap/.config/coc/extensions/node_modules/coc-tsserver/snippets
+	typescript.json
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-tsserver
+	Readme.md
+5
+d/home/ap/.config/coc/extensions/node_modules
+	coc-python
+7
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	schemas
+4
+d/home/ap/.config/coc/extensions/node_modules/coc-python/schemas
+	conda-environment.json
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	schemas
+4
+d/home/ap/.config/coc/extensions/node_modules
+	coc-python
+7
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	snippets
+5
+d/home/ap/.config/coc/extensions/node_modules/coc-python/snippets
+	python.json
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	pythonFiles
 2
-d/home/ap/Documents/visp/Vjerovatnoca - teorija
-	v01.jpg
+d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles
+	testing_tools
 2
-d/home/ap/Documents/visp
-	teorija.pdf
+d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles/testing_tools
+	adapter
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles/testing_tools/adapter
+	__init__.py
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles/testing_tools
+	adapter
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles
+	datascience
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles/datascience
+	dummyJupyter.py
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles
+	datascience
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	lib
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-python/lib
+	index.js
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	resources
+3
+d/home/ap/.config/coc/extensions/node_modules/coc-python/resources
+	ctagOptions
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	schemas
+4
+d/home/ap/.config/coc/extensions/node_modules/coc-python/schemas
+	conda-environment.json
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	snippets
+5
+d/home/ap/.config/coc/extensions/node_modules/coc-python/snippets
+	python.json
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	package.json
+7
+d/home/ap/.config/coc/extensions/node_modules
+	coc-python
+7
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	resources
+3
+d/home/ap/.config/coc/extensions/node_modules/coc-python/resources
+	ctagOptions
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	pythonFiles
+2
+d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles
+	printEnvVariables.py
+6
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	lib
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-python/lib
+	index.js
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	pythonFiles
+2
+d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles
+	printEnvVariables.py
+6
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	pythonFiles
+2
+d/home/ap/.config/coc/extensions/node_modules
+	coc-python
+7
+d/home/ap/.config/coc/extensions
+	coc-python-data
+1
+d/home/ap/.config/coc/extensions/coc-python-data
+	languageServer.0.5.45
+1
+d/home/ap/.config/coc/extensions/coc-python-data/languageServer.0.5.45
+	..
+0
+d/home/ap/.config/coc/extensions/coc-python-data
+	languageServer.0.5.45
+1
+d/home/ap/.config/coc/extensions
+	node_modules
+1
+d/home/ap/.config/coc/extensions/node_modules
+	coc-marketplace
+6
+d/home/ap/.config/coc/extensions
+	node_modules
+1
+d/home/ap/.config/coc
+	extensions
+1
+d/home/ap/.config
+	coc
+7
+d/home/ap/.config/coc
+	extensions
+1
+d/home/ap/.config/coc/extensions
+	node_modules
+1
+d/home/ap/.config/coc/extensions/node_modules
+	coc-python
+7
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	schemas
+4
+d/home/ap/.config/coc/extensions/node_modules/coc-python/schemas
+	conda-environment.json
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	snippets
+5
+d/home/ap/.config/coc/extensions/node_modules
+	coc-marketplace
+6
+d/home/ap/.config/coc/extensions
+	node_modules
+1
+d/home/ap/.config/coc
+	extensions
+1
+d/home/ap/.config/coc/extensions
+	node_modules
+1
+d/home/ap/.config/coc/extensions/node_modules
+	coc-python
+7
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	snippets
+5
+d/home/ap/.config/coc/extensions/node_modules
+	coc-tsserver
+8
+d/home/ap/.config/coc/extensions/node_modules/coc-tsserver
+	Readme.md
+5
+d/home/ap/.config/coc/extensions/node_modules
+	coc-python
+7
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	schemas
+4
+d/home/ap/.config/coc/extensions/node_modules/coc-python/schemas
+	conda-environment.json
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	resources
+3
+d/home/ap/.config/coc/extensions/node_modules/coc-python/resources
+	ctagOptions
+1
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	pythonFiles
+2
+d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles
+	printEnvVariables.py
+6
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	pythonFiles
+2
+d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles
+	sortImports.py
+9
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	pythonFiles
+2
+d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles
+	sortImports.py
+9
+d/home/ap/.config/coc/extensions/node_modules/coc-python
+	schemas
+4
+d/home/ap/.config/coc/extensions/node_modules
+	coc-python
+7
+d/home/ap/.config/coc/extensions
+	node_modules
+2
+d/home/ap/.config/coc
+	commands
+3
+d/home/ap/Music
+	Jimi Hendrix 'Voodoo Child' (Slight Return).opus
 17
-d/home/ap/Documents
-	visp
-10
-d/home/ap
-	Documents
-11
-d/home/ap/Documents
-	analiza2
-5
-d/home/ap/Documents/analiza2
-	rokovi.pdf
-6
-d/home/ap/Documents/visp/Vjerovatnoca - teorija
-	v01.jpg
+d/home/ap/Videos
+	Bohemian.Rhapsody.2018.DVDScr.Xvid.AC3.SHQ.Hive-CM8[oscars]
 1
-d/home/ap/Documents/visp
-	Vjerovatnoca
+d/home/ap/Videos/Bohemian.Rhapsody.2018.DVDScr.Xvid.AC3.SHQ.Hive-CM8[oscars]
+	Bohemian.Rhapsody.2018.DVDScr.Xvid.AC3.SHQ.Hive-CM8.avi
 1
-d/home/ap/Documents/visp/Vjerovatnoca
-	..
-0
-d/home/ap/Documents/visp
-	Vjerovatnoca - teorija
+d/home/ap/Videos
+	Mr.Robot.Season.1.720p
 2
-d/home/ap/Documents/visp/Vjerovatnoca - teorija
-	v02.jpg
-2
-d/home/ap/Documents/visp
-	Vjerovatnoca
-1
-d/home/ap/Documents/visp/Vjerovatnoca
-	vezbe.pdf
-33
-d/home/ap/Documents/visp
-	Vjerovatnoca - teorija
-2
-d/home/ap/Documents
-	pyscraper
-9
-d/home/ap
-	Desktop
-10
-d/home
-	ap
-1
-d/home/ap
-	Desktop
-10
-d/home/ap/Desktop
-	..
-0
-d/home/ap
-	Downloads
-12
-d/home/ap/Downloads
-	Win10_1909_English_x64.iso
-2
-d/home/ap
-	.pki
-5
-d/home
-	ap
-1
-d/
-	home
-4
-d/home
-	ap
-1
-d/home/ap
-	Documents
-11
-d/home/ap/Documents
-	keys
-7
-d/home/ap/Documents/keys
-	keys.png
-1
-d/home/ap/Documents
-	OET
-3
-d/home/ap/Documents/OET
-	Primer K1.pdf
-4
-d/home/ap/Documents
-	GRAFIKA
-2
-d/home/ap/Documents/GRAFIKA
-	2. Predavanje
-2
-d/home/ap/Documents/GRAFIKA/2. Predavanje
-	grafika2.1.m4a
-2
-d/home/ap/Documents/GRAFIKA
-	3. Predavanje
-3
-d/home/ap/Documents/GRAFIKA/3. Predavanje
-	grafika3.3gp
-1
-d/home/ap/Documents/GRAFIKA
-	3. Predavanje
-3
-d/home/ap/Documents
-	baze
-6
-d/home/ap/Documents/baze
-	12_OD_Indeks-sekvencijalna_staticka_datoteka.pdf
-12
-d/home/ap/Documents
-	notes
-8
-d/home/ap/Documents/notes
-	angular.txt
-1
-d/home/ap/Documents
-	analiza2
-5
-d/home/ap/Documents/analiza2
-	Rokovi - analiza
-4
-d/home/ap/Documents
-	baze
-6
-d/home/ap/Documents/baze
-	12_OD_Indeks-sekvencijalna_staticka_datoteka.pdf
-12
-d/home/ap/Documents
-	baze
-6
-d/home/ap/Pictures
-	edited.jpg
-3
-d/home/ap/Documents
-	baze
-6
-d/home/ap/Pictures
-	edited.jpg
-3
-d/home/ap/Documents
-	baze
-6
-d/home/ap/Pictures
-	Screenshots
-1
-d/home/ap/Pictures/Screenshots
-	netcat.png
-6
-d/home/ap/Pictures
-	60745_mountains_snow_milky_way_snowy_mountains_and_milky_way.jpg
-2
-d/home/ap
-	.weechat
-9
-d/home/ap/.weechat
-	guile
-1
-d/home/ap/.weechat/guile
-	autoload
-1
-d/home/ap/.weechat/guile/autoload
-	..
-0
-d/home/ap/.weechat/guile
-	autoload
-1
-d/home/ap/.weechat
-	guile
-1
-d/home/ap
-	.mozilla
-9
-d/home/ap/Documents
-	baze
-6
-d/home/ap/Documents/baze
-	01_BP_Osnovni_pojmovi.pdf
-1
-d/home/ap/Documents
-	notes
-8
-d/home/ap
-	.vscode-oss
-15
-d/home/ap/.vscode-oss
-	extensions
-1
-d/home/ap/.vscode-oss/extensions
-	dracula-theme.theme-dracula-2.21.0
-4
-d/home/ap/.vscode-oss
-	extensions
-1
-d/home/ap
-	.node-gyp
-9
 d
 
 # Right window history (oldest to newest):
-D/home/ap/.config/Code - OSS/blob_storage
-	48cd5ad4-845f-44ce-8210-b65dee5a0901
-1
-D/home/ap/.config/Code - OSS
-	GPUCache
-6
-D/home/ap/.config/Code - OSS/GPUCache
-	data_1
-2
-D/home/ap/.config/Code - OSS
-	CachedData
-3
-D/home/ap/.config/Code - OSS/CachedData
-	..
-0
-D/home/ap/.config/Code - OSS
-	CachedData
-3
-D/home/ap/.config
-	Dharkael
-2
 D/home/ap/.config/Dharkael
 	flameshot.ini
 1
@@ -671,8 +650,29 @@ D/home/ap/Documents/analiza2/Kolokvijum 2
 	01.02.2014.jpg
 1
 D/home/ap/Documents/analiza2
+	Kolokvijum 2
+3
+D/home/ap/Documents
+	analiza2
+5
+D/home/ap/Documents/analiza2
+	Kolokvijum 1
+2
+D/home/ap/Documents
+	OET
+3
+D/home/ap/Documents/OET
 	..
 0
+D/home/ap/Documents
+	SAU
+4
+D/home/ap
+	Videos
+21
+D/home/ap/Videos
+	Mr.Robot.Season.1.720p
+3
 D
 
 # Command line history (oldest to newest):
@@ -745,6 +745,12 @@ D
 :tabkill
 :tabclose
 :mkdir test
+:! ytd "https://www.youtube.com/watch?v=Wu8LHprA3es"
+:mkdir mejdeni
+:mkdir Buckethead
+:df -H Buckethead/
+:!ncmpc
+:mkdir Buckethead-albums
 :q
 
 # Search history (oldest to newest):
@@ -772,8 +778,18 @@ D
 /zsh
 /fzf
 /ket
+/polybar
 
 # Prompt history (oldest to newest):
+pBlack Sabbath - Children of the Grave.opus
+pMetallica Creeping Death
+pMetallica - Creeping Death
+pSlipknot - Wait and Bleed
+pMetallica - For Whom The Bell Tolls
+pIron Maiden - Hallowed Be Thy Name (2015 Remaster)
+pIron Maiden - Running Free
+pParkway Drive - Sleepwalker
+pBuckethead - Soothsayer.opus
 pv.txt
 pvi.txt
 ppodaci
@@ -798,11 +814,23 @@ pvim_newline
 pfile1
 pteorija.pdf
 pSAU
+pBuckethead - Soothsayer.mp3
+pSwamee Swan-skolnIClmPM.mp3
+pW
+pSwamee Swan
+pBuckethead - Swamee Swan.mp3
+pBlack Sabbath - Planet
+pBlack Sabbath - Planet Caravan
+pQueen – Bohemian Rhapsody (Official Video Remastered).m4a
+pJimi Hendrix 'Voodoo Child' (Slight Return)
 
 # Local filter history (oldest to newest):
 |config/
+|config.
+|.confi
 
 # Registers:
+""/home/ap/.local/share/vifm/Trash/000_Bohemian.Rhapsody.2018.DVDScr.Xvid.AC3.SHQ.Hive-CM8[oscars]
 
 # Directory stack (oldest to newest):
 
@@ -1091,6 +1119,24 @@ t/home/ap/.local/share/vifm/Trash/000_Matematicka analiza 2.pdf
 	/home/ap/Documents/analiza2/Kolokvijum 1/Matematicka analiza 2.pdf
 t/home/ap/.local/share/vifm/Trash/000_st
 	/home/ap/st
+t/home/ap/.local/share/vifm/Trash/000_Desktop
+	/home/ap/Desktop
+t/home/ap/.local/share/vifm/Trash/000_Slipknot - Psychosocial [OFFICIAL VIDEO]-5abamRO41fE.m4a.mp3
+	/home/ap/Music/Slipknot - Psychosocial [OFFICIAL VIDEO]-5abamRO41fE.m4a.mp3
+t/home/ap/.local/share/vifm/Trash/000_Music
+	/home/ap/Music
+t/home/ap/.local/share/vifm/Trash/000_Slipknot - Wait And Bleed [OFFICIAL VIDEO].m4a
+	/home/ap/Music/Slipknot - Wait And Bleed [OFFICIAL VIDEO].m4a
+t/home/ap/.local/share/vifm/Trash/000_mejdeni
+	/home/ap/.config/mpd/playlists/mejdeni
+t/home/ap/.local/share/vifm/Trash/000_kitty
+	/home/ap/.config/kitty
+t/home/ap/.local/share/vifm/Trash/000_coc-lua-data
+	/home/ap/.config/coc/extensions/coc-lua-data
+t/home/ap/.local/share/vifm/Trash/000_coc-python-data
+	/home/ap/.config/coc/extensions/coc-python-data
+t/home/ap/.local/share/vifm/Trash/000_Bohemian.Rhapsody.2018.DVDScr.Xvid.AC3.SHQ.Hive-CM8[oscars]
+	/home/ap/Videos/Bohemian.Rhapsody.2018.DVDScr.Xvid.AC3.SHQ.Hive-CM8[oscars]
 
 # State:
 f

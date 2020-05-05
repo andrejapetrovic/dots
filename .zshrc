@@ -3,6 +3,7 @@ PS1="%B%F{yellow}%3~%f%b $ "
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
+setopt HIST_IGNORE_DUPS
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
@@ -12,7 +13,13 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+local WORDCHARS='*?_[]~=&;!#$%^(){}<>'
+
 alias ls='ls --color=auto'
+alias ytd='youtube-dl -f bestaudio -x'
+
+bindkey '^p' up-line-or-search                                                
+bindkey '^n' down-line-or-search
 
 bindkey -s '\ec' 'fzfc\n'
 bindkey -s '\eo' 'fzfn\n'

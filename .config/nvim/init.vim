@@ -3,11 +3,15 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'junegunn/fzf.vim'
 	Plug 'tpope/vim-surround'
+	Plug 'tpope/vim-fugitive'
+	Plug 'tpope/vim-vinegar'
+	Plug 'jpalardy/vim-slime'
 call plug#end()
 
 set mouse=a
 set shell=/usr/bin/zsh
 set relativenumber number
+set updatetime=250
 
 colorscheme nord
 hi Error cterm=NONE ctermbg=160 ctermfg=white
@@ -53,7 +57,7 @@ nnoremap <leader>[ :bprevious<CR>
 
 " fzf (mostly)
 nnoremap <leader>p :Fzfp<CR>
-nnoremap <leader>g :GFiles<CR>
+nnoremap <leader>gs :GFiles<CR>
 nnoremap <leader>el :Lines 
 nnoremap <leader>eb :BLines 
 nnoremap <leader>o :Buffers<CR>
@@ -78,7 +82,9 @@ nnoremap <leader>k <c-w>k
 nnoremap <leader>l <c-w>l
 nnoremap <leader>q <c-w>q
 nnoremap <leader>w <c-w>w
-tnoremap <a-Space> <c-\><c-n>
+
+" terminal
+tnoremap <ESC> <c-\><c-n>
 
 inoremap <c-l> <c-n><c-g>u
 
@@ -89,7 +95,11 @@ inoremap <silent><expr> <c-space> coc#refresh()
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
 " position. Coc only does snippet and additional edit on confirm.
-inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+if exists('*complete_info')
+  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+else
+  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+endif
 
 " Use `[g` and `]g` to navigate diagnostics
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
@@ -110,13 +120,47 @@ function! s:show_documentation()
   endif
 endfunction
 
+" Formatting selected code.
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+
+augroup mygroup
+  autocmd!
+  " Setup formatexpr specified filetype(s).
+  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+  " Update signature help on jump placeholder.
+  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+augroup end
+
 " Remap keys for applying codeAction to the current line.
 nmap <leader>aa  <Plug>(coc-codeaction)
 " Apply AutoFix to problem on the current line.
 nmap <leader>af  <Plug>(coc-fix-current)
 
+" git
+nmap <leader>gp <Plug>(coc-git-prevchunk)
+nmap <leader>gn <Plug>(coc-git-nextchunk)
+" show chunk diff at current position
+nmap <leader>gi <Plug>(coc-git-chunkinfo)
+" show commit contains current position
+nmap <leader>gc <Plug>(coc-git-commit)
+" undo change
+nmap <leader>gu :CocCommand git.chunkUndo<CR>
+nmap <leader>gs :CocCommand git.chunkStage<CR>
+" create text object for git chunks
+" omap ig <Plug>(coc-git-chunk-inner)
+" xmap ig <Plug>(coc-git-chunk-inner)
+" omap ag <Plug>(coc-git-chunk-outer)
+" xmap ag <Plug>(coc-git-chunk-outer)
+
 " term buffer
 augroup custom_term
 	autocmd!
-	autocmd TermOpen * setlocal bufhidden=hide
+	autocmd TermOpen * setlocal bufhidden=hide 
 augroup END
+
+let g:slime_target = "neovim"
+let g:slime_no_mappings = 1
+xmap <c-a> <Plug>SlimeRegionSend
+nmap <c-a> <Plug>SlimeParagraphSend
+nmap <leader>rc   <Plug>SlimeConfig

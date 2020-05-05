@@ -3,8 +3,9 @@ options(){
 	case $1 in
 		"Shutdown") poweroff;;
 		"Restart") reboot;;
+		"Suspend") systemctl suspend;;
 		"*") exit;;
 	esac
 }
 
-echo "Shutdown\nRestart" | options $(dmenu -p "exit" -i)  
+echo "Shutdown\nRestart\nSuspend" | options $(dmenu -p "exit" -i)  

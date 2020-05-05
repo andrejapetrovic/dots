@@ -92,10 +92,11 @@ static const char magenta[8] = "#7878b0";
 static const char cyan[8] = "#88c0d0";
 static const char white[8] = "#e5e9f0";
 
-static const char bblack[8] = "#3b4252";
+static const char bblack[8] = "#555b68";
 
 static const char fgcolor[8] = "#dcdfe5";
-static const char bgcolor[8] = "#161925";
+//static const char bgcolor[8] = "#161925";
+static const char bgcolor[8] = "#1c1f27";
 static const char crscolor[8] = "#fece35";
 static const char icrscolor[8] = "#555555";
 
