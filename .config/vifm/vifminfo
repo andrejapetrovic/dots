@@ -64,147 +64,12 @@
 al
 q0
 v1
-oh
+ov
 m-1
 l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ap/.config/coc/extensions
-	node_modules
-2
-d/home/ap/.config/coc
-	mru
-7
-d/home/ap/.config
-	coc
-7
-d/home/ap/.config/coc
-	ultisnips
-2
-d/home/ap/.config/coc/ultisnips
-	..
-0
-d/home/ap/.config/coc
-	extensions
-1
-d/home/ap/.config/coc/extensions
-	coc-lua-data
-1
-d/home/ap/.config/coc/extensions/coc-lua-data
-	tools
-1
-d/home/ap/.config/coc/extensions/coc-lua-data/tools
-	bin
-1
-d/home/ap/.config/coc/extensions/coc-lua-data/tools/bin
-	..
-0
-d/home/ap/.config/coc/extensions/coc-lua-data/tools
-	bin
-1
-d/home/ap/.config/coc/extensions/coc-lua-data
-	tools
-1
-d/home/ap/.config/coc/extensions
-	node_modules
-1
-d/home/ap/.config/coc/extensions/node_modules
-	.cache
-1
-d/home/ap/.config/coc/extensions/node_modules/.cache
-	..
-0
-d/home/ap/.config/coc/extensions/node_modules
-	coc-marketplace
-6
-d/home/ap/.config/coc/extensions/node_modules/coc-marketplace
-	lib
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-marketplace/lib
-	index.js
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-marketplace
-	package.json
-5
-d/home/ap/.config/coc/extensions/node_modules
-	coc-tsserver
-8
-d/home/ap/.config/coc/extensions/node_modules/coc-tsserver
-	snippets
-4
-d/home/ap/.config/coc/extensions/node_modules/coc-tsserver/snippets
-	typescript.json
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-tsserver
-	Readme.md
-5
-d/home/ap/.config/coc/extensions/node_modules
-	coc-python
-7
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	schemas
-4
-d/home/ap/.config/coc/extensions/node_modules/coc-python/schemas
-	conda-environment.json
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	schemas
-4
-d/home/ap/.config/coc/extensions/node_modules
-	coc-python
-7
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	snippets
-5
-d/home/ap/.config/coc/extensions/node_modules/coc-python/snippets
-	python.json
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	pythonFiles
-2
-d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles
-	testing_tools
-2
-d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles/testing_tools
-	adapter
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles/testing_tools/adapter
-	__init__.py
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles/testing_tools
-	adapter
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles
-	datascience
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles/datascience
-	dummyJupyter.py
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles
-	datascience
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	lib
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-python/lib
-	index.js
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	resources
-3
-d/home/ap/.config/coc/extensions/node_modules/coc-python/resources
-	ctagOptions
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	schemas
-4
-d/home/ap/.config/coc/extensions/node_modules/coc-python/schemas
-	conda-environment.json
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	snippets
-5
 d/home/ap/.config/coc/extensions/node_modules/coc-python/snippets
 	python.json
 1
@@ -370,6 +235,141 @@ d/home/ap/Videos/Bohemian.Rhapsody.2018.DVDScr.Xvid.AC3.SHQ.Hive-CM8[oscars]
 d/home/ap/Videos
 	Mr.Robot.Season.1.720p
 2
+d/home/ap/Projects
+	..
+0
+d/home/ap
+	Projects
+29
+d/home/ap/Projects
+	tsc-node
+7
+d/home/ap
+	.config
+3
+d/home/ap/.config
+	deezer-desktop
+10
+d/home/ap
+	.cache
+2
+d/home/ap/.cache
+	..
+0
+d/home/ap
+	.local
+10
+d/home/ap/.local
+	share
+3
+d/home/ap/.local/share
+	nvim
+9
+d/home/ap/.local/share/nvim
+	swap
+2
+d/home/ap/.local/share
+	sess
+10
+d/home/ap/.local/share/sess
+	isa
+1
+d/home/ap/.local/share
+	sess
+10
+d/home/ap/.local
+	share
+3
+d/home/ap
+	.local
+10
+d/home
+	ap
+1
+d/
+	etc
+3
+d/etc
+	X11
+5
+d/etc/X11
+	xorg.conf.nvidia-xconfig-original
+3
+d/etc
+	X11
+5
+d/
+	home
+4
+d/home
+	ap
+1
+d/home/ap
+	.lyrics
+11
+d/home
+	ap
+1
+d/home/ap
+	Documents
+25
+d/home/ap/Documents
+	analiza2
+5
+d/home/ap/Documents/analiza2
+	Kolokvijum 1
+2
+d/home/ap/Documents/analiza2/Kolokvijum 1
+	Teorija
+1
+d/home/ap/Documents/analiza2/Kolokvijum 1/Teorija
+	12540533_10206502266333285_5444364796372281647_n.jpg
+1
+d/home/ap/Documents/analiza2/Kolokvijum 1
+	16.11.2014.pdf
+2
+d/home/ap/Documents/analiza2
+	Kolokvijum 2
+3
+d/home/ap/Documents/analiza2/Kolokvijum 2
+	..
+0
+d/home/ap/Documents/analiza2
+	Rokovi - analiza
+4
+d/home/ap/Documents/analiza2/Rokovi - analiza
+	..
+0
+d/home/ap/Documents/analiza2
+	Rokovi - analiza
+4
+d/home/ap/Documents
+	OET
+3
+d/home/ap/Documents/OET
+	Zadaci Estat.pdf
+5
+d/home/ap/Documents
+	SAU
+4
+d/home/ap/Documents/SAU
+	sau-testovi
+2
+d/home/ap/Documents/SAU/sau-testovi
+	Ispit_3_09_2014.pdf
+3
+d/home/ap/Documents/SAU
+	stari-materijali
+3
+d/home/ap/Documents/SAU/stari-materijali
+	predavanja2017
+2
+d/home/ap/Documents/SAU
+	sau-testovi
+2
+d/home/ap/Documents/SAU/sau-testovi
+	Ispit_06_07_2018.pdf
+1
 d
 
 # Right window history (oldest to newest):
@@ -671,7 +671,7 @@ D/home/ap
 	Videos
 21
 D/home/ap/Videos
-	Mr.Robot.Season.1.720p
+	Mr.Robot.Season.2.720p
 3
 D
 
@@ -741,9 +741,7 @@ D
 :sh
 :! convert \*.jpg
 :! convert 01.02.2014.jpg 01.02.2014.pdf
-:tabnew
 :tabkill
-:tabclose
 :mkdir test
 :! ytd "https://www.youtube.com/watch?v=Wu8LHprA3es"
 :mkdir mejdeni
@@ -751,6 +749,10 @@ D
 :df -H Buckethead/
 :!ncmpc
 :mkdir Buckethead-albums
+:df
+:!cut d '_' f 1
+:tabnew
+:tabclose
 :q
 
 # Search history (oldest to newest):
@@ -830,7 +832,7 @@ pJimi Hendrix 'Voodoo Child' (Slight Return)
 |.confi
 
 # Registers:
-""/home/ap/.local/share/vifm/Trash/000_Bohemian.Rhapsody.2018.DVDScr.Xvid.AC3.SHQ.Hive-CM8[oscars]
+""/home/ap/.local/share/vifm/Trash/001_--no-height
 
 # Directory stack (oldest to newest):
 
@@ -1137,6 +1139,10 @@ t/home/ap/.local/share/vifm/Trash/000_coc-python-data
 	/home/ap/.config/coc/extensions/coc-python-data
 t/home/ap/.local/share/vifm/Trash/000_Bohemian.Rhapsody.2018.DVDScr.Xvid.AC3.SHQ.Hive-CM8[oscars]
 	/home/ap/Videos/Bohemian.Rhapsody.2018.DVDScr.Xvid.AC3.SHQ.Hive-CM8[oscars]
+t/home/ap/.local/share/vifm/Trash/000_--no-height
+	/home/ap/Projects/--no-height
+t/home/ap/.local/share/vifm/Trash/001_--no-height
+	/home/ap/.local/share/sess/--no-height
 
 # State:
 f

@@ -1,0 +1,3 @@
+#!/bin/sh
+rg --ignore-file ~/.cfgignore --files ~/ | dmenu -p "config files" -l 15 | xargs -r st -e $EDITOR
+

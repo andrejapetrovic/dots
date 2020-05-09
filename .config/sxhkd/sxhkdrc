@@ -28,14 +28,11 @@ super + alt + p
 super + {shift + x, c, v, ctrl + q, x, z}
 	$HOME/Scripts/{docs,web-search,cfg,shutdown-dmenu,search-scr,save-scr}
 
-Menu
+super + shift + b
 	$HOME/Scripts/tmux-attach
 
 super + {a, shift + a, e, shift + e}
 	{firefox, chromium, vifmi, pcmanfm} 
-
-super + {ctrl,alt} s
-	sxiv -t {$HOME/Pictures,$HOME/Pictures/Screenshots}
 
 super + ctrl + c
 	nmtui-st

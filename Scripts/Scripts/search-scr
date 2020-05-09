@@ -1,0 +1,2 @@
+#!/bin/sh
+ls $HOME/Pictures/Screenshots/ | dmenu -l 15 -i -p "Screenshots" | xargs -r -I@ feh --start-at $HOME/Pictures/Screenshots/@

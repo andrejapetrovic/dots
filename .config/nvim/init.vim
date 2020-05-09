@@ -5,6 +5,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'tpope/vim-surround'
 	Plug 'tpope/vim-fugitive'
 	Plug 'tpope/vim-vinegar'
+	Plug 'tpope/vim-commentary'
 	Plug 'jpalardy/vim-slime'
 call plug#end()
 
@@ -17,6 +18,9 @@ colorscheme nord
 hi Error cterm=NONE ctermbg=160 ctermfg=white
 hi ErrorMsg cterm=NONE ctermbg=160 ctermfg=white
 hi VertSplit ctermbg=0
+hi CocGitRemovedSign ctermbg=NONE ctermfg=red
+hi CocGitAddedSign ctermbg=NONE ctermfg=green
+hi CocGitChangedSign ctermbg=NONE ctermfg=yellow
 
 set splitright
 set splitbelow
@@ -39,11 +43,11 @@ let g:fzf_action = {
       \ 'ctrl-t': 'tab split'
       \ }
 
-command Fzfp call fzf#run(fzf#wrap({'source': 'rg --files', 'options': '--multi'}))
-command Conf call fzf#run(fzf#wrap({'source': 'rg --ignore-file ~/.cfgignore --files ~/', 'options': '--multi'}))
-command OSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': 'source', 'down': '40%'})
-command OProj call fzf#run({'source': 'ls', 'dir': '~/Projects', 'sink': 'cd', 'down': '40%'})
-command RSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': '! rm', 'down': '40%', 'options': '--multi'})
+command Fzfp call fzf#run(fzf#wrap({'source': 'rg --files', 'options': ['--multi']}))
+command Conf call fzf#run(fzf#wrap({'source': 'rg --ignore-file ~/.cfgignore --files ~/', 'options': ['--multi', '--prompt=Conf>']}))
+command OSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': 'source', 'down': '40%', 'options': ['--prompt=OpenSession>']})
+command OProj call fzf#run({'source': 'ls', 'dir': '~/Projects', 'sink': 'cd', 'down': '40%', 'options': ['--prompt=OpenProj>']})
+command RSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': '! rm', 'down': '40%', 'options': ['--multi', '--prompt=RemoveSession>']})
 
 " hotkeys
 let mapleader = " "
@@ -163,4 +167,8 @@ let g:slime_target = "neovim"
 let g:slime_no_mappings = 1
 xmap <c-a> <Plug>SlimeRegionSend
 nmap <c-a> <Plug>SlimeParagraphSend
+nmap <c-c> :SlimeSend<CR>
 nmap <leader>rc   <Plug>SlimeConfig
+
+"comments
+autocmd FileType typescript,c setlocal commentstring=//\ %s

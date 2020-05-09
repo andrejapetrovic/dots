@@ -1,0 +1,2 @@
+#!/bin/sh
+rg --files ~/Documents -g '*.pdf' | cut -d '/' -f 5- | sort -g | dmenu -i -p "pdf documents" -l 20 | xargs -r -I@ zathura $HOME/Documents/@
