@@ -1,5 +1,0 @@
-#!/bin/sh
-cache_path="/home/ap/.cache/drun_cache"
-g=$(grep -xF "$(dmenu_path)" "$cache_path")
-echo "$g" > "$cache_path"
-

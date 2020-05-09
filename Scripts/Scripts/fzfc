@@ -1,2 +1,0 @@
-#!/bin/sh
-rg --ignore-file ~/.cfgignore --files ~/ | fzf | xargs -ro $EDITOR

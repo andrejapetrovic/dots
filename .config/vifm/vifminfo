@@ -70,15 +70,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ap/.config/coc/extensions/node_modules/coc-python/snippets
-	python.json
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	package.json
-7
-d/home/ap/.config/coc/extensions/node_modules
-	coc-python
-7
 d/home/ap/.config/coc/extensions/node_modules/coc-python
 	resources
 3
@@ -370,6 +361,15 @@ d/home/ap/Documents/SAU
 d/home/ap/Documents/SAU/sau-testovi
 	Ispit_06_07_2018.pdf
 1
+d/home/ap/Programs/dots
+	.config
+1
+d/home/ap/Programs/dots/.config
+	vifm
+8
+d/home/ap/Programs/dots/.config/vifm
+	vifm-help.txt
+3
 d
 
 # Right window history (oldest to newest):
