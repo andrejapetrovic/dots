@@ -18,6 +18,7 @@ colorscheme nord
 hi Error cterm=NONE ctermbg=160 ctermfg=white
 hi ErrorMsg cterm=NONE ctermbg=160 ctermfg=white
 hi VertSplit ctermbg=0
+hi Visual ctermbg=237
 hi CocGitRemovedSign ctermbg=NONE ctermfg=red
 hi CocGitAddedSign ctermbg=NONE ctermfg=green
 hi CocGitChangedSign ctermbg=NONE ctermfg=yellow

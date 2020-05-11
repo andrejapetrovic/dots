@@ -70,168 +70,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	resources
-3
-d/home/ap/.config/coc/extensions/node_modules/coc-python/resources
-	ctagOptions
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	pythonFiles
-2
-d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles
-	printEnvVariables.py
-6
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	lib
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-python/lib
-	index.js
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	pythonFiles
-2
-d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles
-	printEnvVariables.py
-6
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	pythonFiles
-2
-d/home/ap/.config/coc/extensions/node_modules
-	coc-python
-7
-d/home/ap/.config/coc/extensions
-	coc-python-data
-1
-d/home/ap/.config/coc/extensions/coc-python-data
-	languageServer.0.5.45
-1
-d/home/ap/.config/coc/extensions/coc-python-data/languageServer.0.5.45
-	..
-0
-d/home/ap/.config/coc/extensions/coc-python-data
-	languageServer.0.5.45
-1
-d/home/ap/.config/coc/extensions
-	node_modules
-1
-d/home/ap/.config/coc/extensions/node_modules
-	coc-marketplace
-6
-d/home/ap/.config/coc/extensions
-	node_modules
-1
-d/home/ap/.config/coc
-	extensions
-1
-d/home/ap/.config
-	coc
-7
-d/home/ap/.config/coc
-	extensions
-1
-d/home/ap/.config/coc/extensions
-	node_modules
-1
-d/home/ap/.config/coc/extensions/node_modules
-	coc-python
-7
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	schemas
-4
-d/home/ap/.config/coc/extensions/node_modules/coc-python/schemas
-	conda-environment.json
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	snippets
-5
-d/home/ap/.config/coc/extensions/node_modules
-	coc-marketplace
-6
-d/home/ap/.config/coc/extensions
-	node_modules
-1
-d/home/ap/.config/coc
-	extensions
-1
-d/home/ap/.config/coc/extensions
-	node_modules
-1
-d/home/ap/.config/coc/extensions/node_modules
-	coc-python
-7
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	snippets
-5
-d/home/ap/.config/coc/extensions/node_modules
-	coc-tsserver
-8
-d/home/ap/.config/coc/extensions/node_modules/coc-tsserver
-	Readme.md
-5
-d/home/ap/.config/coc/extensions/node_modules
-	coc-python
-7
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	schemas
-4
-d/home/ap/.config/coc/extensions/node_modules/coc-python/schemas
-	conda-environment.json
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	resources
-3
-d/home/ap/.config/coc/extensions/node_modules/coc-python/resources
-	ctagOptions
-1
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	pythonFiles
-2
-d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles
-	printEnvVariables.py
-6
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	pythonFiles
-2
-d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles
-	sortImports.py
-9
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	pythonFiles
-2
-d/home/ap/.config/coc/extensions/node_modules/coc-python/pythonFiles
-	sortImports.py
-9
-d/home/ap/.config/coc/extensions/node_modules/coc-python
-	schemas
-4
-d/home/ap/.config/coc/extensions/node_modules
-	coc-python
-7
-d/home/ap/.config/coc/extensions
-	node_modules
-2
-d/home/ap/.config/coc
-	commands
-3
-d/home/ap/Music
-	Jimi Hendrix 'Voodoo Child' (Slight Return).opus
-17
-d/home/ap/Videos
-	Bohemian.Rhapsody.2018.DVDScr.Xvid.AC3.SHQ.Hive-CM8[oscars]
-1
-d/home/ap/Videos/Bohemian.Rhapsody.2018.DVDScr.Xvid.AC3.SHQ.Hive-CM8[oscars]
-	Bohemian.Rhapsody.2018.DVDScr.Xvid.AC3.SHQ.Hive-CM8.avi
-1
-d/home/ap/Videos
-	Mr.Robot.Season.1.720p
-2
-d/home/ap/Projects
-	..
-0
-d/home/ap
-	Projects
-29
 d/home/ap/Projects
 	tsc-node
 7
@@ -370,6 +208,168 @@ d/home/ap/Programs/dots/.config
 d/home/ap/Programs/dots/.config/vifm
 	vifm-help.txt
 3
+d/home/ap/Programs/dots/.config
+	vifm
+8
+d/home/ap/Programs/dots
+	.config
+1
+d/home/ap/Programs
+	dots
+4
+d/home/ap
+	Programs
+29
+d/home
+	ap
+1
+d/
+	usr
+17
+d/usr
+	include
+2
+d/usr/include
+	..
+0
+d/usr
+	include
+2
+d/
+	usr
+17
+d/usr
+	local
+6
+d/usr/local
+	games
+3
+d/usr
+	local
+6
+d/
+	etc
+3
+d/etc
+	audisp
+6
+d/
+	usr
+17
+d/usr
+	share
+8
+d/usr/share
+	..
+0
+d/usr
+	local
+6
+d/usr/local
+	share
+8
+d/usr/local/share
+	bash-completion
+1
+d/usr/local/share/bash-completion
+	..
+0
+d/usr/local/share
+	bash-completion
+1
+d/usr/local/share/bash-completion
+	completions
+1
+d/usr/local/share/bash-completion/completions
+	polybar
+1
+d/usr/local/share/bash-completion
+	completions
+1
+d/usr/local/share
+	bash-completion
+1
+d/usr/local
+	share
+8
+d/usr
+	share
+8
+d/usr/share
+	applications
+9
+d/usr/share/applications
+	discord.desktop
+7
+d/usr/share
+	applications
+9
+d/usr/share/applications
+	electron6.desktop
+8
+d/home/ap
+	Programs
+29
+d/home
+	ap
+1
+d/home/ap
+	.emacs.d
+4
+d/home/ap/.emacs.d
+	auto-save-list
+1
+d/home/ap
+	Projects
+11
+d/home/ap/Projects
+	electron-inf-system
+3
+d/home/ap/Projects/electron-inf-system
+	electron
+4
+d/home/ap/Projects/electron-inf-system/electron
+	dist
+1
+d/home/ap/Projects/electron-inf-system
+	electron
+4
+d/home/ap/Projects
+	scripts
+5
+d/home/ap/Projects/scripts
+	ngrun
+2
+d/home/ap/Projects
+	scripts
+5
+d/home/ap
+	Pictures
+9
+d/home/ap/Pictures
+	edited.jpg
+3
+d/home/ap
+	Scripts
+12
+d/home/ap/Scripts
+	cfg
+2
+d/home/ap
+	.bash_history
+33
+d/home
+	ap
+1
+d/home/ap
+	Documents
+24
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Documents/baze
+	06_BP_Relacioni_model_osnove.pdf
+6
 d
 
 # Right window history (oldest to newest):
@@ -781,6 +781,7 @@ D
 /fzf
 /ket
 /polybar
+/appl
 
 # Prompt history (oldest to newest):
 pBlack Sabbath - Children of the Grave.opus
@@ -830,9 +831,10 @@ pJimi Hendrix 'Voodoo Child' (Slight Return)
 |config/
 |config.
 |.confi
+|nvim
 
 # Registers:
-""/home/ap/.local/share/vifm/Trash/001_--no-height
+""/home/ap/.local/share/vifm/Trash/000_.emacs.d
 
 # Directory stack (oldest to newest):
 
@@ -1143,6 +1145,8 @@ t/home/ap/.local/share/vifm/Trash/000_--no-height
 	/home/ap/Projects/--no-height
 t/home/ap/.local/share/vifm/Trash/001_--no-height
 	/home/ap/.local/share/sess/--no-height
+t/home/ap/.local/share/vifm/Trash/000_.emacs.d
+	/home/ap/.emacs.d
 
 # State:
 f
