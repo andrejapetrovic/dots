@@ -1,8 +1,8 @@
 PS1="%B%F{yellow}%3~%f%b $ "
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 setopt HIST_IGNORE_DUPS
 bindkey -e
 # End of lines configured by zsh-newuser-install

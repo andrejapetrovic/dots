@@ -17,6 +17,8 @@ cp -r $HOME/.config/vifm $PWD/.config/
 cp -r $HOME/.config/gtk-3.0 $PWD/.config/
 cp -r $HOME/.config/fontconfig $PWD/.config/
 cp -r $HOME/.config/nvim/init.vim $PWD/.config/nvim/
+cp -r $HOME/.config/alacritty/alacritty.yml $PWD/.config/alacritty/
+cp -r $HOME/.config/sway/config $PWD/.config/sway/
 cp -r $HOME/Scripts $PWD
 cp $HOME/Programs/dmenu/dmenu_history $PWD/dmenu
 cp $HOME/Programs/dmenu/config.h $PWD/dmenu

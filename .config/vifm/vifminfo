@@ -70,18 +70,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ap/Projects
-	tsc-node
-7
-d/home/ap
-	.config
-3
-d/home/ap/.config
-	deezer-desktop
-10
-d/home/ap
-	.cache
-2
 d/home/ap/.cache
 	..
 0
@@ -368,20 +356,23 @@ d/home/ap/Documents
 	baze
 6
 d/home/ap/Documents/baze
-	06_BP_Relacioni_model_osnove.pdf
+	58720259
+1
+d/home/ap/Documents/baze/58720259
+	..
+0
+d/home/ap/Documents/baze
+	01_BP_Osnovni_pojmovi.pdf
+1
+d/home/ap/Documents
+	baze
 6
+d/home/ap/Documents/baze
+	07_OD_EkstMemFizickaOrganizacija.pdf
+7
 d
 
 # Right window history (oldest to newest):
-D/home/ap/.config/Dharkael
-	flameshot.ini
-1
-D/home/ap/.config
-	polybar
-17
-D/home/ap
-	Documents
-15
 D/home
 	ap
 1
@@ -671,8 +662,17 @@ D/home/ap
 	Videos
 21
 D/home/ap/Videos
-	Mr.Robot.Season.2.720p
-3
+	..
+0
+D/home/ap
+	Documents
+14
+D/home/ap/Documents
+	baze
+6
+D/home/ap/Documents/baze
+	01_BP_Osnovni_pojmovi.pdf
+8
 D
 
 # Command line history (oldest to newest):
@@ -834,7 +834,13 @@ pJimi Hendrix 'Voodoo Child' (Slight Return)
 |nvim
 
 # Registers:
-""/home/ap/.local/share/vifm/Trash/000_.emacs.d
+""/home/ap/.local/share/vifm/Trash/000_58720259
+""/home/ap/.local/share/vifm/Trash/000_60817411
+""/home/ap/.local/share/vifm/Trash/000_62914563
+""/home/ap/.local/share/vifm/Trash/000_65011715
+""/home/ap/.local/share/vifm/Trash/000_67108867
+""/home/ap/.local/share/vifm/Trash/000_69206019
+""/home/ap/.local/share/vifm/Trash/000_71303171
 
 # Directory stack (oldest to newest):
 
@@ -1147,6 +1153,20 @@ t/home/ap/.local/share/vifm/Trash/001_--no-height
 	/home/ap/.local/share/sess/--no-height
 t/home/ap/.local/share/vifm/Trash/000_.emacs.d
 	/home/ap/.emacs.d
+t/home/ap/.local/share/vifm/Trash/000_58720259
+	/home/ap/Documents/baze/58720259
+t/home/ap/.local/share/vifm/Trash/000_60817411
+	/home/ap/Documents/baze/60817411
+t/home/ap/.local/share/vifm/Trash/000_62914563
+	/home/ap/Documents/baze/62914563
+t/home/ap/.local/share/vifm/Trash/000_65011715
+	/home/ap/Documents/baze/65011715
+t/home/ap/.local/share/vifm/Trash/000_67108867
+	/home/ap/Documents/baze/67108867
+t/home/ap/.local/share/vifm/Trash/000_69206019
+	/home/ap/Documents/baze/69206019
+t/home/ap/.local/share/vifm/Trash/000_71303171
+	/home/ap/Documents/baze/71303171
 
 # State:
 f
