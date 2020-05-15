@@ -34,9 +34,9 @@
 	zacloud
 1584401011
 'm
-	/home/ap/.config
-	libfm
-1585937604
+	/home/ap/Music
+	Desiigner - Overseas (Audio) ft. Lil Pump-tzRbZ-NBWeQ.opus
+1589555501
 'n
 	/home/ap/Documents/beleske
 	angular.txt
@@ -62,302 +62,14 @@
 
 # TUI:
 al
-q0
-v1
+q1
+v2
 ov
 m-1
 l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ap/.cache
-	..
-0
-d/home/ap
-	.local
-10
-d/home/ap/.local
-	share
-3
-d/home/ap/.local/share
-	nvim
-9
-d/home/ap/.local/share/nvim
-	swap
-2
-d/home/ap/.local/share
-	sess
-10
-d/home/ap/.local/share/sess
-	isa
-1
-d/home/ap/.local/share
-	sess
-10
-d/home/ap/.local
-	share
-3
-d/home/ap
-	.local
-10
-d/home
-	ap
-1
-d/
-	etc
-3
-d/etc
-	X11
-5
-d/etc/X11
-	xorg.conf.nvidia-xconfig-original
-3
-d/etc
-	X11
-5
-d/
-	home
-4
-d/home
-	ap
-1
-d/home/ap
-	.lyrics
-11
-d/home
-	ap
-1
-d/home/ap
-	Documents
-25
-d/home/ap/Documents
-	analiza2
-5
-d/home/ap/Documents/analiza2
-	Kolokvijum 1
-2
-d/home/ap/Documents/analiza2/Kolokvijum 1
-	Teorija
-1
-d/home/ap/Documents/analiza2/Kolokvijum 1/Teorija
-	12540533_10206502266333285_5444364796372281647_n.jpg
-1
-d/home/ap/Documents/analiza2/Kolokvijum 1
-	16.11.2014.pdf
-2
-d/home/ap/Documents/analiza2
-	Kolokvijum 2
-3
-d/home/ap/Documents/analiza2/Kolokvijum 2
-	..
-0
-d/home/ap/Documents/analiza2
-	Rokovi - analiza
-4
-d/home/ap/Documents/analiza2/Rokovi - analiza
-	..
-0
-d/home/ap/Documents/analiza2
-	Rokovi - analiza
-4
-d/home/ap/Documents
-	OET
-3
-d/home/ap/Documents/OET
-	Zadaci Estat.pdf
-5
-d/home/ap/Documents
-	SAU
-4
-d/home/ap/Documents/SAU
-	sau-testovi
-2
-d/home/ap/Documents/SAU/sau-testovi
-	Ispit_3_09_2014.pdf
-3
-d/home/ap/Documents/SAU
-	stari-materijali
-3
-d/home/ap/Documents/SAU/stari-materijali
-	predavanja2017
-2
-d/home/ap/Documents/SAU
-	sau-testovi
-2
-d/home/ap/Documents/SAU/sau-testovi
-	Ispit_06_07_2018.pdf
-1
-d/home/ap/Programs/dots
-	.config
-1
-d/home/ap/Programs/dots/.config
-	vifm
-8
-d/home/ap/Programs/dots/.config/vifm
-	vifm-help.txt
-3
-d/home/ap/Programs/dots/.config
-	vifm
-8
-d/home/ap/Programs/dots
-	.config
-1
-d/home/ap/Programs
-	dots
-4
-d/home/ap
-	Programs
-29
-d/home
-	ap
-1
-d/
-	usr
-17
-d/usr
-	include
-2
-d/usr/include
-	..
-0
-d/usr
-	include
-2
-d/
-	usr
-17
-d/usr
-	local
-6
-d/usr/local
-	games
-3
-d/usr
-	local
-6
-d/
-	etc
-3
-d/etc
-	audisp
-6
-d/
-	usr
-17
-d/usr
-	share
-8
-d/usr/share
-	..
-0
-d/usr
-	local
-6
-d/usr/local
-	share
-8
-d/usr/local/share
-	bash-completion
-1
-d/usr/local/share/bash-completion
-	..
-0
-d/usr/local/share
-	bash-completion
-1
-d/usr/local/share/bash-completion
-	completions
-1
-d/usr/local/share/bash-completion/completions
-	polybar
-1
-d/usr/local/share/bash-completion
-	completions
-1
-d/usr/local/share
-	bash-completion
-1
-d/usr/local
-	share
-8
-d/usr
-	share
-8
-d/usr/share
-	applications
-9
-d/usr/share/applications
-	discord.desktop
-7
-d/usr/share
-	applications
-9
-d/usr/share/applications
-	electron6.desktop
-8
-d/home/ap
-	Programs
-29
-d/home
-	ap
-1
-d/home/ap
-	.emacs.d
-4
-d/home/ap/.emacs.d
-	auto-save-list
-1
-d/home/ap
-	Projects
-11
-d/home/ap/Projects
-	electron-inf-system
-3
-d/home/ap/Projects/electron-inf-system
-	electron
-4
-d/home/ap/Projects/electron-inf-system/electron
-	dist
-1
-d/home/ap/Projects/electron-inf-system
-	electron
-4
-d/home/ap/Projects
-	scripts
-5
-d/home/ap/Projects/scripts
-	ngrun
-2
-d/home/ap/Projects
-	scripts
-5
-d/home/ap
-	Pictures
-9
-d/home/ap/Pictures
-	edited.jpg
-3
-d/home/ap
-	Scripts
-12
-d/home/ap/Scripts
-	cfg
-2
-d/home/ap
-	.bash_history
-33
-d/home
-	ap
-1
-d/home/ap
-	Documents
-24
-d/home/ap/Documents
-	baze
-6
-d/home/ap/Documents/baze
-	58720259
-1
 d/home/ap/Documents/baze/58720259
 	..
 0
@@ -370,6 +82,294 @@ d/home/ap/Documents
 d/home/ap/Documents/baze
 	07_OD_EkstMemFizickaOrganizacija.pdf
 7
+d/home/ap/Scripts
+	web-search
+17
+d/home/ap/Music
+	Black Sabbath - Children of the Grave.opus
+3
+d/home/ap
+	Pictures
+27
+d/home/ap/Pictures
+	60745_mountains_snow_milky_way_snowy_mountains_and_milky_way.jpg
+2
+d/home/ap
+	Documents
+24
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Documents/baze
+	05_BP_Relacioni_model_koncepcija.pdf
+5
+d/home/ap/Documents
+	OET
+3
+d/home/ap
+	Documents
+24
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Documents/baze
+	05_BP_Relacioni_model_koncepcija.pdf
+5
+d/home/ap/Documents
+	keys
+7
+d/home/ap/Documents/keys
+	..
+0
+d/home/ap/Documents
+	notes
+8
+d/home/ap/Documents/notes
+	react.txt
+19
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Documents/baze
+	01_BP_Osnovni_pojmovi.pdf
+1
+d/home/ap/Documents
+	analiza2
+5
+d/home/ap
+	.irssi
+7
+d/home/ap/.irssi
+	config
+1
+d/home/ap
+	Documents
+24
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Documents/baze
+	03_BP_Modeli_podataka.pdf
+3
+d/home/ap/Documents
+	keys
+7
+d/home/ap/Documents/keys
+	keys.png
+1
+d/home/ap/Documents
+	notes
+8
+d/home/ap/Documents/notes
+	java-maven.txt
+7
+d/home/ap/Documents
+	visp
+10
+d/home/ap/Documents/visp
+	..
+0
+d/home/ap/Documents
+	GRAFIKA
+2
+d/home/ap
+	.node-gyp
+15
+d/home
+	ap
+1
+d/home/ap
+	Music
+26
+d/home/ap/Music
+	Planet Caravan (2014 Remaster).opus
+20
+d/home/ap
+	Pictures
+27
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap/Pictures/Screenshots
+	vim_surround_visual.png
+29
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap
+	Pictures
+27
+d/home
+	ap
+1
+d/
+	bin
+0
+d/bin
+	arbfslight
+36
+d/usr/local
+	share
+8
+d/usr/local/share
+	doc
+2
+d/usr/local/share/doc
+	polybar
+1
+d/usr/local/share/doc/polybar
+	_sources
+1
+d/usr/local/share/doc
+	polybar
+1
+d/usr/local/share
+	doc
+2
+d/home/ap/Music
+	Buckethead
+1
+d/home/ap/Music/Buckethead
+	..
+0
+d/home/ap/Music
+	Desiigner - Overseas (Audio) ft. Lil Pump-tzRbZ-NBWeQ.opus
+13
+d/home/ap/Documents/baze
+	03_BP_Modeli_podataka.pdf
+3
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Documents/baze
+	01_BP_Osnovni_pojmovi.pdf
+1
+d/home/ap/Videos
+	..
+0
+d/home/ap
+	Videos
+31
+d/home/ap/Videos
+	Fight Club (1999) [1080p]
+1
+d/home/ap/Videos/Fight Club (1999) [1080p]
+	..
+0
+d/home/ap/Videos
+	vv
+6
+d/home/ap/Videos/vv
+	..
+0
+d/home/ap/Videos
+	vv
+6
+d/home/ap/Videos/vv
+	WHY DID 'SERBIA 1999' HAPPEN by ThuleanPerspective-obH3pOae-E4.mkv
+1
+d/home/ap/Videos
+	Mr.Robot.Season.1.720p
+2
+d/home/ap/Videos/Mr.Robot.Season.1.720p
+	Mr.Robot.S01E02.mkv
+2
+d/home/ap/Videos
+	Mr.Robot.Season.1.720p
+2
+d/home/ap/Videos/Mr.Robot.Season.1.720p
+	Mr.Robot.S01E01.mkv
+1
+d/home/ap/Videos
+	Fight Club (1999) [1080p]
+1
+d/home/ap
+	Documents
+24
+d/home/ap/Documents
+	pyscraper
+9
+d/home/ap/Documents/pyscraper
+	..
+0
+d/home/ap/Documents
+	baze
+6
+d/home/ap/Documents/baze
+	04_BP_ER_Model_Osnove.pdf
+4
+d/home/ap/Pictures
+	Screenshots
+1
+d/home/ap/Pictures/Screenshots
+	vim_execute_macro.png
+17
+d/home/ap/Pictures
+	60745_mountains_snow_milky_way_snowy_mountains_and_milky_way.jpg
+2
+d/home/ap
+	Pictures
+27
+d/home/ap/Pictures
+	sky-690293_1920.jpg
+9
+d/home/ap/.config
+	leafpad
+21
+d/home/ap/.config/leafpad
+	..
+0
+d/home/ap/.config
+	leafpad
+21
+d/home/ap
+	.config
+3
+d/home/ap/.config
+	libfm
+22
+d/home/ap
+	.gnupg
+4
+d/home
+	ap
+1
+d/home/ap
+	Music
+24
+d/home/ap/Music
+	Child in Time.opus
+12
+d/home/ap/Pictures
+	edited.jpg
+3
+d/home/ap/Music
+	Buckethead
+1
+d/home/ap/Music/Buckethead
+	..
+0
+d/home/ap/Music
+	Black Sabbath - Planet Caravan.opus
+3
+d/home/ap
+	Music
+24
+d/home/ap/Music
+	Black Sabbath - Planet Caravan.opus
+3
+d/home/ap
+	Projects
+26
+d/home/ap/Projects
+	tsc-node
+7
+d/home/ap
+	.gitconfig
+36
+d/home/ap/Music
+	Romance Is Dead - Parkway Drive.opus
+27
 d
 
 # Right window history (oldest to newest):
@@ -671,8 +671,8 @@ D/home/ap/Documents
 	baze
 6
 D/home/ap/Documents/baze
-	01_BP_Osnovni_pojmovi.pdf
-8
+	..
+0
 D
 
 # Command line history (oldest to newest):
@@ -751,8 +751,10 @@ D
 :mkdir Buckethead-albums
 :df
 :!cut d '_' f 1
+:Q
 :tabnew
 :tabclose
+:kLq
 :q
 
 # Search history (oldest to newest):
@@ -826,21 +828,22 @@ pBlack Sabbath - Planet
 pBlack Sabbath - Planet Caravan
 pQueen – Bohemian Rhapsody (Official Video Remastered).m4a
 pJimi Hendrix 'Voodoo Child' (Slight Return)
+pParkway Drive - The Weapon They Fear (Heaven Shall Burn Cover).opus
+pRomance Is Dead - Parkway Drive1.opus
+pRomance Is Dead - Parkway Drive
 
 # Local filter history (oldest to newest):
+|w3
 |config/
 |config.
 |.confi
 |nvim
+|Trav
+|Micha
+|rever
 
 # Registers:
-""/home/ap/.local/share/vifm/Trash/000_58720259
-""/home/ap/.local/share/vifm/Trash/000_60817411
-""/home/ap/.local/share/vifm/Trash/000_62914563
-""/home/ap/.local/share/vifm/Trash/000_65011715
-""/home/ap/.local/share/vifm/Trash/000_67108867
-""/home/ap/.local/share/vifm/Trash/000_69206019
-""/home/ap/.local/share/vifm/Trash/000_71303171
+""/home/ap/.local/share/vifm/Trash/000_Romance Is Dead - Parkway Drive.opus
 
 # Directory stack (oldest to newest):
 
@@ -1167,6 +1170,20 @@ t/home/ap/.local/share/vifm/Trash/000_69206019
 	/home/ap/Documents/baze/69206019
 t/home/ap/.local/share/vifm/Trash/000_71303171
 	/home/ap/Documents/baze/71303171
+t/home/ap/.local/share/vifm/Trash/000_Anthrax - Madhouse (Official Video).opus
+	/home/ap/Music/Anthrax - Madhouse (Official Video).opus
+t/home/ap/.local/share/vifm/Trash/000_way.png
+	/home/ap/Pictures/Screenshots/way.png
+t/home/ap/.local/share/vifm/Trash/000_Travis Dickerson - Iconography - Hue and Cry.opus
+	/home/ap/Music/Buckethead/Travis Dickerson - Iconography - Hue and Cry.opus
+t/home/ap/.local/share/vifm/Trash/000_Michael Shulman - Soothsayer 2012.opus
+	/home/ap/Music/Buckethead/Michael Shulman - Soothsayer 2012.opus
+t/home/ap/.local/share/vifm/Trash/000_Soothsayer (reverse remix).opus
+	/home/ap/Music/Buckethead/Soothsayer (reverse remix).opus
+t/home/ap/.local/share/vifm/Trash/000_Buckethead - Siege Engine - Clockunwise Version.opus
+	/home/ap/Music/Buckethead - Siege Engine - Clockunwise Version.opus
+t/home/ap/.local/share/vifm/Trash/000_Romance Is Dead - Parkway Drive.opus
+	/home/ap/Music/Romance Is Dead - Parkway Drive.opus
 
 # State:
 f

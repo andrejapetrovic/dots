@@ -1,0 +1,112 @@
+#!/usr/bin/python
+from sys import argv
+from pathlib import PosixPath
+from yaml import load, dump, FullLoader
+
+cfgpath = str(PosixPath('~/.config/alacritty/alacritty.yml').expanduser())
+
+def light(doc):
+    doc['colors']['primary']['background'] = '0xc9cab6'
+    doc['colors']['primary']['foreground'] = '0x111215'
+
+    doc['colors']['normal']['black'] = '0xb9b4a2'
+    doc['colors']['normal']['red'] = '0xc02419'
+    doc['colors']['normal']['green'] = '0x3b6739'
+    doc['colors']['normal']['yellow'] = '0x9c6326'
+    doc['colors']['normal']['blue'] = '0x1d5396'
+    doc['colors']['normal']['magenta'] = '0x7d3a9c'
+    doc['colors']['normal']['cyan'] = '0x003949'
+    doc['colors']['normal']['white'] = '0x29281f'
+
+    doc['colors']['bright']['black'] = '0x878470'
+    doc['colors']['bright']['red'] = doc['colors']['normal']['red']
+    doc['colors']['bright']['green'] = doc['colors']['normal']['green']
+    doc['colors']['bright']['yellow'] = doc['colors']['normal']['yellow']
+    doc['colors']['bright']['blue'] = doc['colors']['normal']['blue']
+    doc['colors']['bright']['magenta'] = doc['colors']['normal']['magenta']
+    doc['colors']['bright']['cyan'] = doc['colors']['normal']['cyan']
+    doc['colors']['bright']['white'] = doc['colors']['normal']['white']
+
+    doc['colors']['cursor']['cursor'] = '0x0059ff'
+    doc['colors']['cursor']['text'] = '0xeeeeee'
+
+    return doc
+
+def nord(doc):
+    doc['colors']['primary']['background'] = '0x1c1f27'
+    doc['colors']['primary']['foreground'] = '0xfdfdfd'
+
+    doc['colors']['normal']['black'] = '0x282c35'
+    doc['colors']['normal']['red'] = '0xe9837b'
+    doc['colors']['normal']['green'] = '0xa3be8c'
+    doc['colors']['normal']['yellow'] = '0xebcb8b'
+    doc['colors']['normal']['blue'] = '0x7cb7ff'
+    doc['colors']['normal']['magenta'] = '0x7878b0'
+    doc['colors']['normal']['cyan'] = '0x88c0d0'
+    doc['colors']['normal']['white'] = '0xe5e9f0'
+
+    doc['colors']['bright']['black'] = '0x555b68'
+    doc['colors']['bright']['red'] = doc['colors']['normal']['red']
+    doc['colors']['bright']['green'] = doc['colors']['normal']['green']
+    doc['colors']['bright']['yellow'] = doc['colors']['normal']['yellow']
+    doc['colors']['bright']['blue'] = doc['colors']['normal']['blue']
+    doc['colors']['bright']['magenta'] = doc['colors']['normal']['magenta']
+    doc['colors']['bright']['cyan'] = doc['colors']['normal']['cyan']
+    doc['colors']['bright']['white'] = doc['colors']['normal']['white']
+
+    doc['colors']['cursor']['cursor'] = '0xfece35'
+    doc['colors']['cursor']['text'] = '0x555555'
+    
+    return doc
+
+def gruvbox(doc):
+    doc['colors']['primary']['background'] = '0x1d2021'
+    doc['colors']['primary']['foreground'] = '0xebdbb2'
+
+    doc['colors']['normal']['black'] = '0x282828'
+    doc['colors']['normal']['red'] = '0xcc241d'
+    doc['colors']['normal']['green'] = '0x98971a'
+    doc['colors']['normal']['yellow'] = '0xd79921'
+    doc['colors']['normal']['blue'] = '0x458588'
+    doc['colors']['normal']['magenta'] = '0xb16286'
+    doc['colors']['normal']['cyan'] = '0x689d6a'
+    doc['colors']['normal']['white'] = '0xa89984'
+
+    doc['colors']['bright']['black'] = '0x928374'
+    doc['colors']['bright']['red'] = '0xfb4934'
+    doc['colors']['bright']['green'] = '0xb8bb26'
+    doc['colors']['bright']['yellow'] = '0xfabd2f'
+    doc['colors']['bright']['blue'] = '0x83a598'
+    doc['colors']['bright']['magenta'] = '0xd3869b'
+    doc['colors']['bright']['cyan'] = '0x8ec07c'
+    doc['colors']['bright']['white'] = '0xebdbb2'
+
+    doc['colors']['cursor']['cursor'] = '0xfe8019'
+    doc['colors']['cursor']['text'] = '0xffffff'
+    
+
+def nordDarker(doc):
+    doc = nord(doc)
+    doc['colors']['primary']['background'] = '0x0f1219'
+
+    return doc
+
+
+with open(cfgpath, 'r') as file:
+    doc = load(file, Loader=FullLoader)
+    if (argv[1] == 'light'):
+        light(doc)
+    elif (argv[1] == 'nord'):
+        nord(doc)
+    elif (argv[1] == 'nord-darker'):
+        nordDarker(doc)
+    elif (argv[1] == 'gruvbox'):
+        gruvbox(doc)
+    else:
+        print("Colorscheme doesn't exist")
+
+with open(cfgpath, 'w') as file:
+    dump(doc, file)
+
+
+

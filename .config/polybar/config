@@ -20,7 +20,7 @@ icon-c = #a4f9ff
 overide-redirect = true
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 20
+height = 17
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -41,8 +41,8 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 3
 
-font-0 = Noto Sans:weight=100:pixelsize=9:antialias=true;3
-font-1 = SaucecodePro Nerd Font:fontformat=truetype:size=10:antialias=true;3
+font-0 = Noto Sans Mono:weight=100:pixelsize=8:antialias=true;2
+font-1 = SaucecodePro Nerd Font:fontformat=truetype:size=10:antialias=true;2
 
 modules-left = bspwm 
 #modules-center = mpd

@@ -12,10 +12,7 @@ super + n
 	bspc node -o 0.7;
 
 super + i 
-	$HOME/Scripts/drun
-
-super + shift + i
-	dmenu_run -p "run"
+	bemenu-run
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -26,16 +23,16 @@ super + alt + p
 	polybar example &
 
 super + {shift + x, c, v, ctrl + q, x, z}
-	$HOME/Scripts/{docs,web-search,cfg,shutdown-dmenu,search-scr,save-scr}
+	{docs,web-search,cfg,bm-shutdown,xsearch-scr,xsave-scr}
 
 super + shift + b
-	$HOME/Scripts/tmux-attach
+	/tmux-attach
 
 super + {a, shift + a, e, shift + e}
 	{firefox, chromium, vifmi, pcmanfm} 
 
 super + ctrl + c
-	nmtui-st
+	st -c Nmtui-st -e nmtui-connect
 
 Print
 	maim | xclip -selection clipboard -t image/png
@@ -53,10 +50,10 @@ super + {backslash, semicolon, apostrophe, shift + backslash}
 	mpc {toggle, prev, next, stop}
 
 {_,shift + }XF86Audio{Raise,Lower}Volume
-	amixer set Master playback {1+,10+,1-,10-}
+	apactl set-sink-volume 0 {+1%,+10%,-1%,-10%}
 
 XF86AudioMute
-	amixer set Master toggle
+	pactl set-sink-mute 0 toggle
 
 XF86MonBrightness{Down,Up}
 	xbacklight {-dec 10, -inc 10}
@@ -65,9 +62,6 @@ XF86MonBrightness{Down,Up}
 # quit/restart bspwm
 super + q; super + {q,r}
 	bspc {quit,wm -r}
-
-super + q; super + s
-	slock
 
 super + {_,shift + }w
 	bspc node -{c,k}

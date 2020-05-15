@@ -45,19 +45,6 @@ exec swayidle -w \
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 
-### Input configuration
-#
-# Example configuration:
-#
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
-#
-# You can get the names of your inputs by running: swaymsg -t get_inputs
-# Read `man 5 sway-input` for more information about this section.
 
 ### Key bindings
 #
@@ -65,17 +52,42 @@ exec swayidle -w \
 #
     # Start a terminal
     bindsym $mod+Return exec $term -e tmux
-    bindsym $mod+shift+Return exec $term -e zsh
+    bindsym $mod+alt+Return exec st -e tmux
 
     # Kill focused window
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+i exec bemenu-run -H 17
-    bindsym $mod+ctrl+q exec ~/Scripts/wayland/bm-shutdown
-    bindsym $mod+c exec ~/Scripts/wayland/web-search
+    bindsym $mod+i exec bemenu-run
+    bindsym $mod+ctrl+q exec bm-shutdown 
+    bindsym $mod+c exec web-search
 	bindsym $mod+a exec firefox
 	bindsym $mod+shift+a exec chromium
+
+	bindsym XF86MonBrightnessUp exec brightnessctl set +10%
+	bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
+	bindsym XF86AudioRaiseVolume exec 'pactl set-sink-volume 0 +1%'
+	bindsym XF86AudioLowerVolume exec 'pactl set-sink-volume 0 -1%'
+	bindsym shift+XF86AudioRaiseVolume exec 'pactl set-sink-volume 0 +10%'
+	bindsym shift+XF86AudioLowerVolume exec 'pactl set-sink-volume 0 -10%'
+	bindsym XF86AudioMute exec 'pactl set-sink-mute 0 toggle'
+
+	bindsym $mod+backslash exec mpc toggle
+	bindsym $mod+semicolon exec mpc prev
+	bindsym $mod+apostrophe exec mpc next
+	bindsym $mod+shift+backslash exec mpc stop
+
+	bindsym Print exec 'grim - | wl-copy -t image/png'
+	bindsym $mod+shift+s exec 'slurp | xargs -r -I@ grim -g @ - | wl-copy -t image/png'
+	bindsym $mod+z exec save-scr
+	bindsym $mod+x exec search-scr
+	bindsym $mod+t exec tmux-attach
+
+	bindsym $mod+m exec colorscheme-picker
+	bindsym $mod+g exec alacritty-cs nord
+	bindsym $mod+ctrl+g exec alacritty-cs nord-darker
+	bindsym $mod+shift+g exec alacritty-cs light
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
@@ -85,10 +97,11 @@ exec swayidle -w \
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
-
-    # Exit sway (logs you out of your Wayland session)
-    # bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 	bindsym $mod+shift+e exec swaymsg exit
+
+	bindsym $mod+alt+p exec 'killall waybar; waybar'
+
+	# xwayland disable
 #
 # Moving around:
 #
@@ -97,22 +110,12 @@ exec swayidle -w \
     bindsym $mod+$down focus down
     bindsym $mod+$up focus up
     bindsym $mod+$right focus right
-    # Or use $mod+[up|down|left|right]
-    bindsym $mod+Left focus left
-    bindsym $mod+Down focus down
-    bindsym $mod+Up focus up
-    bindsym $mod+Right focus right
 
     # Move the focused window with the same, but add Shift
     bindsym $mod+Shift+$left move left
     bindsym $mod+Shift+$down move down
     bindsym $mod+Shift+$up move up
     bindsym $mod+Shift+$right move right
-    # Ditto, with arrow keys
-    bindsym $mod+Shift+Left move left
-    bindsym $mod+Shift+Down move down
-    bindsym $mod+Shift+Up move up
-    bindsym $mod+Shift+Right move right
 
 	smart_borders on
 #
@@ -206,32 +209,22 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-default_border pixel 1
+default_border pixel 2
+font pango:Noto Sans 8
 
-#
-# Status Bar:
-#
-# Read `man 5 sway-bar` for more information about this section.
-bar {
-    position top
-	font pango:Noto Sans Mono 9
-	height 17
+# class                 border  backgr. text    indicator child_border
+client.focused          #555b68 #555b68 #ffffff #2e9ef4   #285577
+client.focused_inactive #323232 #323232 #808080 #484e50   #5f676a
+# client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+# client.urgent           #2f343a #900000 #ffffff #900000   #900000
+# client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while date +'%a, %d.%m.%Y %l:%M %p '; do sleep 1; done
+for_window [class="feh"] floating enable
+for_window [app_id="imv"] floating enable
+for_window [app_id="pavucontrol"] floating enable
 
-	# border background text
-    colors {
-        statusline #ffffff
-        background #0d0f16
-        inactive_workspace #323232 #323232 #5c5c5c
-        focused_workspace #555b68 #555b68 #ffffff
-    }
-}
-
-# swaymsg -t get_inputs
-input 1:1:AT_Translated_Set_2_keyboard {
+# swaymsg -t get_inputs, man 5 sway-input
+input type:keyboard {
 	xkb_layout us,rs
 	xkb_variant ,latinunicodeyz
 	xkb_options grp:shifts_toggle,caps:escape
@@ -243,5 +236,7 @@ input 2:18:FocalTechPS/2_FocalTech_Touchpad {
     natural_scroll enabled
     dwt enabled
 }
+
+exec --no-startup-id waybar
 
 include /etc/sway/config.d/*

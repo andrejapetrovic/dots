@@ -1,0 +1,11 @@
+#!/bin/sh
+options(){
+	case $1 in
+		"Shutdown") poweroff;;
+		"Restart") reboot;;
+		"Suspend") systemctl suspend;;
+		"*") exit;;
+	esac
+}
+
+echo "Shutdown\nRestart\nSuspend" | options $(bemenu -p "exit" -i)  

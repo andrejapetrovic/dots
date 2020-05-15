@@ -15,9 +15,10 @@ set relativenumber number
 set updatetime=250
 
 colorscheme nord
-hi Error cterm=NONE ctermbg=160 ctermfg=white
-hi ErrorMsg cterm=NONE ctermbg=160 ctermfg=white
+hi Error ctermbg=1 ctermfg=0
+hi ErrorMsg cterm=NONE ctermbg=160 ctermfg=255
 hi VertSplit ctermbg=0
+hi Statusline ctermfg=255
 hi CocGitRemovedSign ctermbg=NONE ctermfg=red
 hi CocGitAddedSign ctermbg=NONE ctermfg=green
 hi CocGitChangedSign ctermbg=NONE ctermfg=yellow
@@ -163,7 +164,7 @@ augroup custom_term
 	autocmd TermOpen * setlocal bufhidden=hide 
 augroup END
 
-let g:slime_target = "neovim"
+let g:slime_target = "tmux"
 let g:slime_no_mappings = 1
 xmap <c-a> <Plug>SlimeRegionSend
 nmap <c-a> <Plug>SlimeParagraphSend

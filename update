@@ -9,6 +9,7 @@ cp $HOME/.bashrc $PWD
 cp $HOME/.xinitrc $PWD
 cp $HOME/.gtkrc-2.0 $PWD
 cp $HOME/.cfgignore $PWD
+cp $HOME/.zprofile $PWD
 cp -r $HOME/.config/bspwm $PWD/.config/
 cp -r $HOME/.config/sxhkd $PWD/.config/
 cp -r $HOME/.config/polybar $PWD/.config/
@@ -19,10 +20,8 @@ cp -r $HOME/.config/fontconfig $PWD/.config/
 cp -r $HOME/.config/nvim/init.vim $PWD/.config/nvim/
 cp -r $HOME/.config/alacritty/alacritty.yml $PWD/.config/alacritty/
 cp -r $HOME/.config/sway/config $PWD/.config/sway/
-cp -r $HOME/Scripts $PWD
-cp $HOME/Programs/dmenu/dmenu_history $PWD/dmenu
-cp $HOME/Programs/dmenu/config.h $PWD/dmenu
-cp $HOME/Programs/st/config.h $PWD/st
+cp -r $HOME/.config/waybar $PWD/.config/
+cp -r $HOME/bin $PWD
 cp $HOME/.tmux.conf $PWD
 
 # git add .

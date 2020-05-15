@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 export FIFO_UEBERZUG="/tmp/vifm-ueberzug-${PPID}"
 
 function cleanup {

@@ -1,5 +1,0 @@
-#!/bin/sh
-${SHELL:-"/bin/sh"} & $1 &
-sed -i '
-1i'"$1"'
-/^'"$1"'$/d' $HOME/.cache/drun_cache
