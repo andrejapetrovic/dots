@@ -1,2 +1,0 @@
-#!/bin/sh
-rg --files | fzf -m --preview 'cat {1}' --preview-window=right:60% | xargs -ro nvim
