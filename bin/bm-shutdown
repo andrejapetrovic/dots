@@ -3,7 +3,7 @@ options(){
 	case $1 in
 		"Shutdown") poweroff;;
 		"Restart") reboot;;
-		"Suspend") systemctl suspend;;
+		"Suspend") swaylock -f -c 000000; systemctl suspend;;
 		"*") exit;;
 	esac
 }

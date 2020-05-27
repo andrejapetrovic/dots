@@ -1,0 +1,2 @@
+#!/bin/sh
+tmux capture-pane -pS -10000 | $1

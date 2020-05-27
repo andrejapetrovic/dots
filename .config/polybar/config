@@ -182,7 +182,7 @@ type = internal/network
 interface = wlp3s0
 interval = 3.0
 ;format-connected = %{A1:nm-connection-editor &:}<ramp-signal> <label-connected>%{A}
-format-connected = <ramp-signal> <label-connected>
+format-connected = <ramp-signal> 
 ;format-connected-underline = #9f78e1
 ;label-connected = "%essid%    %downspeed%  祝 %upspeed% "
 label-connected = "%essid%"
@@ -233,7 +233,7 @@ time = %H:%M
 ;format-prefix-foreground = ${colors.foreground-alt}
 ;format-prefix-foreground = ${colors.icon-y}
 
-label = %date%    %time%
+label = %time%    %date%
 
 [module/alsa]
 type = internal/alsa

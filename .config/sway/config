@@ -1,7 +1,3 @@
-# Default config for sway
-#
-# Copy this to ~/.config/sway/config and edit it to your liking.
-#
 # Read `man 5 sway` for a complete reference.
 
 ### Variables
@@ -23,7 +19,7 @@ set $term alacritty
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Pictures/galaxy-3608029_1280.jpg fill
+output "*" background "~/.cache/wallpaper" fill
 #
 # Example configuration:
 #
@@ -36,7 +32,7 @@ output * bg ~/Pictures/galaxy-3608029_1280.jpg fill
 # Example configuration:
 #
 exec swayidle -w \
-         timeout 300 'swaylock -f -c 000000' \
+         timeout 599 'swaylock -f -c 000000' \
          timeout 600 'swaymsg "output * dpms off"' \
               resume 'swaymsg "output * dpms on"' \
          before-sleep 'swaylock -f -c 000000'
@@ -52,7 +48,7 @@ exec swayidle -w \
 #
     # Start a terminal
     bindsym $mod+Return exec $term -e tmux
-    bindsym $mod+alt+Return exec st -e tmux
+    bindsym $mod+alt+Return exec st -e zsh
 
     # Kill focused window
     bindsym $mod+Shift+q kill
@@ -61,8 +57,9 @@ exec swayidle -w \
     bindsym $mod+i exec bemenu-run
     bindsym $mod+ctrl+q exec bm-shutdown 
     bindsym $mod+c exec web-search
-	bindsym $mod+a exec firefox
-	bindsym $mod+shift+a exec chromium
+	bindsym $mod+a exec --no-startup-id firefox
+	bindsym $mod+shift+a exec --no-startup-id chromium
+	bindsym $mod+alt+a exec imv -r ~/Pictures
 
 	bindsym XF86MonBrightnessUp exec brightnessctl set +10%
 	bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
@@ -81,12 +78,14 @@ exec swayidle -w \
 	bindsym $mod+shift+s exec 'slurp | xargs -r -I@ grim -g @ - | wl-copy -t image/png'
 	bindsym $mod+z exec save-scr
 	bindsym $mod+x exec search-scr
+	bindsym $mod+shift+x exec docs
 	bindsym $mod+t exec tmux-attach
 
 	bindsym $mod+m exec colorscheme-picker
 	bindsym $mod+g exec alacritty-cs nord
 	bindsym $mod+ctrl+g exec alacritty-cs nord-darker
-	bindsym $mod+shift+g exec alacritty-cs light
+	bindsym $mod+alt+g exec alacritty-cs gruvbox
+	bindsym $mod+shift+g exec alacritty-cs gruvbox-light
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -145,6 +144,16 @@ exec swayidle -w \
     bindsym $mod+Shift+0 move container to workspace 10; workspace 10
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
+    bindsym $mod+Ctrl+1 move container to workspace 1
+    bindsym $mod+Ctrl+2 move container to workspace 2
+    bindsym $mod+Ctrl+3 move container to workspace 3
+    bindsym $mod+Ctrl+4 move container to workspace 4
+    bindsym $mod+Ctrl+5 move container to workspace 5
+    bindsym $mod+Ctrl+6 move container to workspace 6
+    bindsym $mod+Ctrl+7 move container to workspace 7
+    bindsym $mod+Ctrl+8 move container to workspace 8
+    bindsym $mod+Ctrl+9 move container to workspace 9
+    bindsym $mod+Ctrl+0 move container to workspace 10
 #
 # Layout stuff:
 #
@@ -170,6 +179,7 @@ exec swayidle -w \
 
     # Move focus to the parent container
     bindsym $mod+p focus parent
+    bindsym $mod+shift+p focus child
 
 	focus_follows_mouse no
 #
@@ -209,13 +219,13 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-default_border pixel 2
+default_border pixel 1
 font pango:Noto Sans 8
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #555b68 #555b68 #ffffff #2e9ef4   #285577
+client.focused          #555b68 #555b68 #ffffff #2e9ef4   #ebcb8b
 client.focused_inactive #323232 #323232 #808080 #484e50   #5f676a
-# client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.unfocused        #333333 #222222 #888888 #292d2e   #555b68
 # client.urgent           #2f343a #900000 #ffffff #900000   #900000
 # client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
@@ -235,6 +245,7 @@ input 2:18:FocalTechPS/2_FocalTech_Touchpad {
     tap enabled
     natural_scroll enabled
     dwt enabled
+	accel_profile flat
 }
 
 exec --no-startup-id waybar

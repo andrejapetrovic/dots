@@ -22,7 +22,7 @@ colors:
     white: '0xe5e9f0'
     yellow: '0xebcb8b'
   primary:
-    background: '0x0f1219'
+    background: '0x1c1f27'
     foreground: '0xfdfdfd'
 env:
   TERM: xterm-256color

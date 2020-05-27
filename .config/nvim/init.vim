@@ -1,5 +1,4 @@
 call plug#begin('~/.config/nvim/plugged')
-	Plug 'arcticicestudio/nord-vim'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'junegunn/fzf.vim'
 	Plug 'tpope/vim-surround'
@@ -13,15 +12,7 @@ set mouse=a
 set shell=/usr/bin/zsh
 set relativenumber number
 set updatetime=250
-
 colorscheme nord
-hi Error ctermbg=1 ctermfg=0
-hi ErrorMsg cterm=NONE ctermbg=160 ctermfg=255
-hi VertSplit ctermbg=0
-hi Statusline ctermfg=255
-hi CocGitRemovedSign ctermbg=NONE ctermfg=red
-hi CocGitAddedSign ctermbg=NONE ctermfg=green
-hi CocGitChangedSign ctermbg=NONE ctermfg=yellow
 
 set splitright
 set splitbelow
@@ -36,6 +27,7 @@ let g:netrw_banner = 0
 let g:netrw_cursor = 0
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 let g:netrw_winsize = 20
+let g:netrw_preview = 1
 
 let g:fzf_buffers_jump = 1
 let g:fzf_action = {
@@ -44,8 +36,8 @@ let g:fzf_action = {
       \ 'ctrl-t': 'tab split'
       \ }
 
-command Fzfp call fzf#run(fzf#wrap({'source': 'rg --files', 'options': ['--multi']}))
-command Conf call fzf#run(fzf#wrap({'source': 'rg --ignore-file ~/.cfgignore --files ~/', 'options': ['--multi', '--prompt=Conf>']}))
+command Fzfp call fzf#run(fzf#wrap({'source': 'rg --files', 'down': '80%', 'options': ['--multi']}))
+command Conf call fzf#run(fzf#wrap({'source': 'rg --ignore-file ~/.cfgignore --files ~/', 'down': '80%', 'options': ['--multi', '--prompt=Conf>']}))
 command OSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': 'source', 'down': '40%', 'options': ['--prompt=OpenSession>']})
 command OProj call fzf#run({'source': 'ls', 'dir': '~/Projects', 'sink': 'cd', 'down': '40%', 'options': ['--prompt=OpenProj>']})
 command RSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': '! rm', 'down': '40%', 'options': ['--multi', '--prompt=RemoveSession>']})
@@ -54,6 +46,7 @@ command RSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink'
 let mapleader = " "
 
 vnoremap <C-c> "+y
+vnoremap <C-p> d"+P
 nnoremap <leader>y "+
 nnoremap <silent> <leader>n :nohlsearch<Bar>:echo<CR>
 
@@ -73,8 +66,9 @@ nnoremap <leader>so :OSess<CR>
 nnoremap <leader>sp :OProj<CR>
 nnoremap <leader>sr :RSess<CR>
 nnoremap <leader>ss :mks! ~/.local/share/sess/
-nnoremap <leader>c :Conf<CR> 
+nnoremap <leader>sa :w<cr>
 nnoremap <leader>sd :cd %:p:h<CR> 
+nnoremap <leader>c :Conf<CR> 
 nnoremap <leader>rr :term<CR>
 nnoremap <leader>rs :sp \| term<CR>
 nnoremap <leader>rv :vsp \| term<CR>
@@ -170,6 +164,7 @@ xmap <c-a> <Plug>SlimeRegionSend
 nmap <c-a> <Plug>SlimeParagraphSend
 nmap <c-c> :SlimeSend<CR>
 nmap <leader>rc   <Plug>SlimeConfig
+let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
 
 "comments
 autocmd FileType typescript,c setlocal commentstring=//\ %s

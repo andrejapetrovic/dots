@@ -2,7 +2,7 @@
 # wm independent hotkeys
 
 super + Return
-	$TERMINAL -e tmux 
+	$TERMINAL -e zsh 
 
 super + b
 	tmux ls && $TERMINAL -e tmux a || $TERMINAL -e tmux

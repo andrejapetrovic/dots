@@ -5,33 +5,6 @@ from yaml import load, dump, FullLoader
 
 cfgpath = str(PosixPath('~/.config/alacritty/alacritty.yml').expanduser())
 
-def light(doc):
-    doc['colors']['primary']['background'] = '0xc9cab6'
-    doc['colors']['primary']['foreground'] = '0x111215'
-
-    doc['colors']['normal']['black'] = '0xb9b4a2'
-    doc['colors']['normal']['red'] = '0xc02419'
-    doc['colors']['normal']['green'] = '0x3b6739'
-    doc['colors']['normal']['yellow'] = '0x9c6326'
-    doc['colors']['normal']['blue'] = '0x1d5396'
-    doc['colors']['normal']['magenta'] = '0x7d3a9c'
-    doc['colors']['normal']['cyan'] = '0x003949'
-    doc['colors']['normal']['white'] = '0x29281f'
-
-    doc['colors']['bright']['black'] = '0x878470'
-    doc['colors']['bright']['red'] = doc['colors']['normal']['red']
-    doc['colors']['bright']['green'] = doc['colors']['normal']['green']
-    doc['colors']['bright']['yellow'] = doc['colors']['normal']['yellow']
-    doc['colors']['bright']['blue'] = doc['colors']['normal']['blue']
-    doc['colors']['bright']['magenta'] = doc['colors']['normal']['magenta']
-    doc['colors']['bright']['cyan'] = doc['colors']['normal']['cyan']
-    doc['colors']['bright']['white'] = doc['colors']['normal']['white']
-
-    doc['colors']['cursor']['cursor'] = '0x0059ff'
-    doc['colors']['cursor']['text'] = '0xeeeeee'
-
-    return doc
-
 def nord(doc):
     doc['colors']['primary']['background'] = '0x1c1f27'
     doc['colors']['primary']['foreground'] = '0xfdfdfd'
@@ -59,6 +32,39 @@ def nord(doc):
     
     return doc
 
+def nordDarker(doc):
+    doc = nord(doc)
+    doc['colors']['primary']['background'] = '0x0f1219'
+
+    return doc
+
+def gruvboxLight(doc):
+    doc['colors']['primary']['background'] = '0xebdbb2'
+    doc['colors']['primary']['foreground'] = '0x111215'
+
+    doc['colors']['normal']['black'] = '0xd5c5a1'
+    doc['colors']['normal']['red'] = '0xc02419'
+    doc['colors']['normal']['green'] = '0x354519'
+    doc['colors']['normal']['yellow'] = '0xb57614'
+    doc['colors']['normal']['blue'] = '0x076678'
+    doc['colors']['normal']['magenta'] = '0x8f3f71'
+    doc['colors']['normal']['cyan'] = '0x003949'
+    doc['colors']['normal']['white'] = '0x29281f'
+
+    doc['colors']['bright']['black'] = '0x928374'
+    doc['colors']['bright']['red'] = doc['colors']['normal']['red']
+    doc['colors']['bright']['green'] = doc['colors']['normal']['green']
+    doc['colors']['bright']['yellow'] = doc['colors']['normal']['yellow']
+    doc['colors']['bright']['blue'] = doc['colors']['normal']['blue']
+    doc['colors']['bright']['magenta'] = doc['colors']['normal']['magenta']
+    doc['colors']['bright']['cyan'] = doc['colors']['normal']['cyan']
+    doc['colors']['bright']['white'] = doc['colors']['normal']['white']
+
+    doc['colors']['cursor']['cursor'] = '0x193d78'
+    doc['colors']['cursor']['text'] = '0xffffff'
+
+    return doc
+
 def gruvbox(doc):
     doc['colors']['primary']['background'] = '0x1d2021'
     doc['colors']['primary']['foreground'] = '0xebdbb2'
@@ -83,19 +89,11 @@ def gruvbox(doc):
 
     doc['colors']['cursor']['cursor'] = '0xfe8019'
     doc['colors']['cursor']['text'] = '0xffffff'
-    
-
-def nordDarker(doc):
-    doc = nord(doc)
-    doc['colors']['primary']['background'] = '0x0f1219'
-
-    return doc
-
 
 with open(cfgpath, 'r') as file:
     doc = load(file, Loader=FullLoader)
-    if (argv[1] == 'light'):
-        light(doc)
+    if (argv[1] == 'gruvbox-light'):
+        gruvboxLight(doc)
     elif (argv[1] == 'nord'):
         nord(doc)
     elif (argv[1] == 'nord-darker'):
@@ -107,6 +105,4 @@ with open(cfgpath, 'r') as file:
 
 with open(cfgpath, 'w') as file:
     dump(doc, file)
-
-
 

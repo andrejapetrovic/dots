@@ -9,10 +9,12 @@ Programs
 Projects
 Videos
 Music
+dots
 discord
 !.config
 !.bashrc
 !.zshrc
+!.zprofile
 !.xinitrc
 !.gtkrc-2.0
 !.cfgignore
