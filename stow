@@ -1,0 +1,7 @@
+#!/bin/sh
+stow nvim
+stow config
+stow zsh
+stow tmux
+stow other
+stow scripts
