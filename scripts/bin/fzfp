@@ -1,2 +1,2 @@
 #!/bin/sh
-rg --follow --files | fzf -m --preview '<{1}' --preview-window=right:60% | xargs -ro nvim
+rg --hidden --follow --files | fzf -m --preview '<{1}' --preview-window=right:60% | xargs -ro nvim
