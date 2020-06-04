@@ -19,9 +19,17 @@ alias ytd='youtube-dl -f bestaudio -xi'
 bindkey '^p' history-beginning-search-backward
 bindkey '^n' history-beginning-search-forward
 
-bindkey -s '\ec' 'fzfc\n'
-bindkey -s '\eo' 'fzfp\n'
-bindkey -s '\em' 'tpane nvim -\n'
+function fzf-files { fzfp }
+zle -N fzf-files 
+bindkey '\eo' fzf-files
+
+function fzf-config-files { fzfc }
+zle -N fzf-config-files
+bindkey '\ec' fzf-config-files
+
+function pipe-tmux-pane { tpane nvim - }
+zle -N pipe-tmux-pane
+bindkey '\em' pipe-tmux-pane
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
