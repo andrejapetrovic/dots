@@ -20,9 +20,8 @@ bindkey '^p' history-beginning-search-backward
 bindkey '^n' history-beginning-search-forward
 
 bindkey -s '\ec' 'fzfc\n'
-bindkey -s '\eo' 'fzfn\n'
-bindkey -s '\ep' 'fzfp\n'
-bindkey -s '\en' 'tpane nvim -\n'
+bindkey -s '\eo' 'fzfp\n'
+bindkey -s '\em' 'tpane nvim -\n'
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-    background-color: #0d0f16;
+    background-color: #0f1219;
     /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
     color: #ffffff;
     transition-property: background-color;
@@ -48,7 +48,7 @@ window#waybar.solo {
 }
 
 #workspaces button.focused {
-    background-color: #64727d;
+    background-color: #303540;
 	color: #ffffff
     /* border-bottom: 3px solid #ffffff; */
 }

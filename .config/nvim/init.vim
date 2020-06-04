@@ -1,22 +1,27 @@
 call plug#begin('~/.config/nvim/plugged')
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'junegunn/fzf.vim'
+	Plug 'junegunn/gv.vim'
 	Plug 'tpope/vim-surround'
 	Plug 'tpope/vim-fugitive'
-	Plug 'tpope/vim-vinegar'
 	Plug 'tpope/vim-commentary'
 	Plug 'jpalardy/vim-slime'
+	Plug 'honza/vim-snippets'
+	Plug 'norcalli/nvim-colorizer.lua'
+	" Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 set mouse=a
 set shell=/usr/bin/zsh
 set relativenumber number
 set updatetime=250
-colorscheme nord
+set termguicolors
+colorscheme nord 
 
 set splitright
 set splitbelow
 set fillchars+=vert:\ 
+" set colorcolumn=80
 
 set tabstop=4
 set shiftwidth=4
@@ -47,8 +52,8 @@ let mapleader = " "
 
 vnoremap <C-c> "+y
 vnoremap <C-p> d"+P
-nnoremap <leader>y "+
 nnoremap <silent> <leader>n :nohlsearch<Bar>:echo<CR>
+nnoremap <c-k> :<c-f>
 
 nnoremap <leader>] :bnext<CR>
 nnoremap <leader>[ :bprevious<CR>
@@ -56,8 +61,8 @@ nnoremap <leader>[ :bprevious<CR>
 " fzf (mostly)
 nnoremap <leader>p :Fzfp<CR>
 nnoremap <leader>gs :GFiles<CR>
-nnoremap <leader>el :Lines 
-nnoremap <leader>eb :BLines 
+nnoremap <leader>bl :Lines 
+nnoremap <leader>bb :BLines 
 nnoremap <leader>o :Buffers<CR>
 nnoremap <leader>i :History<CR>
 nnoremap <leader>m :Marks<CR>
@@ -67,12 +72,14 @@ nnoremap <leader>sp :OProj<CR>
 nnoremap <leader>sr :RSess<CR>
 nnoremap <leader>ss :mks! ~/.local/share/sess/
 nnoremap <leader>sa :w<cr>
+nnoremap <leader>sl :w<cr>
+nnoremap <leader>sq :wq<cr>
 nnoremap <leader>sd :cd %:p:h<CR> 
+nnoremap <leader>se :Lex<CR>
 nnoremap <leader>c :Conf<CR> 
-nnoremap <leader>rr :term<CR>
-nnoremap <leader>rs :sp \| term<CR>
-nnoremap <leader>rv :vsp \| term<CR>
-nnoremap <leader>re :Lex<CR>
+nnoremap <leader>tt :term<CR>
+nnoremap <leader>ts :sp \| term<CR>
+nnoremap <leader>tv :vsp \| term<CR>
 
 " windows
 nnoremap <leader>h <c-w>h
@@ -82,15 +89,16 @@ nnoremap <leader>l <c-w>l
 nnoremap <leader>q <c-w>q
 nnoremap <leader>w <c-w>w
 
-" terminal
-tnoremap <ESC> <c-\><c-n>
-
-inoremap <c-l> <c-n><c-g>u
+"terminal
+tnoremap <Esc> <c-\><c-n>
+autocmd! FileType fzf tnoremap <buffer> <esc> <c-c>
 
 "coc
 set signcolumn=yes
 set updatetime=300
 inoremap <silent><expr> <c-space> coc#refresh()
+inoremap <c-l> <c-n><c-g>u
+imap <C-j> <Plug>(coc-snippets-expand-jump)
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
 " position. Coc only does snippet and additional edit on confirm.
@@ -152,6 +160,9 @@ nmap <leader>gs :CocCommand git.chunkStage<CR>
 " omap ag <Plug>(coc-git-chunk-outer)
 " xmap ag <Plug>(coc-git-chunk-outer)
 
+"explorer
+nmap <leader>e :CocCommand explorer<CR>
+
 " term buffer
 augroup custom_term
 	autocmd!
@@ -163,8 +174,21 @@ let g:slime_no_mappings = 1
 xmap <c-a> <Plug>SlimeRegionSend
 nmap <c-a> <Plug>SlimeParagraphSend
 nmap <c-c> :SlimeSend<CR>
-nmap <leader>rc   <Plug>SlimeConfig
+nmap <leader>sc   <Plug>SlimeConfig
 let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
 
 "comments
 autocmd FileType typescript,c setlocal commentstring=//\ %s
+
+"Color preview
+lua require'colorizer'.setup()
+
+function! GitBranch()
+  return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+endfunction
+
+function! StatuslineGit()
+  let l:branchname = GitBranch()
+  return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
+endfunction
+

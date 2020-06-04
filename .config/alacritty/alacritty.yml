@@ -1,35 +1,36 @@
 colors:
   bright:
-    black: '0x555b68'
-    blue: '0x7cb7ff'
-    cyan: '0x88c0d0'
-    green: '0xa3be8c'
-    magenta: '0x7878b0'
-    red: '0xe9837b'
-    white: '0xe5e9f0'
-    yellow: '0xebcb8b'
+    black: '#555b68'
+    blue: '#7cb7ff'
+    cyan: '#88c0d0'
+    green: '#a3be8c'
+    magenta: '#7878b0'
+    red: '#e9837b'
+    white: '#e5e9f0'
+    yellow: '#ebcb8b'
   cursor:
-    cursor: '0xfece35'
-    test: '0xffffff'
-    text: '0x555555'
+    cursor: '#fece35'
+    text: '#555555'
   normal:
-    black: '0x282c35'
-    blue: '0x7cb7ff'
-    cyan: '0x88c0d0'
-    green: '0xa3be8c'
-    magenta: '0x7878b0'
-    red: '0xe9837b'
-    white: '0xe5e9f0'
-    yellow: '0xebcb8b'
+    black: '#282c35'
+    blue: '#7cb7ff'
+    cyan: '#88c0d0'
+    green: '#a3be8c'
+    magenta: '#7878b0'
+    red: '#e9837b'
+    white: '#e5e9f0'
+    yellow: '#ebcb8b'
   primary:
-    background: '0x1c1f27'
-    foreground: '0xfdfdfd'
+    background: '#0f1219'
+    foreground: '#d8dee9'
 env:
   TERM: xterm-256color
 font:
   normal:
     family: Noto Sans Mono
-    style: Medium
-  size: 9.0
+  offset:
+    x: 0
+    y: 0
+  size: 9.5
 shell:
   program: /bin/zsh

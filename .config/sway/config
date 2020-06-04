@@ -48,7 +48,7 @@ exec swayidle -w \
 #
     # Start a terminal
     bindsym $mod+Return exec $term -e tmux
-    bindsym $mod+alt+Return exec st -e zsh
+    bindsym $mod+alt+Return exec $term
 
     # Kill focused window
     bindsym $mod+Shift+q kill
@@ -223,9 +223,9 @@ default_border pixel 1
 font pango:Noto Sans 8
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #555b68 #555b68 #ffffff #2e9ef4   #ebcb8b
+client.focused          #555b68 #303540 #ffffff #2e9ef4   #ebcb8b
 client.focused_inactive #323232 #323232 #808080 #484e50   #5f676a
-client.unfocused        #333333 #222222 #888888 #292d2e   #555b68
+client.unfocused        #333333 #0f1219 #888888 #292d2e   #555b68
 # client.urgent           #2f343a #900000 #ffffff #900000   #900000
 # client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 

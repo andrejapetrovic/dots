@@ -6,14 +6,10 @@
 
 cp $HOME/.zshrc $PWD
 cp $HOME/.bashrc $PWD
-cp $HOME/.xinitrc $PWD
 cp $HOME/.gtkrc-2.0 $PWD
 cp $HOME/.cfgignore $PWD
 cp $HOME/.zprofile $PWD
-cp -r $HOME/.config/bspwm $PWD/.config/
-cp -r $HOME/.config/sxhkd $PWD/.config/
-cp -r $HOME/.config/polybar $PWD/.config/
-cp -r $HOME/.config/picom $PWD/.config/
+cp $HOME/.tmux.conf $PWD
 cp -r $HOME/.config/vifm $PWD/.config/
 cp -r $HOME/.config/gtk-3.0 $PWD/.config/
 cp -r $HOME/.config/fontconfig $PWD/.config/
@@ -22,7 +18,6 @@ cp -r $HOME/.config/alacritty/alacritty.yml $PWD/.config/alacritty/
 cp -r $HOME/.config/sway/config $PWD/.config/sway/
 cp -r $HOME/.config/waybar $PWD/.config/
 cp -r $HOME/bin $PWD
-cp $HOME/.tmux.conf $PWD
 
 # git add .
 # git commit -m "$1"

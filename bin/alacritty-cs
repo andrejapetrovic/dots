@@ -6,89 +6,89 @@ from yaml import load, dump, FullLoader
 cfgpath = str(PosixPath('~/.config/alacritty/alacritty.yml').expanduser())
 
 def nord(doc):
-    doc['colors']['primary']['background'] = '0x1c1f27'
-    doc['colors']['primary']['foreground'] = '0xfdfdfd'
+    doc['colors']['primary']['background'] = '#1c1f27'
+    doc['colors']['primary']['foreground'] = '#d8dee9'
+    # doc['colors']['primary']['foreground'] = '#fdfdfd'
 
-    doc['colors']['normal']['black'] = '0x282c35'
-    doc['colors']['normal']['red'] = '0xe9837b'
-    doc['colors']['normal']['green'] = '0xa3be8c'
-    doc['colors']['normal']['yellow'] = '0xebcb8b'
-    doc['colors']['normal']['blue'] = '0x7cb7ff'
-    doc['colors']['normal']['magenta'] = '0x7878b0'
-    doc['colors']['normal']['cyan'] = '0x88c0d0'
-    doc['colors']['normal']['white'] = '0xe5e9f0'
+    doc['colors']['normal']['black']    = '#282c35'
+    doc['colors']['normal']['red']      = '#e9837b'
+    doc['colors']['normal']['green']    = '#a3be8c'
+    doc['colors']['normal']['yellow']   = '#ebcb8b'
+    doc['colors']['normal']['blue']     = '#7cb7ff'
+    doc['colors']['normal']['magenta']  = '#7878b0'
+    doc['colors']['normal']['cyan']     = '#88c0d0'
+    doc['colors']['normal']['white']    = '#e5e9f0'
 
-    doc['colors']['bright']['black'] = '0x555b68'
-    doc['colors']['bright']['red'] = doc['colors']['normal']['red']
-    doc['colors']['bright']['green'] = doc['colors']['normal']['green']
-    doc['colors']['bright']['yellow'] = doc['colors']['normal']['yellow']
-    doc['colors']['bright']['blue'] = doc['colors']['normal']['blue']
-    doc['colors']['bright']['magenta'] = doc['colors']['normal']['magenta']
-    doc['colors']['bright']['cyan'] = doc['colors']['normal']['cyan']
-    doc['colors']['bright']['white'] = doc['colors']['normal']['white']
+    doc['colors']['bright']['black']    = '#555b68'
+    doc['colors']['bright']['red']      = doc['colors']['normal']['red']
+    doc['colors']['bright']['green']    = doc['colors']['normal']['green']
+    doc['colors']['bright']['yellow']   = doc['colors']['normal']['yellow']
+    doc['colors']['bright']['blue']     = doc['colors']['normal']['blue']
+    doc['colors']['bright']['magenta']  = doc['colors']['normal']['magenta']
+    doc['colors']['bright']['cyan']     = doc['colors']['normal']['cyan']
+    doc['colors']['bright']['white']    = doc['colors']['normal']['white']
 
-    doc['colors']['cursor']['cursor'] = '0xfece35'
-    doc['colors']['cursor']['text'] = '0x555555'
-    
+    doc['colors']['cursor']['cursor']   = '#fece35'
+    doc['colors']['cursor']['text']     = '#555555'
     return doc
 
 def nordDarker(doc):
     doc = nord(doc)
-    doc['colors']['primary']['background'] = '0x0f1219'
+    doc['colors']['primary']['background'] = '#0f1219'
 
     return doc
 
 def gruvboxLight(doc):
-    doc['colors']['primary']['background'] = '0xebdbb2'
-    doc['colors']['primary']['foreground'] = '0x111215'
+    doc['colors']['primary']['background'] = '#ebdbb2'
+    doc['colors']['primary']['foreground'] = '#111215'
 
-    doc['colors']['normal']['black'] = '0xd5c5a1'
-    doc['colors']['normal']['red'] = '0xc02419'
-    doc['colors']['normal']['green'] = '0x354519'
-    doc['colors']['normal']['yellow'] = '0xb57614'
-    doc['colors']['normal']['blue'] = '0x076678'
-    doc['colors']['normal']['magenta'] = '0x8f3f71'
-    doc['colors']['normal']['cyan'] = '0x003949'
-    doc['colors']['normal']['white'] = '0x29281f'
+    doc['colors']['normal']['black']    = '#d5c5a1'
+    doc['colors']['normal']['red']      = '#c02419'
+    doc['colors']['normal']['green']    = '#354519'
+    doc['colors']['normal']['yellow']   = '#b57614'
+    doc['colors']['normal']['blue']     = '#076678'
+    doc['colors']['normal']['magenta']  = '#8f3f71'
+    doc['colors']['normal']['cyan']     = '#003949'
+    doc['colors']['normal']['white']    = '#29281f'
 
-    doc['colors']['bright']['black'] = '0x928374'
-    doc['colors']['bright']['red'] = doc['colors']['normal']['red']
-    doc['colors']['bright']['green'] = doc['colors']['normal']['green']
-    doc['colors']['bright']['yellow'] = doc['colors']['normal']['yellow']
-    doc['colors']['bright']['blue'] = doc['colors']['normal']['blue']
-    doc['colors']['bright']['magenta'] = doc['colors']['normal']['magenta']
-    doc['colors']['bright']['cyan'] = doc['colors']['normal']['cyan']
-    doc['colors']['bright']['white'] = doc['colors']['normal']['white']
+    doc['colors']['bright']['black']    = '#928374'
+    doc['colors']['bright']['red']      = doc['colors']['normal']['red']
+    doc['colors']['bright']['green']    = doc['colors']['normal']['green']
+    doc['colors']['bright']['yellow']   = doc['colors']['normal']['yellow']
+    doc['colors']['bright']['blue']     = doc['colors']['normal']['blue']
+    doc['colors']['bright']['magenta']  = doc['colors']['normal']['magenta']
+    doc['colors']['bright']['cyan']     = doc['colors']['normal']['cyan']
+    doc['colors']['bright']['white']    = doc['colors']['normal']['white']
 
-    doc['colors']['cursor']['cursor'] = '0x193d78'
-    doc['colors']['cursor']['text'] = '0xffffff'
-
+    doc['colors']['cursor']['cursor']   = '#193d78'
+    doc['colors']['cursor']['text']     = '#ffffff'
     return doc
 
 def gruvbox(doc):
-    doc['colors']['primary']['background'] = '0x1d2021'
-    doc['colors']['primary']['foreground'] = '0xebdbb2'
+    doc['colors']['primary']['background'] = '#1d2021'
+    doc['colors']['primary']['foreground'] = '#ebdbb2'
 
-    doc['colors']['normal']['black'] = '0x282828'
-    doc['colors']['normal']['red'] = '0xcc241d'
-    doc['colors']['normal']['green'] = '0x98971a'
-    doc['colors']['normal']['yellow'] = '0xd79921'
-    doc['colors']['normal']['blue'] = '0x458588'
-    doc['colors']['normal']['magenta'] = '0xb16286'
-    doc['colors']['normal']['cyan'] = '0x689d6a'
-    doc['colors']['normal']['white'] = '0xa89984'
+    doc['colors']['normal']['black']    = '#282828'
+    doc['colors']['normal']['red']      = '#cc241d'
+    doc['colors']['normal']['green']    = '#98971a'
+    doc['colors']['normal']['yellow']   = '#d79921'
+    doc['colors']['normal']['blue']     = '#458588'
+    doc['colors']['normal']['magenta']  = '#b16286'
+    doc['colors']['normal']['cyan']     = '#689d6a'
+    doc['colors']['normal']['white']    = '#a89984'
 
-    doc['colors']['bright']['black'] = '0x928374'
-    doc['colors']['bright']['red'] = '0xfb4934'
-    doc['colors']['bright']['green'] = '0xb8bb26'
-    doc['colors']['bright']['yellow'] = '0xfabd2f'
-    doc['colors']['bright']['blue'] = '0x83a598'
-    doc['colors']['bright']['magenta'] = '0xd3869b'
-    doc['colors']['bright']['cyan'] = '0x8ec07c'
-    doc['colors']['bright']['white'] = '0xebdbb2'
+    doc['colors']['bright']['black']    = '#928374'
+    doc['colors']['bright']['red']      = '#fb4934'
+    doc['colors']['bright']['green']    = '#b8bb26'
+    doc['colors']['bright']['yellow']   = '#fabd2f'
+    doc['colors']['bright']['blue']     = '#83a598'
+    doc['colors']['bright']['magenta']  = '#d3869b'
+    doc['colors']['bright']['cyan']     = '#8ec07c'
+    doc['colors']['bright']['white']    = '#ebdbb2'
 
-    doc['colors']['cursor']['cursor'] = '0xfe8019'
-    doc['colors']['cursor']['text'] = '0xffffff'
+    doc['colors']['cursor']['cursor']   = '#fe8019'
+    doc['colors']['cursor']['text']     = '#ffffff'
+    return doc
 
 with open(cfgpath, 'r') as file:
     doc = load(file, Loader=FullLoader)
