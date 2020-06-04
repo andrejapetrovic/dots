@@ -41,7 +41,7 @@ let g:fzf_action = {
       \ 'ctrl-t': 'tab split'
       \ }
 
-command Fzfp call fzf#run(fzf#wrap({'source': 'rg --follow --files', 'down': '80%', 'options': ['--multi']}))
+command Fzfp call fzf#run(fzf#wrap({'source': 'rg --follow --files --hidden', 'down': '80%', 'options': ['--multi']}))
 command Conf call fzf#run(fzf#wrap({'source': 'rg --follow --ignore-file ~/.cfgignore --files ~/', 'down': '80%', 'options': ['--multi', '--prompt=Conf>']}))
 command OSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': 'source', 'down': '40%', 'options': ['--prompt=OpenSession>']})
 command OProj call fzf#run({'source': 'ls', 'dir': '~/Projects', 'sink': 'cd', 'down': '40%', 'options': ['--prompt=OpenProj>']})
@@ -60,7 +60,7 @@ nnoremap <leader>[ :bprevious<CR>
 
 " fzf (mostly)
 nnoremap <leader>p :Fzfp<CR>
-nnoremap <leader>gs :GFiles<CR>
+nnoremap <leader>u :GFiles<CR>
 nnoremap <leader>bl :Lines 
 nnoremap <leader>bb :BLines 
 nnoremap <leader>o :Buffers<CR>
