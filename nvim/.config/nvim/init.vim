@@ -71,9 +71,9 @@ nnoremap <leader>so :OSess<CR>
 nnoremap <leader>sp :OProj<CR>
 nnoremap <leader>sr :RSess<CR>
 nnoremap <leader>ss :mks! ~/.local/share/sess/
-nnoremap <leader>sa :w<cr>
-nnoremap <leader>sl :w<cr>
-nnoremap <leader>sq :wq<cr>
+nnoremap <leader>sa :w<CR>
+nnoremap <leader>sl :w<CR>
+nnoremap <leader>sq :wq<CR>
 nnoremap <leader>sd :cd %:p:h<CR> 
 nnoremap <leader>se :Lex<CR>
 nnoremap <leader>c :Conf<CR> 
@@ -100,12 +100,12 @@ inoremap <silent><expr> <c-space> coc#refresh()
 inoremap <c-l> <c-n><c-g>u
 imap <C-j> <Plug>(coc-snippets-expand-jump)
 
-" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
+" Use <CR> to confirm completion, `<C-g>u` means break undo chain at current
 " position. Coc only does snippet and additional edit on confirm.
 if exists('*complete_info')
-  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+  inoremap <expr> <CR> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
 else
-  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+  inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 endif
 
 " Use `[g` and `]g` to navigate diagnostics
@@ -183,3 +183,15 @@ autocmd FileType typescript,c setlocal commentstring=//\ %s
 "Color preview
 lua require'colorizer'.setup()
 
+"git
+nmap <leader>gg :G<CR>
+nmap <leader>gv :Gvdiff>CR>
+nmap <leader>g2 :diffget //2<CR>
+nmap <leader>g3 :diffget //3<CR>
+
+"status
+"left: file, git branch(fugitive)
+"right line,col/perc,total lines
+set statusline =
+set statusline +=\ %f
+set statusline +=%=%{fugitive#statusline()}\ [%(%l,%c%V%)]\ [%L,%P]

@@ -220,7 +220,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 default_border pixel 1
-font pango:Noto Sans 8
+font pango:Noto Sans 8.5
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #555b68 #303540 #ffffff #2e9ef4   #ebcb8b
