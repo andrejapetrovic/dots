@@ -4,7 +4,8 @@ HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
 setopt HIST_IGNORE_DUPS
-bindkey -e
+bindkey -v
+export KEYTIMEOUT=1
 zstyle :compinstall filename '/home/ap/.zshrc'
 
 autoload -Uz compinit
@@ -18,10 +19,39 @@ alias ytd='youtube-dl -f bestaudio -xi'
 
 bindkey '^p' history-beginning-search-backward
 bindkey '^n' history-beginning-search-forward
+bindkey '^h' backward-delete-char
+bindkey '^?' backward-delete-char
+bindkey '^w' backward-kill-word
+bindkey '^u' backward-kill-line
+bindkey '^r' history-incremental-search-backward
+bindkey '^s' history-incremental-search-forward
+bindkey '^f' autosuggest-accept
+bindkey '^e' autosuggest-execute
+
+# Change cursor shape for different vi modes.
+function zle-keymap-select {
+  if [[ ${KEYMAP} == vicmd ]] ||
+     [[ $1 = 'block' ]]; then
+    echo -ne '\e[1 q'
+  elif [[ ${KEYMAP} == main ]] ||
+       [[ ${KEYMAP} == viins ]] ||
+       [[ ${KEYMAP} = '' ]] ||
+       [[ $1 = 'beam' ]]; then
+    echo -ne '\e[5 q'
+  fi
+}
+zle -N zle-keymap-select
+zle-line-init() {
+    # zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
+    echo -ne "\e[5 q"
+}
+zle -N zle-line-init
+echo -ne '\e[5 q' # Use beam shape cursor on startup.
+preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 function fzf-files { fzfp }
 zle -N fzf-files
-bindkey '\eo' fzf-files
+bindkey '\ep' fzf-files
 
 function fzf-config-files { fzfc }
 zle -N fzf-config-files
