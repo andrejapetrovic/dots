@@ -55,7 +55,7 @@ exec swayidle -w \
 
     # Start your launcher
     bindsym $mod+i exec bemenu-run
-    bindsym $mod+ctrl+q exec bm-shutdown 
+    bindsym $mod+ctrl+q exec bm-shutdown
     bindsym $mod+c exec web-search
 	bindsym $mod+a exec --no-startup-id firefox
 	bindsym $mod+shift+a exec --no-startup-id chromium

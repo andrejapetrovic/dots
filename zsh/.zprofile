@@ -3,7 +3,7 @@ export BROWSER=firefox
 export TERMINAL=alacritty
 export EDITOR=nvim
 export BEMENU_OPTS="-H 17 --fn 'Noto Sans Mono 9' --nb=#0d0f16 --fb=#0d0f16 --hb=#282c35 --tb=#0d0f16 --hf=#7cb7ff --tf=#7cb7ff"
-export PATH="$HOME/bin:$HOME/Projects/scripts:$HOME/.local/bin:$PATH"
+export PATH="$HOME/bin:$HOME/Projects/scripts:$HOME/.local/bin:$PATH:$HOME/.config/composer/vendor/laravel/installer/bin"
 
 export LESS=-R
 export LESS_TERMCAP_mb=$'\E[1;31m'     # begin blink

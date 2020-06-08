@@ -16,11 +16,11 @@ set shell=/usr/bin/zsh
 set relativenumber number
 set updatetime=250
 set termguicolors
-colorscheme nord 
+colorscheme nord
 
 set splitright
 set splitbelow
-set fillchars+=vert:\ 
+set fillchars+=vert:\
 " set colorcolumn=80
 
 set tabstop=4
@@ -50,6 +50,8 @@ command RSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink'
 " hotkeys
 let mapleader = " "
 
+inoremap { {<CR>}<Esc>O
+
 vnoremap <C-c> "+y
 vnoremap <C-p> d"+P
 nnoremap <silent> <leader>n :nohlsearch<Bar>:echo<CR>
@@ -61,8 +63,8 @@ nnoremap <leader>[ :bprevious<CR>
 " fzf (mostly)
 nnoremap <leader>p :Fzfp<CR>
 nnoremap <leader>u :GFiles<CR>
-nnoremap <leader>bl :Lines 
-nnoremap <leader>bb :BLines 
+nnoremap <leader>bl :Lines
+nnoremap <leader>bb :BLines
 nnoremap <leader>o :Buffers<CR>
 nnoremap <leader>i :History<CR>
 nnoremap <leader>m :Marks<CR>
@@ -74,9 +76,10 @@ nnoremap <leader>ss :mks! ~/.local/share/sess/
 nnoremap <leader>sa :w<CR>
 nnoremap <leader>sl :w<CR>
 nnoremap <leader>sq :wq<CR>
-nnoremap <leader>sd :cd %:p:h<CR> 
+nnoremap <leader>sd :cd %:p:h<CR>
 nnoremap <leader>se :Lex<CR>
-nnoremap <leader>c :Conf<CR> 
+nnoremap <leader>st :%s/\s\+$//e<CR>
+nnoremap <leader>c :Conf<CR>
 nnoremap <leader>tt :term<CR>
 nnoremap <leader>ts :sp \| term<CR>
 nnoremap <leader>tv :vsp \| term<CR>
@@ -166,7 +169,7 @@ nmap <leader>e :CocCommand explorer<CR>
 " term buffer
 augroup custom_term
 	autocmd!
-	autocmd TermOpen * setlocal bufhidden=hide 
+	autocmd TermOpen * setlocal bufhidden=hide
 augroup END
 
 let g:slime_target = "tmux"

@@ -16,7 +16,7 @@ search() {
 		#youtube
 		"yt") LOC="https://www.youtube.com/results?search_query=$@";;
 		#archwiki
-		"aw") LOC="https://wiki.archlinux.org/index.php?search=$@&title=Special%3ASearch&go=Go";;	
+		"aw") LOC="https://wiki.archlinux.org/index.php?search=$@&title=Special%3ASearch&go=Go";;
 		#aur
 		"aur") LOC="https://aur.archlinux.org/packages/?O=0&K=$@";;
 		#localhost

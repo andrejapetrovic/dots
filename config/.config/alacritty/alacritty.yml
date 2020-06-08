@@ -1,10 +1,10 @@
 colors:
   bright:
     black: '#555b68'
-    blue: '#7cb7ff'
+    blue: '#81a1c1'
     cyan: '#88c0d0'
     green: '#a3be8c'
-    magenta: '#7878b0'
+    magenta: '#b48ead'
     red: '#e9837b'
     white: '#e5e9f0'
     yellow: '#ebcb8b'
@@ -13,15 +13,15 @@ colors:
     text: '#555555'
   normal:
     black: '#282c35'
-    blue: '#7cb7ff'
+    blue: '#81a1c1'
     cyan: '#88c0d0'
     green: '#a3be8c'
-    magenta: '#7878b0'
+    magenta: '#b48ead'
     red: '#e9837b'
     white: '#e5e9f0'
     yellow: '#ebcb8b'
   primary:
-    background: '#0f1219'
+    background: '#1c1f27'
     foreground: '#d8dee9'
 env:
   TERM: xterm-256color

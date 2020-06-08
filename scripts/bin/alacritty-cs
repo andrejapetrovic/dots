@@ -14,8 +14,8 @@ def nord(doc):
     doc['colors']['normal']['red']      = '#e9837b'
     doc['colors']['normal']['green']    = '#a3be8c'
     doc['colors']['normal']['yellow']   = '#ebcb8b'
-    doc['colors']['normal']['blue']     = '#7cb7ff'
-    doc['colors']['normal']['magenta']  = '#7878b0'
+    doc['colors']['normal']['blue']     = '#81a1c1'
+    doc['colors']['normal']['magenta']  = '#b48ead'
     doc['colors']['normal']['cyan']     = '#88c0d0'
     doc['colors']['normal']['white']    = '#e5e9f0'
 
@@ -64,32 +64,6 @@ def gruvboxLight(doc):
     doc['colors']['cursor']['text']     = '#ffffff'
     return doc
 
-def gruvbox(doc):
-    doc['colors']['primary']['background'] = '#1d2021'
-    doc['colors']['primary']['foreground'] = '#ebdbb2'
-
-    doc['colors']['normal']['black']    = '#282828'
-    doc['colors']['normal']['red']      = '#cc241d'
-    doc['colors']['normal']['green']    = '#98971a'
-    doc['colors']['normal']['yellow']   = '#d79921'
-    doc['colors']['normal']['blue']     = '#458588'
-    doc['colors']['normal']['magenta']  = '#b16286'
-    doc['colors']['normal']['cyan']     = '#689d6a'
-    doc['colors']['normal']['white']    = '#a89984'
-
-    doc['colors']['bright']['black']    = '#928374'
-    doc['colors']['bright']['red']      = '#fb4934'
-    doc['colors']['bright']['green']    = '#b8bb26'
-    doc['colors']['bright']['yellow']   = '#fabd2f'
-    doc['colors']['bright']['blue']     = '#83a598'
-    doc['colors']['bright']['magenta']  = '#d3869b'
-    doc['colors']['bright']['cyan']     = '#8ec07c'
-    doc['colors']['bright']['white']    = '#ebdbb2'
-
-    doc['colors']['cursor']['cursor']   = '#fe8019'
-    doc['colors']['cursor']['text']     = '#ffffff'
-    return doc
-
 with open(cfgpath, 'r') as file:
     doc = load(file, Loader=FullLoader)
     if (argv[1] == 'gruvbox-light'):
@@ -98,8 +72,6 @@ with open(cfgpath, 'r') as file:
         nord(doc)
     elif (argv[1] == 'nord-darker'):
         nordDarker(doc)
-    elif (argv[1] == 'gruvbox'):
-        gruvbox(doc)
     else:
         print("Colorscheme doesn't exist")
 

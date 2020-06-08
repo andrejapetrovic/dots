@@ -20,7 +20,7 @@ bindkey '^p' history-beginning-search-backward
 bindkey '^n' history-beginning-search-forward
 
 function fzf-files { fzfp }
-zle -N fzf-files 
+zle -N fzf-files
 bindkey '\eo' fzf-files
 
 function fzf-config-files { fzfc }

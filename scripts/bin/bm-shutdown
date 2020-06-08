@@ -8,4 +8,4 @@ options(){
 	esac
 }
 
-echo "Shutdown\nRestart\nSuspend" | options $(bemenu -p "exit" -i)  
+echo "Shutdown\nRestart\nSuspend" | options $(bemenu -p "exit" -i)

@@ -1,6 +1,5 @@
 #!/bin/sh
 echo "nord
 nord-darker
-gruvbox
 gruvbox-light" | bemenu -l 10 -p "Terminal colorscheme" | xargs -r alacritty-cs
 
