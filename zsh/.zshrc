@@ -17,8 +17,6 @@ stty -ixon
 alias ls='ls --color=auto'
 alias ytd='youtube-dl -f bestaudio -xi'
 
-bindkey '^p' history-beginning-search-backward
-bindkey '^n' history-beginning-search-forward
 bindkey '^h' backward-delete-char
 bindkey '^?' backward-delete-char
 bindkey '^w' backward-kill-word
@@ -27,6 +25,10 @@ bindkey '^r' history-incremental-search-backward
 bindkey '^s' history-incremental-search-forward
 bindkey '^f' autosuggest-accept
 bindkey '^e' autosuggest-execute
+bindkey '^p' history-beginning-search-backward
+bindkey '^n' history-beginning-search-forward
+bindkey -M vicmd 'K' history-beginning-search-backward
+bindkey -M vicmd 'J' history-beginning-search-forward
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
@@ -46,8 +48,8 @@ zle-line-init() {
     echo -ne "\e[5 q"
 }
 zle -N zle-line-init
-echo -ne '\e[5 q' # Use beam shape cursor on startup.
-preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+# echo -ne '\e[5 q' # Use beam shape cursor on startup.
+# preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 function fzf-files { fzfp }
 zle -N fzf-files
@@ -60,6 +62,14 @@ bindkey '\ec' fzf-config-files
 function pipe-tmux-pane { tpane nvim - }
 zle -N pipe-tmux-pane
 bindkey '\em' pipe-tmux-pane
+
+# Yank to the system clipboard
+function vi-yank-clip {
+    zle vi-yank
+   echo "$CUTBUFFER" | wl-copy
+}
+zle -N vi-yank-clip
+bindkey -M vicmd 'y' vi-yank-clip
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

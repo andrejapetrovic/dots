@@ -26,6 +26,10 @@ set fillchars+=vert:\
 set tabstop=4
 set shiftwidth=4
 
+" fixes a bug where cursor gets stuck in a block shape
+" in zsh vi mode after exiting neovim
+au VimLeave * set guicursor=a:ver25-blinkon0
+
 " netrw
 let g:netrw_liststyle = 3
 let g:netrw_banner = 0
@@ -42,7 +46,7 @@ let g:fzf_action = {
       \ }
 
 command Fzfp call fzf#run(fzf#wrap({'source': 'rg --follow --files --hidden --glob "!.git/"', 'down': '80%', 'options': ['--multi']}))
-command Conf call fzf#run(fzf#wrap({'source': 'rg --follow --ignore-file ~/.cfgignore --files ~/', 'down': '80%', 'options': ['--multi', '--prompt=Conf>']}))
+command Conf call fzf#run(fzf#wrap({'source': 'rg --follow --ignore-file ~/.cfgignore --files ~/', 'down': '80%', 'options': ['--multi', '--prompt=Conf> ']}))
 command OSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': 'source', 'down': '40%', 'options': ['--prompt=OpenSession>']})
 command OProj call fzf#run({'source': 'ls', 'dir': '~/Projects', 'sink': 'cd', 'down': '40%', 'options': ['--prompt=OpenProj>']})
 command RSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': '! rm', 'down': '40%', 'options': ['--multi', '--prompt=RemoveSession>']})
