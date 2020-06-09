@@ -15,6 +15,7 @@ set mouse=a
 set shell=/usr/bin/zsh
 set relativenumber number
 set updatetime=250
+set clipboard=unnamedplus
 set termguicolors
 colorscheme nord
 
@@ -38,11 +39,18 @@ let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 let g:netrw_winsize = 20
 let g:netrw_preview = 1
 
+function! s:build_quickfix_list(lines)
+	call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
+	copen
+	cc
+endfunction
+
 let g:fzf_buffers_jump = 1
 let g:fzf_action = {
       \ 'ctrl-s': 'split',
       \ 'ctrl-v': 'vsplit',
-      \ 'ctrl-t': 'tab split'
+      \ 'ctrl-t': 'tab split',
+      \ 'ctrl-a': function('s:build_quickfix_list')
       \ }
 
 command Fzfp call fzf#run(fzf#wrap({'source': 'rg --follow --files --hidden --glob "!.git/"', 'down': '80%', 'options': ['--multi']}))

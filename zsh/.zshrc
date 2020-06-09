@@ -15,6 +15,8 @@ local WORDCHARS='*?_[]~=&;!#$%^(){}<>'
 stty -ixon
 
 alias ls='ls --color=auto'
+alias diff='diff --color=auto'
+alias grep='grep --color=auto'
 alias ytd='youtube-dl -f bestaudio -xi'
 
 bindkey '^h' backward-delete-char
