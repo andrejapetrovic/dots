@@ -5,6 +5,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'tpope/vim-surround'
 	Plug 'tpope/vim-fugitive'
 	Plug 'tpope/vim-commentary'
+	Plug 'tpope/vim-repeat'
 	Plug 'jpalardy/vim-slime'
 	Plug 'honza/vim-snippets'
 	Plug 'norcalli/nvim-colorizer.lua'
@@ -18,10 +19,10 @@ set updatetime=250
 set clipboard=unnamedplus
 set termguicolors
 colorscheme nord
+let mapleader = " "
 
 set splitright
 set splitbelow
-set fillchars+=vert:\
 " set colorcolumn=80
 
 set tabstop=4
@@ -43,7 +44,23 @@ function! s:build_quickfix_list(lines)
 	call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
 	copen
 	cc
-endfunction
+endfunction 
+
+" augroup autoquickfix
+"     autocmd!
+"     autocmd QuickFixCmdPost [^l]* cwindow
+"     autocmd QuickFixCmdPost    l* lwindow
+" augroup END
+
+"change :grep to rg
+set grepprg=rg\ --vimgrep
+set grepformat^=%f:%l:%c:%m
+"grep for word under cursor
+nnoremap <leader>rr :grep! "\b<C-R><C-W>\b"<CR>:copen<CR><CR>
+nmap ]q :cnext<CR>
+nmap [q :cprev<CR>
+nmap ]Q :clast<CR>
+nmap [Q :cfirs<CR>
 
 let g:fzf_buffers_jump = 1
 let g:fzf_action = {
@@ -60,14 +77,12 @@ command OProj call fzf#run({'source': 'ls', 'dir': '~/Projects', 'sink': 'cd', '
 command RSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': '! rm', 'down': '40%', 'options': ['--multi', '--prompt=RemoveSession>']})
 
 " hotkeys
-let mapleader = " "
-
 inoremap { {<CR>}<Esc>O
 
 vnoremap <C-c> "+y
 vnoremap <C-p> d"+P
 nnoremap <silent> <leader>n :nohlsearch<Bar>:echo<CR>
-nnoremap <c-k> :<c-f>
+nnoremap <c-k> :<c-f>k
 
 nnoremap <leader>] :bnext<CR>
 nnoremap <leader>[ :bprevious<CR>
@@ -189,7 +204,7 @@ let g:slime_no_mappings = 1
 xmap <c-a> <Plug>SlimeRegionSend
 nmap <c-a> <Plug>SlimeParagraphSend
 nmap <c-c> :SlimeSend<CR>
-nmap <leader>sc   <Plug>SlimeConfig
+nmap <leader>sc <Plug>SlimeConfig
 let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
 
 "comments
@@ -205,8 +220,8 @@ nmap <leader>g2 :diffget //2<CR>
 nmap <leader>g3 :diffget //3<CR>
 
 "status
-"left: file, git branch(fugitive)
-"right line,col/perc,total lines
+"left:  filename
+"right: [git branch(fugitive)] [line,col] [perc total_lines]
 set statusline =
 set statusline +=\ %f
 set statusline +=%=%{fugitive#statusline()}\ [%(%l,%c%V%)]\ [%L,%P]
