@@ -32,8 +32,8 @@ output "*" background "~/.cache/wallpaper" fill
 # Example configuration:
 #
 exec swayidle -w \
-         timeout 599 'swaylock -f -c 000000' \
-         timeout 600 'swaymsg "output * dpms off"' \
+         timeout 899 'swaylock -f -c 000000' \
+         timeout 900 'swaymsg "output * dpms off"' \
               resume 'swaymsg "output * dpms on"' \
          before-sleep 'swaylock -f -c 000000'
 #
@@ -96,7 +96,7 @@ exec swayidle -w \
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
-	bindsym $mod+shift+e exec swaymsg exit
+	bindsym $mod+alt+q exec swaymsg exit
 
 	bindsym $mod+alt+p exec 'killall waybar; waybar'
 

@@ -1,5 +1,6 @@
 call plug#begin('~/.config/nvim/plugged')
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	Plug 'neoclide/jsonc.vim'
 	Plug 'junegunn/fzf.vim'
 	Plug 'junegunn/gv.vim'
 	Plug 'tpope/vim-surround'
@@ -9,7 +10,6 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'jpalardy/vim-slime'
 	Plug 'honza/vim-snippets'
 	Plug 'norcalli/nvim-colorizer.lua'
-	" Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 set mouse=a
@@ -19,6 +19,7 @@ set updatetime=250
 set clipboard=unnamedplus
 set termguicolors
 colorscheme nord
+set nohlsearch
 let mapleader = " "
 
 set splitright
@@ -44,7 +45,7 @@ function! s:build_quickfix_list(lines)
 	call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
 	copen
 	cc
-endfunction 
+endfunction
 
 " augroup autoquickfix
 "     autocmd!
@@ -53,7 +54,7 @@ endfunction
 " augroup END
 
 "change :grep to rg
-set grepprg=rg\ --vimgrep
+set grepprg=rg\ --vimgrep\ --block-buffered
 set grepformat^=%f:%l:%c:%m
 "grep for word under cursor
 nnoremap <leader>rr :grep! "\b<C-R><C-W>\b"<CR>:copen<CR><CR>
@@ -77,11 +78,10 @@ command OProj call fzf#run({'source': 'ls', 'dir': '~/Projects', 'sink': 'cd', '
 command RSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': '! rm', 'down': '40%', 'options': ['--multi', '--prompt=RemoveSession>']})
 
 " hotkeys
-inoremap { {<CR>}<Esc>O
-
 vnoremap <C-c> "+y
 vnoremap <C-p> d"+P
-nnoremap <silent> <leader>n :nohlsearch<Bar>:echo<CR>
+" nnoremap <silent> <leader>n :nohlsearch<Bar>:echo<CR>
+nnoremap <leader>n :hlsearch!
 nnoremap <c-k> :<c-f>k
 
 nnoremap <leader>] :bnext<CR>
@@ -201,9 +201,9 @@ augroup END
 
 let g:slime_target = "tmux"
 let g:slime_no_mappings = 1
-xmap <c-a> <Plug>SlimeRegionSend
-nmap <c-a> <Plug>SlimeParagraphSend
-nmap <c-c> :SlimeSend<CR>
+xmap <M-r> <Plug>SlimeRegionSend
+nmap <M-r> <Plug>SlimeParagraphSend
+nmap <M-e> :SlimeSend<CR>
 nmap <leader>sc <Plug>SlimeConfig
 let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
 
@@ -219,9 +219,7 @@ nmap <leader>gv :Gvdiff>CR>
 nmap <leader>g2 :diffget //2<CR>
 nmap <leader>g3 :diffget //3<CR>
 
-"status
-"left:  filename
-"right: [git branch(fugitive)] [line,col] [perc total_lines]
-set statusline =
-set statusline +=\ %f
-set statusline +=%=%{fugitive#statusline()}\ [%(%l,%c%V%)]\ [%L,%P]
+"filename [git branch(fugitive)] [line,col] [perc total_lines]
+set statusline =\ %f%=%{fugitive#statusline()}\ [%(%l,%c%V%)]\ [%L,%P]
+
+autocmd BufNewFile,BufRead *.json,**/waybar/config set filetype=jsonc

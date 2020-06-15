@@ -28,8 +28,8 @@ def nord(doc):
     doc['colors']['bright']['cyan']     = doc['colors']['normal']['cyan']
     doc['colors']['bright']['white']    = doc['colors']['normal']['white']
 
-    doc['colors']['cursor']['cursor']   = '#fece35'
-    doc['colors']['cursor']['text']     = '#555555'
+    doc['colors']['cursor']['cursor']   = doc['colors']['primary']['foreground']
+    doc['colors']['cursor']['text']     = doc['colors']['primary']['background']
     return doc
 
 def nordDarker(doc):

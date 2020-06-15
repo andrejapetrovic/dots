@@ -68,7 +68,7 @@ bindkey '\em' pipe-tmux-pane
 # Yank to the system clipboard
 function vi-yank-clip {
     zle vi-yank
-   echo "$CUTBUFFER" | wl-copy
+	echo "$CUTBUFFER" | wl-copy
 }
 zle -N vi-yank-clip
 bindkey -M vicmd 'y' vi-yank-clip

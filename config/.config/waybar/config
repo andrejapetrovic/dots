@@ -11,16 +11,16 @@
         "format": "<span style=\"italic\">{}</span>"
     },
     "mpd": {
-        "format": "{artist} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
+        "format": " {artist} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S})",
         "format-disconnected": "Disconnected ",
-        "format-stopped": "蘿",
+        "format-stopped": " mpd",
         "unknown-tag": "N/A",
         "interval": 2,
         "consume-icons": {
             "on": " "
         },
         "random-icons": {
-            "off": "<span color=\"#f53c3c\"></span> ",
+            "off": " ",
             "on": " "
         },
         "repeat-icons": {
@@ -50,14 +50,14 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-		"format": "{:%H:%M  %a, %d %b}"
+		"format": " {:%H:%M   %a, %d %b}"
     },
     "cpu": {
-        "format": "<span color=\"#555b68\"> </span>{usage}%",
+        "format": " {usage}%",
         "tooltip": false
     },
     "memory": {
-        "format": "<span color=\"#88c0d0\"> </span>{}%"
+        "format": " {}%"
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -69,8 +69,8 @@
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "<span color=\"#ebcb8b\">{icon}</span> {percent}%",
-        "format-icons": ["", ""]
+        "format": "{icon} {percent}%",
+        "format-icons": ["", ""]
     },
     "battery": {
         "states": {
