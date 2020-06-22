@@ -68,11 +68,10 @@ exec swayidle -w \
 	bindsym shift+XF86AudioRaiseVolume exec 'pactl set-sink-volume 0 +10%'
 	bindsym shift+XF86AudioLowerVolume exec 'pactl set-sink-volume 0 -10%'
 	bindsym XF86AudioMute exec 'pactl set-sink-mute 0 toggle'
-
-	bindsym $mod+backslash exec mpc toggle
-	bindsym $mod+semicolon exec mpc prev
-	bindsym $mod+apostrophe exec mpc next
-	bindsym $mod+shift+backslash exec mpc stop
+	bindsym XF86AudioPlay exec mpc toggle
+	bindsym XF86AudioPrev exec mpc prev
+	bindsym XF86AudioNext exec mpc next
+	bindsym XF86AudioStop exec mpc stop
 
 	bindsym Print exec 'grim - | wl-copy -t image/png'
 	bindsym $mod+shift+s exec 'slurp | xargs -r -I@ grim -g @ - | wl-copy -t image/png'
@@ -95,7 +94,7 @@ exec swayidle -w \
     floating_modifier $mod normal
 
     # Reload the configuration file
-    bindsym $mod+Shift+c reload
+    bindsym $mod+Shift+escape reload
 	bindsym $mod+alt+q exec swaymsg exit
 
 	bindsym $mod+alt+p exec 'killall waybar; waybar'
@@ -249,5 +248,6 @@ input 2:18:FocalTechPS/2_FocalTech_Touchpad {
 }
 
 exec --no-startup-id waybar
+exec --no-startup-id redshift
 
 include /etc/sway/config.d/*

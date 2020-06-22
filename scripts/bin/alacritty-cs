@@ -6,7 +6,8 @@ from yaml import load, dump, FullLoader
 cfgpath = str(PosixPath('~/.config/alacritty/alacritty.yml').expanduser())
 
 def nord(doc):
-    doc['colors']['primary']['background'] = '#1c1f27'
+    # doc['colors']['primary']['background'] = '#1c1f27'
+    doc['colors']['primary']['background'] = '#2e3440'
     doc['colors']['primary']['foreground'] = '#d8dee9'
     # doc['colors']['primary']['foreground'] = '#fdfdfd'
 
@@ -19,7 +20,7 @@ def nord(doc):
     doc['colors']['normal']['cyan']     = '#88c0d0'
     doc['colors']['normal']['white']    = '#e5e9f0'
 
-    doc['colors']['bright']['black']    = '#555b68'
+    doc['colors']['bright']['black']    = '#526e87'
     doc['colors']['bright']['red']      = doc['colors']['normal']['red']
     doc['colors']['bright']['green']    = doc['colors']['normal']['green']
     doc['colors']['bright']['yellow']   = doc['colors']['normal']['yellow']

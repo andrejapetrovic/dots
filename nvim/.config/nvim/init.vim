@@ -20,6 +20,7 @@ set clipboard=unnamedplus
 set termguicolors
 colorscheme nord
 set nohlsearch
+set inccommand=split
 let mapleader = " "
 
 set splitright
@@ -57,7 +58,8 @@ endfunction
 set grepprg=rg\ --vimgrep\ --block-buffered
 set grepformat^=%f:%l:%c:%m
 "grep for word under cursor
-nnoremap <leader>rr :grep! "\b<C-R><C-W>\b"<CR>:copen<CR><CR>
+nnoremap <leader>rr :silent grep! "\b<C-R><C-W>\b"<CR>:copen<CR><CR>
+nnoremap <leader>rg :silent grep 
 nmap ]q :cnext<CR>
 nmap [q :cprev<CR>
 nmap ]Q :clast<CR>
@@ -78,8 +80,6 @@ command OProj call fzf#run({'source': 'ls', 'dir': '~/Projects', 'sink': 'cd', '
 command RSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': '! rm', 'down': '40%', 'options': ['--multi', '--prompt=RemoveSession>']})
 
 " hotkeys
-vnoremap <C-c> "+y
-vnoremap <C-p> d"+P
 " nnoremap <silent> <leader>n :nohlsearch<Bar>:echo<CR>
 nnoremap <leader>n :hlsearch!
 nnoremap <c-k> :<c-f>k
@@ -203,7 +203,9 @@ let g:slime_target = "tmux"
 let g:slime_no_mappings = 1
 xmap <M-r> <Plug>SlimeRegionSend
 nmap <M-r> <Plug>SlimeParagraphSend
+imap <M-r> <ESC><Plug>SlimeParagraphSend
 nmap <M-e> :SlimeSend<CR>
+imap <M-e> <ESC>:SlimeSend<CR>
 nmap <leader>sc <Plug>SlimeConfig
 let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
 

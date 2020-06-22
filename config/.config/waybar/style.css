@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-    background-color: #0f1219;
+    background-color: #000000;
     /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
     color: #ffffff;
     transition-property: background-color;
@@ -81,7 +81,7 @@ window#waybar.solo {
 #mpd {
     padding: 0 5px;
     margin: 0 4px;
-    color: #b8babf;
+    color: #afb0b2;
 }
 
 /* #clock { */
