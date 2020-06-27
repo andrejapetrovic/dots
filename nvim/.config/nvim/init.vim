@@ -75,11 +75,11 @@ let g:fzf_action = {
       \ 'ctrl-a': function('s:build_quickfix_list')
       \ }
 
-command Fzfp call fzf#run(fzf#wrap({'source': 'rg --follow --files --hidden --glob "!.git/"', 'down': '50%', 'options': ['--multi']}))
-command Conf call fzf#run(fzf#wrap({'source': 'rg --follow --ignore-file ~/.cfgignore --files ~/', 'down': '50%', 'options': ['--multi', '--prompt=Conf> ']}))
-command OSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': 'source', 'down': '40%', 'options': ['--prompt=OpenSession>']})
-command OProj call fzf#run({'source': 'ls', 'dir': '~/Projects', 'sink': 'cd', 'down': '40%', 'options': ['--prompt=OpenProj>']})
-command RSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': '! rm', 'down': '40%', 'options': ['--multi', '--prompt=RemoveSession>']})
+command! Fzfp call fzf#run(fzf#wrap({'source': 'rg --follow --files --hidden --glob "!.git/"', 'down': '50%', 'options': ['--multi']}))
+command! Conf call fzf#run(fzf#wrap({'source': 'rg --follow --ignore-file ~/.cfgignore --files ~/', 'down': '50%', 'options': ['--multi', '--prompt=Conf> ']}))
+command! OSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': 'source', 'down': '40%', 'options': ['--prompt=OpenSession>']})
+command! OProj call fzf#run({'source': 'ls', 'dir': '~/Projects', 'sink': 'cd', 'down': '40%', 'options': ['--prompt=OpenProj>']})
+command! RSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': '! rm', 'down': '40%', 'options': ['--multi', '--prompt=RemoveSession>']})
 
 " hotkeys
 " nnoremap <silent> <leader>n :nohlsearch<Bar>:echo<CR>
@@ -193,7 +193,7 @@ nmap <leader>gs :CocCommand git.chunkStage<CR>
 " xmap ag <Plug>(coc-git-chunk-outer)
 
 "explorer
-nmap <leader>e :CocCommand explorer<CR>
+nmap <leader>re :CocCommand explorer<CR>
 
 " term buffer
 augroup custom_term
@@ -236,4 +236,12 @@ augroup END
 
 "Color preview
 "Buggy in neovim nightly with treesitter
-" lua require'colorizer'.setup()
+lua require'colorizer'.setup()
+
+"partial sourcing, visual, line, paragraph
+vnoremap . "sy:@s<CR>
+nnoremap <leader>ee "syy:@s<CR>
+nnoremap <leader>ep "syip:@s<CR>
+nnoremap <leader>ei "syy:@s \| PlugInstall<CR>
+nnoremap <leader>ec "syip:@s \| PlugClean<CR>
+
