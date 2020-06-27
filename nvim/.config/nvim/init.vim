@@ -225,28 +225,7 @@ set statusline =\ %f%=%{fugitive#statusline()}\ [%(%l,%c%V%)]\ [%L,%P]
 
 autocmd BufNewFile,BufRead *.json,**/waybar/config set filetype=jsonc
 
-"lua
-lua << EOF
-
-require'nvim-treesitter.configs'.setup {
-    highlight = {
-		enable = true,
-	},
-    incremental_selection = {
-        enable = true,
-        keymaps = {                       
-          init_selection = "<c-m>",
-          node_incremental = "<c-n>",       
-          scope_incremental = "<c-j>",      
-          node_decremental = "<c-p>", 
-        }
-    }
-}
-
-require "nvim-treesitter.highlight"
-vim.treesitter.TSHighlighter.hl_map.error = nil
-
-EOF
+lua require'trees'.setup()
 
 " set foldmethod=expr foldexpr=nvim_treesitter#foldexpr()
 
