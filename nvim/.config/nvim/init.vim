@@ -10,6 +10,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'jpalardy/vim-slime'
 	Plug 'honza/vim-snippets'
 	Plug 'norcalli/nvim-colorizer.lua'
+	Plug 'nvim-treesitter/nvim-treesitter'
 call plug#end()
 
 set mouse=a
@@ -21,6 +22,7 @@ set termguicolors
 colorscheme nord
 set nohlsearch
 set inccommand=split
+set pumheight=25
 let mapleader = " "
 
 set splitright
@@ -73,8 +75,8 @@ let g:fzf_action = {
       \ 'ctrl-a': function('s:build_quickfix_list')
       \ }
 
-command Fzfp call fzf#run(fzf#wrap({'source': 'rg --follow --files --hidden --glob "!.git/"', 'down': '80%', 'options': ['--multi']}))
-command Conf call fzf#run(fzf#wrap({'source': 'rg --follow --ignore-file ~/.cfgignore --files ~/', 'down': '80%', 'options': ['--multi', '--prompt=Conf> ']}))
+command Fzfp call fzf#run(fzf#wrap({'source': 'rg --follow --files --hidden --glob "!.git/"', 'down': '50%', 'options': ['--multi']}))
+command Conf call fzf#run(fzf#wrap({'source': 'rg --follow --ignore-file ~/.cfgignore --files ~/', 'down': '50%', 'options': ['--multi', '--prompt=Conf> ']}))
 command OSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': 'source', 'down': '40%', 'options': ['--prompt=OpenSession>']})
 command OProj call fzf#run({'source': 'ls', 'dir': '~/Projects', 'sink': 'cd', 'down': '40%', 'options': ['--prompt=OpenProj>']})
 command RSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': '! rm', 'down': '40%', 'options': ['--multi', '--prompt=RemoveSession>']})
@@ -212,9 +214,6 @@ let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
 "comments
 autocmd FileType typescript,c setlocal commentstring=//\ %s
 
-"Color preview
-lua require'colorizer'.setup()
-
 "git
 nmap <leader>gg :G<CR>
 nmap <leader>gv :Gvdiff>CR>
@@ -225,3 +224,37 @@ nmap <leader>g3 :diffget //3<CR>
 set statusline =\ %f%=%{fugitive#statusline()}\ [%(%l,%c%V%)]\ [%L,%P]
 
 autocmd BufNewFile,BufRead *.json,**/waybar/config set filetype=jsonc
+
+"lua
+lua << EOF
+
+require'nvim-treesitter.configs'.setup {
+    highlight = {
+		enable = true,
+	},
+    incremental_selection = {
+        enable = true,
+        keymaps = {                       
+          init_selection = "<c-m>",
+          node_incremental = "<c-n>",       
+          scope_incremental = "<c-j>",      
+          node_decremental = "<c-p>", 
+        }
+    }
+}
+
+require "nvim-treesitter.highlight"
+vim.treesitter.TSHighlighter.hl_map.error = nil
+
+EOF
+
+" set foldmethod=expr foldexpr=nvim_treesitter#foldexpr()
+
+augroup highlight_yank
+    autocmd!
+    autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank("IncSearch", 200)
+augroup END 
+
+"Color preview
+"Buggy in neovim nightly with treesitter
+" lua require'colorizer'.setup()
