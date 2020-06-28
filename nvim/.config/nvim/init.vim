@@ -1,6 +1,6 @@
 call plug#begin('~/.config/nvim/plugged')
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
-	Plug 'neoclide/jsonc.vim'
+	Plug 'neoclide/jsonc.vim', {'for': 'json'}
 	Plug 'junegunn/fzf.vim'
 	Plug 'junegunn/gv.vim'
 	Plug 'tpope/vim-surround'
@@ -34,7 +34,7 @@ set shiftwidth=4
 
 " fixes a bug where cursor gets stuck in a block shape
 " in zsh vi mode after exiting neovim
-au VimLeave * set guicursor=a:ver25-blinkon0
+autocmd! VimLeave * set guicursor=a:ver25-blinkon0
 
 " netrw
 let g:netrw_liststyle = 3
@@ -62,10 +62,10 @@ set grepformat^=%f:%l:%c:%m
 "grep for word under cursor
 nnoremap <leader>rr :silent grep! "\b<C-R><C-W>\b"<CR>:copen<CR><CR>
 nnoremap <leader>rg :silent grep 
-nmap ]q :cnext<CR>
-nmap [q :cprev<CR>
-nmap ]Q :clast<CR>
-nmap [Q :cfirs<CR>
+nmap <silent> ]q :cnext<CR>
+nmap <silent> [q :cprev<CR>
+nmap <silent> ]Q :clast<CR>
+nmap <silent> [Q :cfirs<CR>
 
 let g:fzf_buffers_jump = 1
 let g:fzf_action = {
@@ -81,22 +81,25 @@ command! OSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink
 command! OProj call fzf#run({'source': 'ls', 'dir': '~/Projects', 'sink': 'cd', 'down': '40%', 'options': ['--prompt=OpenProj>']})
 command! RSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink': '! rm', 'down': '40%', 'options': ['--multi', '--prompt=RemoveSession>']})
 
+command! Sourceconf source ~/.config/nvim/init.vim
+
 " hotkeys
 " nnoremap <silent> <leader>n :nohlsearch<Bar>:echo<CR>
 nnoremap <leader>n :hlsearch!
-nnoremap <c-k> :<c-f>k
+nnoremap <leader>sk :<c-f>k
 
-nnoremap <leader>] :bnext<CR>
-nnoremap <leader>[ :bprevious<CR>
+nnoremap <silent> <leader>] :bnext<CR>
+nnoremap <silent> <leader>[ :bprevious<CR>
 
 " fzf (mostly)
-nnoremap <leader>p :Fzfp<CR>
-nnoremap <leader>u :GFiles<CR>
-nnoremap <leader>bl :Lines
-nnoremap <leader>bb :BLines
-nnoremap <leader>o :Buffers<CR>
-nnoremap <leader>i :History<CR>
-nnoremap <leader>m :Marks<CR>
+nnoremap <silent> <leader>p :Fzfp<CR>
+nnoremap <silent> <leader>u :GFiles<CR>
+nnoremap <silent> <leader>bl :Lines
+nnoremap <silent> <leader>bb :BLines
+nnoremap <silent> <leader>o :Buffers<CR>
+nnoremap <silent> <leader>i :History<CR>
+nnoremap <silent> <leader>m :Marks<CR>
+nnoremap <silent> <leader>c :Conf<CR>
 
 nnoremap <leader>so :OSess<CR>
 nnoremap <leader>sp :OProj<CR>
@@ -108,7 +111,6 @@ nnoremap <leader>sq :wq<CR>
 nnoremap <leader>sd :cd %:p:h<CR>
 nnoremap <leader>se :Lex<CR>
 nnoremap <leader>st :%s/\s\+$//e<CR>
-nnoremap <leader>c :Conf<CR>
 nnoremap <leader>tt :term<CR>
 nnoremap <leader>ts :sp \| term<CR>
 nnoremap <leader>tv :vsp \| term<CR>
@@ -120,6 +122,12 @@ nnoremap <leader>k <c-w>k
 nnoremap <leader>l <c-w>l
 nnoremap <leader>q <c-w>q
 nnoremap <leader>w <c-w>w
+
+"lines
+nnoremap <silent> <c-j> :m .+1<CR>==
+nnoremap <silent> <c-k> :m .-2<CR>==
+vnoremap <silent> <c-j> :m '>+1<CR>gv=gv
+vnoremap <silent> <c-k> :m '<-2<CR>gv=gv
 
 "terminal
 tnoremap <Esc> <c-\><c-n>
@@ -206,24 +214,23 @@ let g:slime_no_mappings = 1
 xmap <M-r> <Plug>SlimeRegionSend
 nmap <M-r> <Plug>SlimeParagraphSend
 imap <M-r> <ESC><Plug>SlimeParagraphSend
-nmap <M-e> :SlimeSend<CR>
-imap <M-e> <ESC>:SlimeSend<CR>
+nmap <silent> <M-e> :SlimeSend<CR>
+imap <silent> <M-e> <ESC>:SlimeSend<CR>
 nmap <leader>sc <Plug>SlimeConfig
 let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
 
 "comments
-autocmd FileType typescript,c setlocal commentstring=//\ %s
+autocmd! FileType typescript,c setlocal commentstring=//\ %s
 
 "git
 nmap <leader>gg :G<CR>
-nmap <leader>gv :Gvdiff>CR>
+nmap <leader>gv :Gvdiff<CR>
 nmap <leader>g2 :diffget //2<CR>
 nmap <leader>g3 :diffget //3<CR>
 
-"filename [git branch(fugitive)] [line,col] [perc total_lines]
-set statusline =\ %f%=%{fugitive#statusline()}\ [%(%l,%c%V%)]\ [%L,%P]
+set statusline =\ %f\ \ [%p%%]\ \ %L%=%{fugitive#statusline()}\ [%(%l,%c%V%)]
 
-autocmd BufNewFile,BufRead *.json,**/waybar/config set filetype=jsonc
+autocmd! BufNewFile,BufRead *.json,*/waybar/config set filetype=jsonc
 
 lua require'trees'.setup()
 
@@ -241,7 +248,7 @@ lua require'colorizer'.setup()
 "partial sourcing, visual, line, paragraph
 vnoremap . "sy:@s<CR>
 nnoremap <leader>ee "syy:@s<CR>
-nnoremap <leader>ep "syip:@s<CR>
+nnoremap <leader>ep ms"syip:@s<CR>
 nnoremap <leader>ei "syy:@s \| PlugInstall<CR>
 nnoremap <leader>ec "syip:@s \| PlugClean<CR>
 

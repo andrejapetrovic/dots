@@ -9,7 +9,7 @@ function M.setup()
 			keymaps = {                       
 			  init_selection = "<c-m>",
 			  node_incremental = "<c-n>",       
-			  scope_incremental = "<c-j>",      
+			  scope_incremental = "<c-N>",      
 			  node_decremental = "<c-p>", 
 			}
 		}
