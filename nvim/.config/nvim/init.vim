@@ -7,10 +7,11 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'tpope/vim-fugitive'
 	Plug 'tpope/vim-commentary'
 	Plug 'tpope/vim-repeat'
+	Plug 'tpope/vim-eunuch'
 	Plug 'jpalardy/vim-slime'
 	Plug 'honza/vim-snippets'
 	Plug 'norcalli/nvim-colorizer.lua'
-	Plug 'nvim-treesitter/nvim-treesitter'
+	" Plug 'nvim-treesitter/nvim-treesitter'
 	Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install', 'for': 'markdown'}
 	Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server', 'for': 'html'}
 call plug#end()
@@ -246,7 +247,7 @@ set statusline =\ %f\ \ [%p%%]\ \ %L%=%{fugitive#statusline()}\ [%(%l,%c%V%)]
 
 autocmd! BufNewFile,BufRead *.json,*/waybar/config set filetype=jsonc
 
-lua require'trees'
+" lua require'trees'
 
 " set foldmethod=expr foldexpr=nvim_treesitter#foldexpr()
 
@@ -288,3 +289,19 @@ function! FloatingWindow()
 endfunction
 nnoremap <silent> <leader>tf :call FloatingWindow() \| call termopen("zsh")<CR>
 
+"Treesitter slow loading time, load on command
+function! LoadTS()
+	Plug 'nvim-treesitter/nvim-treesitter'
+	call plug#load('nvim-treesitter')
+	" lua require'trees'
+	TSBufEnable highlight
+	TSBufEnable incremental_selection
+	TSBufEnable refactor.smart_rename
+	TSBufEnable refactor.highlight_definitions
+	TSBufEnable refactor.navigation
+endfunction
+
+autocmd! Filetype javascript,typescript,python,c,cpp,java call LoadTS()
+
+command! TS :call LoadTS()<CR>
+nnoremap <silent> <leader>rt :call LoadTS()<CR>

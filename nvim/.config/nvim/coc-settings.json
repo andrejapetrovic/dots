@@ -8,6 +8,7 @@
 	"signature.enable": false,
 	"python.jediEnabled": false,
 	"explorer.icon.enableNerdfont": true,
+	"explorer.file.showHiddenFiles": true,
 	"git.addedSign.hlGroup": "GitGutterAdd",
 	"git.changedSign.hlGroup": "GitGutterChange",
 	"git.removedSign.hlGroup": "GitGutterDelete",
