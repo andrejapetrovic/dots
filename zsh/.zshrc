@@ -18,17 +18,19 @@ alias ls='ls --color=auto'
 alias diff='diff --color=auto'
 alias grep='grep --color=auto'
 alias ytd='youtube-dl -f bestaudio -xi'
+alias vi="nvim -u NONE -c 'set clipboard=unnamedplus'"
 
 bindkey '^h' backward-delete-char
 bindkey '^?' backward-delete-char
 bindkey '^w' backward-kill-word
+bindkey '^k' kill-line
 bindkey '^u' backward-kill-line
 bindkey '^r' history-incremental-search-backward
 bindkey '^s' history-incremental-search-forward
 bindkey '^f' autosuggest-accept
 bindkey '^e' autosuggest-execute
-bindkey '^p' history-beginning-search-backward
-bindkey '^n' history-beginning-search-forward
+bindkey '^p' history-search-backward
+bindkey '^n' history-search-forward
 bindkey -M vicmd 'K' history-beginning-search-backward
 bindkey -M vicmd 'J' history-beginning-search-forward
 

@@ -11,26 +11,34 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'honza/vim-snippets'
 	Plug 'norcalli/nvim-colorizer.lua'
 	Plug 'nvim-treesitter/nvim-treesitter'
+	Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install', 'for': 'markdown'}
+	Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server', 'for': 'html'}
 call plug#end()
 
 set mouse=a
-set shell=/usr/bin/zsh
 set relativenumber number
-set updatetime=250
+set updatetime=0
+set signcolumn=yes
 set clipboard=unnamedplus
 set termguicolors
 colorscheme nord
 set nohlsearch
-set inccommand=split
-set pumheight=25
-let mapleader = " "
-
+set inccommand=nosplit
+set pumheight=15
 set splitright
 set splitbelow
 " set colorcolumn=80
-
 set tabstop=4
 set shiftwidth=4
+" set expandtab
+set noswapfile
+set nobackup
+set nowritebackup
+let mapleader = " "
+
+cabbrev Q q
+cabbrev W w
+cabbrev Wq wq
 
 " fixes a bug where cursor gets stuck in a block shape
 " in zsh vi mode after exiting neovim
@@ -67,6 +75,10 @@ nmap <silent> [q :cprev<CR>
 nmap <silent> ]Q :clast<CR>
 nmap <silent> [Q :cfirs<CR>
 
+" rename ward + repeat for next with dot
+nnoremap <leader>rn *Ncgn
+nnoremap <leader>rN #Ncgn
+
 let g:fzf_buffers_jump = 1
 let g:fzf_action = {
       \ 'ctrl-s': 'split',
@@ -84,22 +96,22 @@ command! RSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink
 command! Sourceconf source ~/.config/nvim/init.vim
 
 " hotkeys
-" nnoremap <silent> <leader>n :nohlsearch<Bar>:echo<CR>
-nnoremap <leader>n :hlsearch!
 nnoremap <leader>sk :<c-f>k
 
-nnoremap <silent> <leader>] :bnext<CR>
-nnoremap <silent> <leader>[ :bprevious<CR>
+nnoremap <silent> <c-k> :bnext<CR>
+nnoremap <silent> <c-j> :bprevious<CR>
+nnoremap <leader>d <c-^>
+nnoremap <leader>n *
+nnoremap <leader>m #
+nnoremap <leader>; %
 
 " fzf (mostly)
 nnoremap <silent> <leader>p :Fzfp<CR>
 nnoremap <silent> <leader>u :GFiles<CR>
-nnoremap <silent> <leader>bl :Lines
-nnoremap <silent> <leader>bb :BLines
 nnoremap <silent> <leader>o :Buffers<CR>
 nnoremap <silent> <leader>i :History<CR>
-nnoremap <silent> <leader>m :Marks<CR>
 nnoremap <silent> <leader>c :Conf<CR>
+nnoremap <silent> <leader>sm :Marks<CR>
 
 nnoremap <leader>so :OSess<CR>
 nnoremap <leader>sp :OProj<CR>
@@ -124,20 +136,19 @@ nnoremap <leader>q <c-w>q
 nnoremap <leader>w <c-w>w
 
 "lines
-nnoremap <silent> <c-j> :m .+1<CR>==
-nnoremap <silent> <c-k> :m .-2<CR>==
-vnoremap <silent> <c-j> :m '>+1<CR>gv=gv
-vnoremap <silent> <c-k> :m '<-2<CR>gv=gv
+nnoremap <silent> <c-n> :m .+1<CR>==
+nnoremap <silent> <c-p> :m .-2<CR>==
+vnoremap <silent> <c-n> :m '>+1<CR>gv=gv
+vnoremap <silent> <c-p> :m '<-2<CR>gv=gv
 
 "terminal
 tnoremap <Esc> <c-\><c-n>
+tnoremap <c-d> <c-\><c-n>:bd!<CR>
 autocmd! FileType fzf tnoremap <buffer> <esc> <c-c>
 
-"coc
-set signcolumn=yes
-set updatetime=300
+" coc
 inoremap <silent><expr> <c-space> coc#refresh()
-inoremap <c-l> <c-n><c-g>u
+inoremap <silent><expr> <c-l> coc#refresh()
 imap <C-j> <Plug>(coc-snippets-expand-jump)
 
 " Use <CR> to confirm completion, `<C-g>u` means break undo chain at current
@@ -153,10 +164,10 @@ nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nmap <silent> <leader>gd <Plug>(coc-definition)
+nmap <silent> <leader>gt <Plug>(coc-type-definition)
+nmap <silent> <leader>gl <Plug>(coc-implementation)
+nmap <silent> <leader>gr <Plug>(coc-references)
 
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 function! s:show_documentation()
@@ -196,17 +207,20 @@ nmap <leader>gu :CocCommand git.chunkUndo<CR>
 nmap <leader>gs :CocCommand git.chunkStage<CR>
 " create text object for git chunks
 " omap ig <Plug>(coc-git-chunk-inner)
-" xmap ig <Plug>(coc-git-chunk-inner)
+"nxmap ig <Plug>(coc-git-chunk-inner)
 " omap ag <Plug>(coc-git-chunk-outer)
 " xmap ag <Plug>(coc-git-chunk-outer)
 
 "explorer
 nmap <leader>re :CocCommand explorer<CR>
+" end coc
 
 " term buffer
 augroup custom_term
 	autocmd!
-	autocmd TermOpen * setlocal bufhidden=hide
+	autocmd TermOpen *
+				\ setlocal bufhidden=hide
+				\ | norm! a
 augroup END
 
 let g:slime_target = "tmux"
@@ -232,13 +246,13 @@ set statusline =\ %f\ \ [%p%%]\ \ %L%=%{fugitive#statusline()}\ [%(%l,%c%V%)]
 
 autocmd! BufNewFile,BufRead *.json,*/waybar/config set filetype=jsonc
 
-lua require'trees'.setup()
+lua require'trees'
 
 " set foldmethod=expr foldexpr=nvim_treesitter#foldexpr()
 
 augroup highlight_yank
-    autocmd!
-    autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank("IncSearch", 200)
+	autocmd!
+	autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank("IncSearch", 200)
 augroup END 
 
 "Color preview
@@ -246,9 +260,31 @@ augroup END
 lua require'colorizer'.setup()
 
 "partial sourcing, visual, line, paragraph
-vnoremap . "sy:@s<CR>
+vnoremap <leader>e "sy:@s<CR>
 nnoremap <leader>ee "syy:@s<CR>
 nnoremap <leader>ep ms"syip:@s<CR>
+nnoremap <leader>ef k/^endfunction<CR>V?^function<CR>"sy:@s<CR>
 nnoremap <leader>ei "syy:@s \| PlugInstall<CR>
-nnoremap <leader>ec "syip:@s \| PlugClean<CR>
+
+augroup tab_stop
+	autocmd!
+	autocmd Filetype html,vim,css,xml,yaml
+				\ setlocal tabstop=2 
+				\ | setlocal shiftwidth=2
+augroup end
+
+function! FloatingWindow()
+  let buf = nvim_create_buf(v:true, v:true)
+  call setbufvar(buf, '&signcolumn', 'no')
+
+  let width = float2nr(&columns - (&columns * 2 / 10))
+  let height = 30
+  let y = &lines - height - 3
+  let x = float2nr((&columns - width) / 2)
+  let opts = { 'relative': 'editor', 'row': y, 'col': x, 'width': width, 'height': height }
+
+	" let buf = winbufnr(0)
+  call nvim_open_win(buf, v:true, opts)
+endfunction
+nnoremap <silent> <leader>tf :call FloatingWindow() \| call termopen("zsh")<CR>
 

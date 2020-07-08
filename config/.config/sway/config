@@ -95,7 +95,7 @@ exec swayidle -w \
 
     # Reload the configuration file
     bindsym $mod+Shift+escape reload
-	bindsym $mod+alt+q exec swaymsg exit
+	bindsym $mod+alt+q exec "pkill redshift; swaymsg exit"
 
 	bindsym $mod+alt+p exec 'killall waybar; waybar'
 
@@ -201,10 +201,10 @@ mode "resize" {
     # right will grow the containers width
     # up will shrink the containers height
     # down will grow the containers height
-    bindsym $left resize shrink width 10px
-    bindsym $down resize grow height 10px
-    bindsym $up resize shrink height 10px
-    bindsym $right resize grow width 10px
+    bindsym $left resize shrink width 40px
+    bindsym $down resize grow height 40px
+    bindsym $up resize shrink height 40px
+    bindsym $right resize grow width 40px
 
     # Ditto, with arrow keys
     bindsym Left resize shrink width 10px

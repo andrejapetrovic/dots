@@ -1,2 +1,2 @@
 #!/bin/sh
-ls $HOME/Pictures/Screenshots/ | bemenu -l 15 -i -p "Screenshots" | xargs -r -I@ feh --start-at $HOME/Pictures/Screenshots/@
+ls $HOME/Pictures/Screenshots/ | bemenu -l 15 -i -p "Screenshots" | xargs -r -I@ imv $HOME/Pictures/Screenshots/@

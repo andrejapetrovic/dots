@@ -5,7 +5,7 @@ export EDITOR=nvim
 export BEMENU_OPTS="-H 17 --fn 'Noto Sans Mono 9' --nb=#000000 --fb=#000000 --hb=#282c35 --tb=#000000 --hf=#ffffff --tf=#ffffff --tb=#282c35"
 export PATH="$HOME/bin:$HOME/Projects/scripts:$HOME/.local/bin:$PATH:$HOME/.config/composer/vendor/laravel/installer/bin"
 
-export LESS=-R
+export LESS=-Rj.4 
 export LESS_TERMCAP_mb=$'\E[1;31m'     # begin blink
 export LESS_TERMCAP_md=$'\E[1;36m'     # begin bold
 export LESS_TERMCAP_me=$'\E[0m'        # reset bold/blink
