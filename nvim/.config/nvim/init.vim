@@ -41,8 +41,7 @@ cabbrev Q q
 cabbrev W w
 cabbrev Wq wq
 
-" fixes a bug where cursor gets stuck in a block shape
-" in zsh vi mode after exiting neovim
+"zsh vi mode fixes a bug where cursor gets stuck in a block shape after exit
 autocmd! VimLeave * set guicursor=a:ver25-blinkon0
 
 " netrw
@@ -104,7 +103,7 @@ nnoremap <silent> <c-j> :bprevious<CR>
 nnoremap <leader>d <c-^>
 nnoremap <leader>n *
 nnoremap <leader>m #
-nnoremap <leader>; %
+nnoremap <leader>, %
 
 " fzf (mostly)
 nnoremap <silent> <leader>p :Fzfp<CR>
@@ -207,10 +206,10 @@ nmap <leader>gc <Plug>(coc-git-commit)
 nmap <leader>gu :CocCommand git.chunkUndo<CR>
 nmap <leader>gs :CocCommand git.chunkStage<CR>
 " create text object for git chunks
-" omap ig <Plug>(coc-git-chunk-inner)
-"nxmap ig <Plug>(coc-git-chunk-inner)
-" omap ag <Plug>(coc-git-chunk-outer)
-" xmap ag <Plug>(coc-git-chunk-outer)
+omap ig <Plug>(coc-git-chunk-inner)
+xmap ig <Plug>(coc-git-chunk-inner)
+omap ag <Plug>(coc-git-chunk-outer)
+xmap ag <Plug>(coc-git-chunk-outer)
 
 "explorer
 nmap <leader>re :CocCommand explorer<CR>
