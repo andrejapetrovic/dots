@@ -697,3 +697,4 @@ call s:hi("yamlKey", s:nord7_gui, "", s:nord7_term, "", "", "")
 hi TSConstructor guifg=#88c0d0
 hi TSVariableBuiltin guifg=#81a1c1
 hi TSProperty guifg=#8fbcbb
+hi TSError guibg=None

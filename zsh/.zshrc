@@ -18,7 +18,7 @@ alias ls='ls --color=auto'
 alias diff='diff --color=auto'
 alias grep='grep --color=auto'
 alias ytd='youtube-dl -f bestaudio -xi'
-alias vi="nvim -u NONE -c 'set clipboard=unnamedplus'"
+alias mvi="nvim -u NONE -c 'set clipboard=unnamedplus'"
 
 bindkey '^h' backward-delete-char
 bindkey '^?' backward-delete-char

@@ -14,6 +14,7 @@ call plug#begin('~/.config/nvim/plugged')
 	" Plug 'nvim-treesitter/nvim-treesitter'
 	Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install', 'for': 'markdown'}
 	Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server', 'for': 'html'}
+	" Plug 'kyazdani42/nvim-tree.lua'
 call plug#end()
 
 set mouse=a
@@ -35,6 +36,8 @@ set shiftwidth=4
 set noswapfile
 set nobackup
 set nowritebackup
+
+map <Space> <Nop>
 let mapleader = " "
 
 cabbrev Q q
@@ -97,13 +100,14 @@ command! Sourceconf source ~/.config/nvim/init.vim
 
 " hotkeys
 nnoremap <leader>sk :<c-f>k
+nnoremap <c-q> <c-a>
 
 nnoremap <silent> <c-k> :bnext<CR>
 nnoremap <silent> <c-j> :bprevious<CR>
 nnoremap <leader>d <c-^>
 nnoremap <leader>n *
 nnoremap <leader>m #
-nnoremap <leader>, %
+nnoremap <leader>; %
 
 " fzf (mostly)
 nnoremap <silent> <leader>p :Fzfp<CR>
@@ -169,6 +173,8 @@ nmap <silent> <leader>gt <Plug>(coc-type-definition)
 nmap <silent> <leader>gl <Plug>(coc-implementation)
 nmap <silent> <leader>gr <Plug>(coc-references)
 
+nmap <leader>rl <Plug>(coc-rename)
+
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -230,6 +236,7 @@ nmap <M-r> <Plug>SlimeParagraphSend
 imap <M-r> <ESC><Plug>SlimeParagraphSend
 nmap <silent> <M-e> :SlimeSend<CR>
 imap <silent> <M-e> <ESC>:SlimeSend<CR>
+nmap <silent> <M-E> mmggVG:SlimeSend<CR>`m
 nmap <leader>sc <Plug>SlimeConfig
 let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
 
@@ -261,10 +268,10 @@ lua require'colorizer'.setup()
 
 "partial sourcing, visual, line, paragraph
 vnoremap <leader>e "sy:@s<CR>
-nnoremap <leader>ee "syy:@s<CR>
+nnoremap <leader>ee :exe getline(".")<CR>
 nnoremap <leader>ep ms"syip:@s<CR>
 nnoremap <leader>ef k/^endfunction<CR>V?^function<CR>"sy:@s<CR>
-nnoremap <leader>ei "syy:@s \| PlugInstall<CR>
+nnoremap <leader>ei :exe getline(".") \| PlugInstall<CR>
 
 augroup tab_stop
 	autocmd!
@@ -293,13 +300,13 @@ function! LoadTS()
 	Plug 'nvim-treesitter/nvim-treesitter'
 	call plug#load('nvim-treesitter')
 	" lua require'trees'
+	lua vim.treesitter.TSHighlighter.hl_map["variable.builtin"] = "TSVariableBuiltin"
 	TSBufEnable highlight
 	TSBufEnable incremental_selection
 	TSBufEnable refactor.smart_rename
 	TSBufEnable refactor.highlight_definitions
 	TSBufEnable refactor.navigation
 endfunction
-
 autocmd! Filetype javascript,typescript,python,c,cpp,java call LoadTS()
 
 command! TS :call LoadTS()<CR>

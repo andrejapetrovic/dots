@@ -20,16 +20,22 @@ function setup()
 			highlight_definitions = {
 				enable = true,
 			},
+			highlight_current_scope = {
+				enable = false
+			},
 			navigation = {
 				enable = true,
 				goto_definition = "gnd",
 				list_definitions = "gnD"
+			},
+			textobjects = {
+				enable = false
 			}
 		}
 	}
 
-	require "nvim-treesitter.highlight"
-	vim.treesitter.TSHighlighter.hl_map.error = nil
+	-- require "nvim-treesitter.highlight"
+	-- vim.treesitter.TSHighlighter.hl_map.error = nil
 
 	local hlmap = vim.treesitter.TSHighlighter.hl_map
 	hlmap["variable.builtin"] = "TSVariableBuiltin"

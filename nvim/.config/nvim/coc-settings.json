@@ -6,7 +6,7 @@
 	"suggest.autoTrigger": "none",
 	"suggest.noselect": false,
 	"signature.enable": false,
-	"python.jediEnabled": false,
+	"signature.target": "echo",
 	"explorer.icon.enableNerdfont": true,
 	"explorer.file.showHiddenFiles": true,
 	"git.addedSign.hlGroup": "GitGutterAdd",

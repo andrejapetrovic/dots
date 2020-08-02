@@ -75,6 +75,7 @@ exec swayidle -w \
 
 	bindsym Print exec 'grim - | wl-copy -t image/png'
 	bindsym $mod+shift+s exec 'slurp | xargs -r -I@ grim -g @ - | wl-copy -t image/png'
+	bindsym $mod+alt+s exec 'wl-paste -t image/png | swappy -f -'
 	bindsym $mod+z exec save-scr
 	bindsym $mod+x exec search-scr
 	bindsym $mod+shift+x exec docs
@@ -98,8 +99,10 @@ exec swayidle -w \
 	bindsym $mod+alt+q exec "pkill redshift; swaymsg exit"
 
 	bindsym $mod+alt+p exec 'killall waybar; waybar'
+	bindsym $mod+shift+d exec 'cd ~/Music && youtube-dl -f bestaudio -xi $(wl-paste)'
 
-	# xwayland disable
+	xwayland disable
+	# exec mako
 #
 # Moving around:
 #
@@ -229,7 +232,7 @@ client.unfocused        #333333 #0f1219 #888888 #292d2e   #555b68
 # client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 for_window [class="feh"] floating enable
-for_window [app_id="imv"] floating enable
+# for_window [app_id="imv"] floating enable
 for_window [app_id="pavucontrol"] floating enable
 
 # swaymsg -t get_inputs, man 5 sway-input
