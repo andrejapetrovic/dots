@@ -13,7 +13,6 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'norcalli/nvim-colorizer.lua'
 	" Plug 'nvim-treesitter/nvim-treesitter'
 	Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install', 'for': 'markdown'}
-	Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server', 'for': 'html'}
 	" Plug 'kyazdani42/nvim-tree.lua'
 call plug#end()
 
@@ -99,7 +98,6 @@ command! RSess call fzf#run({'source': 'ls', 'dir': '~/.local/share/sess', 'sink
 command! Sourceconf source ~/.config/nvim/init.vim
 
 " hotkeys
-nnoremap <leader>sk :<c-f>k
 nnoremap <c-q> <c-a>
 
 nnoremap <silent> <c-k> :bnext<CR>
