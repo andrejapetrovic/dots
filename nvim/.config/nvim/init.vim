@@ -2,6 +2,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'neoclide/jsonc.vim', {'for': 'json'}
 	Plug 'junegunn/fzf.vim'
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'junegunn/gv.vim'
 	Plug 'tpope/vim-surround'
 	Plug 'tpope/vim-fugitive'
@@ -298,7 +299,7 @@ function! LoadTS()
 	Plug 'nvim-treesitter/nvim-treesitter'
 	call plug#load('nvim-treesitter')
 	" lua require'trees'
-	lua vim.treesitter.TSHighlighter.hl_map["variable.builtin"] = "TSVariableBuiltin"
+	" lua vim.treesitter.TSHighlighter.hl_map["variable.builtin"] = "TSVariableBuiltin"
 	TSBufEnable highlight
 	TSBufEnable incremental_selection
 	TSBufEnable refactor.smart_rename
