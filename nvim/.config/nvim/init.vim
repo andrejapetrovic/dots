@@ -12,6 +12,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'jpalardy/vim-slime'
 	Plug 'honza/vim-snippets'
 	Plug 'norcalli/nvim-colorizer.lua'
+	Plug 'jiangmiao/auto-pairs'
 	" Plug 'nvim-treesitter/nvim-treesitter'
 	Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install', 'for': 'markdown'}
 	" Plug 'kyazdani42/nvim-tree.lua'
@@ -36,6 +37,7 @@ set shiftwidth=4
 set noswapfile
 set nobackup
 set nowritebackup
+set hidden
 
 map <Space> <Nop>
 let mapleader = " "
