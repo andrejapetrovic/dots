@@ -1,0 +1,2 @@
+#!/bin/sh
+tmux capture-pane -pS -10000 | nvim -c "setlocal nobuflisted buftype=nofile bufhidden=wipe noswapfile"
