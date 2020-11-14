@@ -1,4 +1,0 @@
-#!/bin/sh
-IMG_PATH=$(ls $HOME/Pictures/Screenshots | bemenu -p "Save image as" -l 15 | xargs -r -I@ echo $HOME/Pictures/Screenshots/@.png)
-[ -z $IMG_PATH ] || wl-paste -t image/png > $IMG_PATH
-

@@ -1,2 +1,0 @@
-#!/bin/sh
-tmux ls | bemenu -l 15 -p 'tmux attach' | cut -d ':' -f 1 | xargs -r -I@ alacritty -e tmux a -t '@'

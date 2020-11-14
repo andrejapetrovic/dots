@@ -1,2 +1,0 @@
-#!/bin/sh
-cp -f "$1" ~/.cache/wallpaper && swaymsg output "*" background ~/.cache/wallpaper fill

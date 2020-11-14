@@ -1,4 +1,0 @@
-#!/bin/sh
-IMG_PATH=$(ls $HOME/Pictures/Screenshots | bemenu -p "Save image as" -l 15 | xargs -r -I@ echo $HOME/Pictures/Screenshots/@.png)
-[ -z $IMG_PATH ] || xclip -selection clipboard -t img/png -o > $IMG_PATH
-

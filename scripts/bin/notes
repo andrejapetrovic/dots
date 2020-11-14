@@ -1,2 +1,0 @@
-#!/bin/sh
-ls $HOME/Documents/notes/ | fzf -m --preview '<$HOME/Documents/notes/{1}' --preview-window=right:80% | xargs -r -I{} nvim $HOME/Documents/notes/{}

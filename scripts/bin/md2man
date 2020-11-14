@@ -1,2 +1,0 @@
-#!/bin/sh
-pandoc -s -f markdown -t man $1 | man -l -

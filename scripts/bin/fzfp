@@ -1,2 +1,0 @@
-#!/bin/sh
-rg --hidden --follow --files --glob '!.git/' | fzf -m --preview '<{1}' --preview-window=right:60% | xargs -ro nvim
