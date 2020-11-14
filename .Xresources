@@ -1,0 +1,52 @@
+XTerm*metaSendsEscape: true
+XTerm.termName: xterm-256color
+
+xterm*faceName: Fira mono
+xterm*faceSize: 11
+
+! special
+xterm*.foreground:   #c5c8c6
+xterm*.background:   #1d1f21
+xterm*.cursorColor:  #c5c8c6
+
+! black
+xterm*.color0:       #282a2e
+xterm*.color8:       #373b41
+
+! red
+xterm*.color1:       #a54242
+xterm*.color9:       #cc6666
+
+! green
+xterm*.color2:       #8c9440
+xterm*.color10:      #b5bd68
+
+! yellow
+xterm*.color3:       #de935f
+xterm*.color11:      #f0c674
+
+! blue
+xterm*.color4:       #5f819d
+xterm*.color12:      #81a2be
+
+! magenta
+xterm*.color5:       #85678f
+xterm*.color13:      #b294bb
+
+! cyan
+xterm*.color6:       #5e8d87
+xterm*.color14:      #8abeb7
+
+! white
+xterm*.color7:       #707880
+xterm*.color15:      #c5c8c6
+
+XTerm.vt100.locale: false
+XTerm.vt100.utf8: true
+
+XTerm*vt100.translations: #override \
+    Shift Ctrl <Key> C: copy-selection(CLIPBOARD) \n\
+    Shift Ctrl <Key> V: insert-selection(CLIPBOARD)
+
+XTerm*selectToClipboard: true
+XTerm*geometry: 80x40

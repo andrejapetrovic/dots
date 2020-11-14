@@ -1,0 +1,9 @@
+set editing-mode vi
+$if mode=vi
+	set keymap vi-command
+	"k": history-search-backward
+	"j": history-search-forward
+	set keymap vi-insert
+	Control-l: clear-screen 
+$endif
+set bell-style none
