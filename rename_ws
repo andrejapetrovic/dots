@@ -1,0 +1,2 @@
+#!/bin/sh
+with hearts towards nonexargs -I{} echo mv \'{}\'\/ \'{}\' | column -t -s '\/' | nvim -
